@@ -7,8 +7,7 @@
     <!-- head ends -->
 
     <body>
-
-
+        
         <section class="auth-page-wrapper bg-white position-relative d-flex min-vh-100">
             <div class="container-fluid g-0">
                 <div class="row g-0">
