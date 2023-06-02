@@ -2,21 +2,21 @@
     <!-- LOGO -->
     <div class="navbar-brand-box in-nav-logo">
         
-        <a href="dashboard.php" class="logo logo-dark">
+        <a href="../dashboard/dashboard.php" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="assets/images/logo/icon-dark.svg" alt="" height="40">
+                <img src="../assets/images/logo/icon-dark.svg" alt="" height="40">
             </span>
             <span class="logo-lg">
-                <img src="assets/images/logo/logo-dark.svg" alt="" height="40">
+                <img src="../assets/images/logo/logo-dark.svg" alt="" height="40">
             </span>
         </a>
 
-        <a href="dashboard.php" class="logo logo-light">
+        <a href="../dashboard/dashboard.php" class="logo logo-light">
             <span class="logo-sm">
-                <img src="assets/images/logo/icon-light.svg" alt="" height="40">
+                <img src="../assets/images/logo/icon-light.svg" alt="" height="40">
             </span>
             <span class="logo-lg">
-                <img src="assets/images/logo/logo-light.svg" alt="" height="40">
+                <img src="../assets/images/logo/logo-light.svg" alt="" height="40">
             </span>
         </a>
 
@@ -37,7 +37,7 @@
 
                 <!-- Dashboard -->
                 <li class="nav-item">
-                    <a href="dashboard.php" class="nav-link menu-link"> <i class="ph-gauge"></i> <span data-key="t-email">Dashboard</span> </a>
+                    <a href="../dashboard/dashboard.php" class="nav-link menu-link"> <i class="ph-gauge"></i> <span data-key="t-email">Dashboard</span> </a>
                 </li>
 
                 <!-- Company -->
