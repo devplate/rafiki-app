@@ -1,0 +1,97 @@
+
+/* default */
+:root {
+    --primary-color: #0d1e32;
+    --tb-vertical-menu-bg: #0d1e32;
+    --primary-light-color: #0D1D2F;
+    --secondary-color: #1171B8;
+    --alternative-color: #009999;
+    --supportive-color: #f1a21e;
+    --text-solid-color: #4D4F5C;
+    --text-light-color: #707070;
+    --off-light-color: #EAF0F4;
+    --tb-primary: #0d1e32;
+
+
+    --tb-primary-text-emphasis: var(--alternative-color);
+    --tb-vertical-menu-item-active-bg: var(--primary-light-color);
+    --tb-vertical-menu-item-color: #b8bec3;
+    --tb-primary-rgb: 13, 30, 50;
+}
+
+[data-theme=default][data-sidebar=dark] {
+    --tb-vertical-menu-bg: #0d1e32;
+    --tb-vertical-menu-item-active-bg: #13273e;
+    --tb-vertical-menu-item-color: #c6c6c6;
+    --tb-vertical-menu-sub-item-color: #c6c6c6;
+}
+
+body {
+    margin: 0;
+    font-family: var(--tb-body-font-family);
+    font-size: var(--tb-body-font-size);
+    font-weight: var(--tb-body-font-weight);
+    line-height: var(--tb-body-line-height);
+    color: var(--tb-body-color);
+    text-align: var(--tb-body-text-align);
+    background-color: var(--tb-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.text-primary{
+    color: var(--text-solid-color) !important;
+}
+.text-primary a:hover {
+    color: var(--alternative-color);
+}
+.text-secondary a{
+    color: var(--text-light-color);
+}
+.text-secondary a:hover {
+    color: var(--alternative-color);
+}
+
+@media (min-width: 1024.1px){
+[data-layout=vertical][data-layout-style=detached] .navbar-menu {
+    border-radius: 2px;
+
+    }
+}
+
+[data-layout=vertical][data-layout-style=detached] .footer {
+    border-top: 1px solid var(--tb-border-color);
+}
+.navbar-menu .navbar-nav .nav-link .badge {
+    margin-left: auto;
+    margin-right: 7px;
+    z-index: 1;
+}
+.navbar-header .user-name-sub-text {
+    color: var(--tb-header-item-sub-color);
+    font-weight: 400;
+}
+
+.bg-danger {
+    --tb-bg-opacity: 1;
+    background-color: rgb(241, 162, 30) !important;
+}
+.navbar-menu .navbar-nav .nav-link .badge {
+    margin-left: auto;
+    margin-right: 7px;
+    z-index: 1;
+    font-weight: 400;
+}
+.in-nav-logo img {
+    margin-left: -130px;
+}
+.card{
+    border-radius: 0;
+}
+.auth-card {
+    --tb-bg-opacity: 1;
+    background: linear-gradient(to left bottom, #242348, #009999);
+}
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: var(--tb-font-weight-normal);
+}
