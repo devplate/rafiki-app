@@ -305,7 +305,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../office/office.php"><i class="mdi ph-wrench-fill text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Office</span></a>
                         <a class="dropdown-item" href="../auth/lockscreen.php"><i class="mdi mdi-lock text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
-                        <a class="dropdown-item" href="../auth/login.php"><i class="mdi mdi-logout text-muted fs-lg align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                        <a class="dropdown-item" href="../auth/logout.php"><i class="mdi mdi-logout text-muted fs-lg align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
                 </div>
             </div>
