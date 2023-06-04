@@ -95,3 +95,27 @@ body {
     margin-bottom: 0.5rem;
     font-weight: var(--tb-font-weight-normal);
 }
+.form-control-sm {
+    min-height: calc(1.5em + 0.5rem + calc(var(--tb-border-width) * 2));
+    padding: 0.3rem 1rem;
+    font-size: calc(var(--tb-font-base) * .875);
+    border-radius: 0;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 1em;
+    display: inline-block;
+    width: auto;
+}
+.form-select-sm {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    font-size: calc(var(--tb-font-base) * .875);
+    border-radius: 0;
+}
+.page-item:last-child .page-link{
+    border-radius: 0;
+}
+.page-item:first-child .page-link{
+    border-radius: 0;
+}
