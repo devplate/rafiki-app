@@ -3,7 +3,7 @@
 <html lang="en" data-layout="vertical" data-sidebar="dark" data-sidebar-size="lg" data-preloader="disable" data-theme="default" data-topbar="light" data-bs-theme="light">
 
     <!-- head starts -->
-    <?php include '../includes/head.php';?>
+    <?php include 'includes/head.php';?>
     <!-- head ends -->
 
     <body>
@@ -13,7 +13,7 @@
                 <div class="row g-0">
                     
                     <!-- left side bar start  -->
-                    <?php include '../includes/auth-left-sidebar.php'; ?>
+                    <?php include 'includes/auth-left-sidebar.php'; ?>
                     <!-- left side bar ends -->
                     
                     <!--end col-->
@@ -26,7 +26,7 @@
                                     
                                     <div class="text-muted text-center mb-4 pb-2 mx-lg-3">
                                         <div class="mb-4">
-                                            <img src="../assets/images/auth/permission.png" alt="" class="avatar-md">
+                                            <img src="assets/images/auth/permission.png" alt="" class="avatar-md">
                                         </div>
                                         <h4>Verify Your Email</h4>
                                         <p>Please enter the 4 digit code sent to <span class="fw-semibold">example@abc.com</span></p>
@@ -82,7 +82,7 @@
         </section>
         
         <!-- javascript links starts  -->
-        <?php include '../includes/javascripts.php';?>
+        <?php include 'includes/javascripts.php';?>
         <!-- javascript links ends -->
 
     </body>

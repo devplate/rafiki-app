@@ -6,19 +6,19 @@
                 <div class="navbar-brand-box horizontal-logo">
                     <a href="dashboard.php" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="../assets/images/logo/icon-dark.svg" alt="" height="40">
+                            <img src="assets/images/logo/icon-dark.svg" alt="" height="40">
                         </span>
                         <span class="logo-lg">
-                            <img src="../assets/images/logo/logo-dark.svg" alt="" height="40">
+                            <img src="assets/images/logo/logo-dark.svg" alt="" height="40">
                         </span>
                     </a>
 
                     <a href="dashboard.php" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="../assets/images/logo/icon-light.svg" alt="" height="40">
+                            <img src="assets/images/logo/icon-light.svg" alt="" height="40">
                         </span>
                         <span class="logo-lg">
-                            <img src="../assets/images/logo/logo-light.svg" alt="" height="40">
+                            <img src="assets/images/logo/logo-light.svg" alt="" height="40">
                         </span>
                     </a>
                 </div>
@@ -80,7 +80,7 @@
                                 <!-- item -->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
                                     <div class="d-flex">
-                                        <img src="../assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <img src="assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="flex-1">
                                             <h6 class="m-0">Angela Bernier</h6>
                                             <span class="fs-11 mb-0 text-muted">Manager</span>
@@ -90,7 +90,7 @@
                                 <!-- item -->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
                                     <div class="d-flex">
-                                        <img src="../assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="flex-1">
                                             <h6 class="m-0">David Grasso</h6>
                                             <span class="fs-11 mb-0 text-muted">Web Designer</span>
@@ -100,7 +100,7 @@
                                 <!-- item -->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
                                     <div class="d-flex">
-                                        <img src="../assets/images/users/avatar-5.jpg.png" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <img src="assets/images/users/avatar-5.jpg.png" class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="flex-1">
                                             <h6 class="m-0">Mike Bunch</h6>
                                             <span class="fs-11 mb-0 text-muted">React Developer</span>
@@ -195,7 +195,7 @@
                                 <div class="text-reset notification-item d-block dropdown-item position-relative unread-message">
                                     <div class="d-flex">
                                         <div class="position-relative me-3 flex-shrink-0">
-                                            <img src="../assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="user-pic">
+                                            <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="user-pic">
                                             <span class="active-badge position-absolute start-100 translate-middle p-1 bg-success rounded-circle">
                                                 <span class="visually-hidden">New alerts</span>
                                             </span>
@@ -251,7 +251,7 @@
                                     <div class="d-flex">
 
                                         <div class="position-relative me-3 flex-shrink-0">
-                                            <img src="../assets/images/users/avatar-8.jpg" class="rounded-circle avatar-xs" alt="user-pic">
+                                            <img src="assets/images/users/avatar-8.jpg" class="rounded-circle avatar-xs" alt="user-pic">
                                             <span class="active-badge position-absolute start-100 translate-middle p-1 bg-warning rounded-circle">
                                                 <span class="visually-hidden">New alerts</span>
                                             </span>
@@ -289,7 +289,7 @@
                 <div class="dropdown ms-sm-3 header-item topbar-user">
                     <button type="button" class="btn shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="d-flex align-items-center">
-                            <img class="rounded-circle header-profile-user" src="../assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
                             <span class="text-start ms-xl-2">
                                 <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Richard Marshall</span>
                                 <span class="d-none d-xl-block ms-1 fs-sm user-name-sub-text">Founder</span>
@@ -303,9 +303,9 @@
                         <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Messages</span></a>
                         <a class="dropdown-item" href="pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Help</span></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="../office/office.php"><i class="mdi ph-wrench-fill text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Office</span></a>
-                        <a class="dropdown-item" href="../auth/lockscreen.php"><i class="mdi mdi-lock text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
-                        <a class="dropdown-item" href="../auth/logout.php"><i class="mdi mdi-logout text-muted fs-lg align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                        <a class="dropdown-item" href="office.php"><i class="mdi ph-wrench-fill text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Office</span></a>
+                        <a class="dropdown-item" href="lockscreen.php"><i class="mdi mdi-lock text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+                        <a class="dropdown-item" href="logout.php"><i class="mdi mdi-logout text-muted fs-lg align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
                 </div>
             </div>

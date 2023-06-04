@@ -10,7 +10,7 @@
                             <div class="effect-circle-1 position-relative mx-auto rounded-circle d-flex align-items-center justify-content-center">
                                 <div class="effect-circle-2 position-relative mx-auto rounded-circle d-flex align-items-center justify-content-center">
                                     <div class="effect-circle-3 mx-auto rounded-circle position-relative text-white fs-4xl d-flex align-items-center justify-content-center">
-                                        <img src="../assets/images/logo/logo-light.svg" alt="" srcset="" height="70">
+                                        <img src="assets/images/logo/logo-light.svg" alt="" srcset="" height="70">
                                     </div>
                                 </div>
                             </div>
@@ -18,35 +18,35 @@
                                 <li>
                                     <div class="avatar-sm d-inline-block">
                                         <div class="avatar-title bg-white shadow-lg overflow-hidden rounded-circle">
-                                            <img src="../assets/images/users/avatar-1.jpg" alt="" class="img-fluid">
+                                            <img src="assets/images/users/avatar-1.jpg" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="avatar-sm d-inline-block">
                                         <div class="avatar-title bg-white shadow-lg overflow-hidden rounded-circle">
-                                            <img src="../assets/images/users/avatar-2.jpg" alt="" class="img-fluid">
+                                            <img src="assets/images/users/avatar-2.jpg" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="avatar-sm d-inline-block">
                                         <div class="avatar-title bg-white shadow-lg overflow-hidden rounded-circle">
-                                            <img src="../assets/images/users/avatar-3.jpg" alt="" class="img-fluid">
+                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="avatar-sm d-inline-block">
                                         <div class="avatar-title bg-white shadow-lg overflow-hidden rounded-circle">
-                                            <img src="../assets/images/users/avatar-4.jpg" alt="" class="img-fluid">
+                                            <img src="assets/images/users/avatar-4.jpg" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="avatar-sm d-inline-block">
                                         <div class="avatar-title bg-white shadow-lg overflow-hidden rounded-circle">
-                                            <img src="../assets/images/users/avatar-5.jpg.png" alt="" class="img-fluid">
+                                            <img src="assets/images/users/avatar-5.jpg.png" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </li>

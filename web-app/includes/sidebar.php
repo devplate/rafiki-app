@@ -2,21 +2,21 @@
     <!-- LOGO -->
     <div class="navbar-brand-box in-nav-logo">
         
-        <a href="../dashboard/dashboard.php" class="logo logo-dark">
+        <a href="dashboard.php" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="../assets/images/logo/icon-dark.svg" alt="" height="40">
+                <img src="assets/images/logo/icon-dark.svg" alt="" height="40">
             </span>
             <span class="logo-lg">
-                <img src="../assets/images/logo/logo-dark.svg" alt="" height="40">
+                <img src="assets/images/logo/logo-dark.svg" alt="" height="40">
             </span>
         </a>
 
-        <a href="../dashboard/dashboard.php" class="logo logo-light">
+        <a href="dashboard.php" class="logo logo-light">
             <span class="logo-sm">
-                <img src="../assets/images/logo/icon-light.svg" alt="" height="40">
+                <img src="assets/images/logo/icon-light.svg" alt="" height="40">
             </span>
             <span class="logo-lg">
-                <img src="../assets/images/logo/logo-light.svg" alt="" height="40">
+                <img src="assets/images/logo/logo-light.svg" alt="" height="40">
             </span>
         </a>
 
@@ -37,21 +37,21 @@
 
                 <!-- Dashboard -->
                 <li class="nav-item">
-                    <a href="../dashboard/dashboard.php" class="nav-link menu-link"> <i class="ph-gauge"></i> <span data-key="t-email">Dashboard</span> </a>
+                    <a href="dashboard.php" class="nav-link menu-link"> <i class="ph-gauge"></i> <span data-key="t-email">Dashboard</span> </a>
                 </li>
 
                 <!-- Company -->
                 <li class="nav-item">
                     <a href="index.php#sidebarCompany" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCompany">
-                        <i class="ph-house-line"></i> <span data-key="t-company">Company</span>
+                        <i class="ph-house-line"></i> <span data-key="company">Company</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarCompany">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="add-company.php" class="nav-link" data-key="t-products">Add Company</a>
+                                <a href="add-company.php" class="nav-link" data-key="add-company">Add Company</a>
                             </li>
                             <li class="nav-item">
-                                <a href="companies.php" class="nav-link" data-key="t-products-grid">All Companies</a>
+                                <a href="companies.php" class="nav-link" data-key="companies">All Companies</a>
                             </li>
                         </ul>
                     </div>

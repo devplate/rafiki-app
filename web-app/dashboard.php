@@ -3,7 +3,8 @@
 <html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="dark" data-sidebar-size="lg" data-preloader="enable" data-theme="default" data-bs-theme="light">
 
     <!-- head starts -->
-    <?php include '../includes/head.php';?>
+
+    <?php include 'includes/head.php';?>
     <!--datatable css-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" >
     <!--datatable responsive css-->
@@ -19,18 +20,18 @@
         <div id="layout-wrapper">
 
                 <!-- left sidebar starts -->
-                <?php include '../includes/sidebar.php';?>
+                <?php include 'includes/sidebar.php';?>
                 <!-- Left Sidebar End -->
 
                 <!-- Vertical Overlay-->
                 <div class="vertical-overlay"></div>
             
                 <!-- Header starts -->
-                <?php include '../includes/header.php';?>
+                <?php include 'includes/header.php';?>
                 <!-- header ends -->
 
                 <!-- notification models starts -->
-                <?php include '../includes/notification-models.php';?>
+                <?php include 'includes/notification-models.php';?>
                 <!-- notification models ends -->
 
                 <!-- Start right Content here -->
@@ -46,14 +47,14 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="../dashboard/dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Current Year</a>
+                                            <a class="dropdown-item" href="dashboard.php">Today</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
+                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
                                         </div>
                                     </div>
                                     <p class="fs-md text-muted mb-0">Patients</p>
@@ -74,14 +75,14 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="../dashboard/dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Current Year</a>
+                                            <a class="dropdown-item" href="dashboard.php">Today</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
+                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
                                         </div>
                                     </div>
                                     <p class="fs-md text-muted mb-0">Doctors</p>
@@ -102,14 +103,14 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="../dashboard/dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Current Year</a>
+                                            <a class="dropdown-item" href="dashboard.php">Today</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
+                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
                                         </div>
                                     </div>
                                     <p class="fs-md text-muted mb-0">Appointments</p>
@@ -130,14 +131,14 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="../dashboard/dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="../dashboard/dashboard.php">Current Year</a>
+                                            <a class="dropdown-item" href="dashboard.php">Today</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
+                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
+                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
                                         </div>
                                     </div>
                                     <p class="fs-md text-muted mb-0">Attended cases</p>
@@ -614,7 +615,7 @@
                 <!-- page contents ends -->
 
                 <!-- footer starts -->
-                <?php include '../includes/footer.php';?>
+                <?php include 'includes/footer.php';?>
                 <!-- footer ends -->
 
             </div>
@@ -625,30 +626,30 @@
 
 
             <!--start back-to-top-->
-            <?php include '../includes/back-button.php'; ?>
+            <?php include 'includes/back-button.php'; ?>
             <!--end back-to-top-->
 
             <!--preloader starts-->
-            <?php include '../includes/preloader.php';?>
+            <?php include 'includes/preloader.php';?>
             <!-- preloader ends -->
 
             <!-- theme Settings starts -->
-            <?php include '../includes/theme-settings.php';
+            <?php include 'includes/theme-settings.php';
             ?>
             <!-- theme settings ends -->
 
             <!-- javascript links starts  -->
-            <?php include '../includes/javascripts.php';?>
+            <?php include 'includes/javascripts.php';?>
 
             
             <!-- apexcharts init -->
-            <script src="../assets/js/pages/apexcharts-column.init.js"></script>
-            <script src="../assets/libs/simplebar/simplebar.min.js"></script>
+            <script src="assets/js/pages/apexcharts-column.init.js"></script>
+            <script src="assets/libs/simplebar/simplebar.min.js"></script>
             
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
              
             <!-- apexcharts -->
-            <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+            <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/dayjs.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/plugin/quarterOfYear.min.js"></script>
 
@@ -663,7 +664,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
 
-            <script src="../assets/js/pages/datatables.init.js"></script>
+            <script src="assets/js/pages/datatables.init.js"></script>
             <!-- javascript links ends -->
 
 

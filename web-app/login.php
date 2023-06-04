@@ -3,7 +3,7 @@
 <html lang="en" data-layout="vertical" data-sidebar="dark" data-sidebar-size="lg" data-preloader="disable" data-theme="default" data-topbar="light" data-bs-theme="light">
 
     <!-- head starts -->
-    <?php include '../includes/head.php';?>
+    <?php include 'includes/head.php';?>
     <!-- head ends -->
 
     <body>
@@ -14,7 +14,7 @@
                 <div class="row g-0">
 
                     <!-- left side bar start  -->
-                    <?php include '../includes/auth-left-sidebar.php'; ?>
+                    <?php include 'includes/auth-left-sidebar.php'; ?>
                     <!-- left side bar ends -->
 
                     <!--end col-->
@@ -27,7 +27,7 @@
                                     <p class="text-muted">Sign in to your Rafiki account </p>
                                 </div>
                                 <div class="p-2 mt-5">
-                                    <form action="../dashboard/dashboard.php">
+                                    <form action="dashboard.php">
                 
                                         <div class="mb-4">
                                             <label for="username" class="form-label text-muted">Username <span class="text-danger">*</span></label>
@@ -56,7 +56,7 @@
                                     </form>
                 
                                     <div class="text-center mt-5">
-                                        <p class="mb-0 text-secondary"><a href="../dashboard/dashboard.php">Term of use and privacy policy</a> </p>
+                                        <p class="mb-0 text-secondary"><a href="dashboard.php">Term of use and privacy policy</a> </p>
                                     </div>
                                 </div>
                             </div><!-- end card body -->
@@ -70,7 +70,7 @@
         </section>
         
         <!-- javascript links starts  -->
-        <?php include '../includes/javascripts.php';?>
+        <?php include 'includes/javascripts.php';?>
         <!-- javascript links ends -->
 
     </body>

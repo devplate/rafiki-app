@@ -3,7 +3,7 @@
 <html lang="en" data-layout="vertical" data-sidebar="dark" data-sidebar-size="lg" data-preloader="disable" data-theme="default" data-topbar="light" data-bs-theme="light">
 
     <!-- head starts -->
-    <?php include '../includes/head.php';?>
+    <?php include 'includes/head.php';?>
     <!-- head ends -->
 
     <body>
@@ -13,7 +13,7 @@
                 <div class="row g-0">
                     
                     <!-- left side bar start  -->
-                    <?php include '../includes/auth-left-sidebar.php'; ?>
+                    <?php include 'includes/auth-left-sidebar.php'; ?>
                     <!-- left side bar ends -->
                     
                     <!--end col-->
@@ -25,7 +25,7 @@
                                     <h5 class="fs-3xl">Request login keys</h5>
                                     <p class="text-muted mb-4">Request login keys via your email</p>
                                     <div class="pb-4">
-                                        <img src="../assets/images/auth/email.png" alt="" class="avatar-md">
+                                        <img src="assets/images/auth/email.png" alt="" class="avatar-md">
                                     </div>
                                 </div>
 
@@ -58,7 +58,7 @@
         </section>
         
         <!-- javascript links starts  -->
-        <?php include '../includes/javascripts.php';?>
+        <?php include 'includes/javascripts.php';?>
         <!-- javascript links ends -->
 
     </body>
