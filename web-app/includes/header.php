@@ -139,7 +139,7 @@
                 <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
                     <button type="button" class="btn btn-icon btn-topbar btn-ghost-dark rounded-circle" id="page-header-notifications-dropdown" data-bs-toggle="dropdown"  data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
                         <i class='bi bi-bell fs-2xl'></i>
-                        <span class="position-absolute topbar-badge fs-3xs translate-middle badge rounded-pill bg-danger"><span class="notification-badge">4</span><span class="visually-hidden">unread messages</span></span>
+                        <span class="position-absolute topbar-badge fs-3xs translate-middle badge rounded-pill bg-badge"><span class="notification-badge">4</span><span class="visually-hidden">unread messages</span></span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
 
@@ -304,8 +304,8 @@
                         <a class="dropdown-item" href="pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Help</span></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="office.php"><i class="mdi ph-wrench-fill text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Office</span></a>
-                        <a class="dropdown-item" href="lockscreen.php"><i class="mdi mdi-lock text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
-                        <a class="dropdown-item" href="logout.php"><i class="mdi mdi-logout text-muted fs-lg align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                        <a class="dropdown-item" href="auth-lockscreen.php"><i class="mdi mdi-lock text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+                        <a class="dropdown-item" href="auth-logout.php"><i class="mdi mdi-logout text-muted fs-lg align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
                 </div>
             </div>

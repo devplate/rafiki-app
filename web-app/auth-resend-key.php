@@ -33,7 +33,7 @@
                                     Enter your email and instructions will be sent to you!
                                 </div>
                                 <div class="p-2">
-                                    <form>
+                                    <form action="dashboard.php">
                                         <div class="mb-4">
                                             <label class="form-label text-muted">Your email address</label>
                                             <input type="email" class="form-control password-input" id="email" placeholder="Enter your email" required >
@@ -45,7 +45,7 @@
                                     </form><!-- end form -->
                                 </div>
                                 <div class="mt-4 text-center">
-                                    <p class="mb-0 text-muted">Wait, I received my login keys... <a href="../auth/login.php" class="fw-semibold text-primary text-decoration-underline"> Click here </a> </p>
+                                    <p class="mb-0 text-muted">Wait, I received my login keys... <a href="auth-login.php" class="fw-semibold text-primary text-decoration-underline"> Click here </a> </p>
                                 </div>
                             </div><!-- end card body -->
                         </div><!-- end card -->

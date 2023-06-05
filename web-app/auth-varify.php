@@ -32,7 +32,7 @@
                                         <p>Please enter the 4 digit code sent to <span class="fw-semibold">example@abc.com</span></p>
                                     </div>
                                 
-                                    <form autocomplete="off">
+                                    <form autocomplete="on" action="dashboard.php">
                                         <div class="row">
                                             <div class="col-3">
                                                 <div class="mb-3">
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 text-center">
-                                    <p class="mb-0">Didn't receive a code ? <a href="auth-pass-reset.html" class="fw-semibold text-primary text-decoration-underline">Resend</a> </p>
+                                    <p class="mb-0">Didn't receive a code ? <a href="auth-resend.php" class="fw-semibold text-primary text-decoration-underline">Resend</a> </p>
                                 </div>
                             </div><!-- end card body -->
                         </div><!-- end card -->

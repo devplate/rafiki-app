@@ -182,7 +182,7 @@
                                 <h4 class="card-title mb-2">Patients list</h4>
                             </div>
                             <div class="card-body">
-                                <table id="fixed-header" class="table dt-responsive nowrap align-middle" style="width:100%">
+                                <table id="fixed-header" class="table dt-responsive table-hover nowrap align-middle" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th scope="col" style="width: 10px;">

@@ -28,7 +28,7 @@
                                     <h5 class="fs-2xl">You are Logged Out</h5>
                                     <p class="text-muted">Thank you for using <span class="fw-semibold">Rafiki App</span></p>
                                     <div class="mt-4">
-                                        <a href="login.php" class="btn btn-primary w-100">Sign In</a>
+                                        <a href="auth-login.php" class="btn btn-primary w-100">Sign In</a>
                                     </div>
                                 </div>
                             </div><!-- end card body -->

@@ -48,7 +48,7 @@
                     <div class="collapse menu-dropdown" id="sidebarCompany">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="add-company.php" class="nav-link" data-key="add-company">Add Company</a>
+                                <a href="company-new.php" class="nav-link" data-key="add-company">Add Company</a>
                             </li>
                             <li class="nav-item">
                                 <a href="companies.php" class="nav-link" data-key="companies">All Companies</a>
@@ -65,7 +65,7 @@
                     <div class="collapse menu-dropdown" id="sidebarDoctor">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="add-doctor.php" class="nav-link" data-key="t-products">Add Doctor</a>
+                                <a href="doctor-new.php" class="nav-link" data-key="t-products">Add Doctor</a>
                             </li>
                             <li class="nav-item">
                                 <a href="doctors.php" class="nav-link" data-key="t-products-grid">All Doctors</a>
@@ -82,7 +82,7 @@
                     <div class="collapse menu-dropdown" id="sidebarPatient">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="add-patient.php" class="nav-link" data-key="t-products">Add Patient</a>
+                                <a href="patient-new.php" class="nav-link" data-key="t-products">Add Patient</a>
                             </li>
                             <li class="nav-item">
                                 <a href="patients.php" class="nav-link" data-key="t-products-grid">All Patients</a>
@@ -109,13 +109,13 @@
                     <div class="collapse menu-dropdown" id="sidebarPublications">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="articles.php" class="nav-link" data-key="t-products">Article</a>
+                                <a href="publication-articles.php" class="nav-link" data-key="t-products">Article</a>
                             </li>
                             <li class="nav-item">
-                                <a href="audio.php" class="nav-link" data-key="t-products-grid">Audio</a>
+                                <a href="publication-audio.php" class="nav-link" data-key="t-products-grid">Audio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="video.php" class="nav-link" data-key="t-products-grid">Video</a>
+                                <a href="publication-video.php" class="nav-link" data-key="t-products-grid">Video</a>
                             </li>
                         </ul>
                     </div>
@@ -129,7 +129,7 @@
                 <!-- Customize -->
                 <li class="nav-item">
                     <a class="nav-link btn p-2 menu-link" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-                        <i class="ph-wrench"></i> <span data-key="t-custom-ui">Personalize</span> <span class="badge badge-pill bg-danger" data-key="t-custom">Custom</span>
+                        <i class="ph-wrench"></i> <span data-key="t-custom-ui">Personalize</span> <span class="badge badge-pill bg-badge" data-key="t-custom">Custom</span>
                     </a>
                 </li>
 

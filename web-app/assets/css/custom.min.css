@@ -71,9 +71,12 @@ body {
     font-weight: 400;
 }
 
-.bg-danger {
+.bg-badge {
     --tb-bg-opacity: 1;
     background-color: rgb(241, 162, 30) !important;
+}
+.badge{
+    --tb-badge-border-radius: 0.04rem;
 }
 .navbar-menu .navbar-nav .nav-link .badge {
     margin-left: auto;
@@ -117,5 +120,19 @@ div.dataTables_wrapper div.dataTables_filter input {
     border-radius: 0;
 }
 .page-item:first-child .page-link{
+    border-radius: 0;
+}
+.dt-buttons :is(button.dt-button,div.dt-button,a.dt-button,input.dt-button){
+    padding: 0.5em 1.5em;
+    border-radius: 0px;
+}
+.btn-sm{
+    --tb-btn-padding-y: 0.1rem;
+    --tb-btn-padding-x: 1rem;
+    --tb-btn-font-size: calc(var(--tb-font-base) * .875);
+    --tb-btn-border-radius: 0.2rem;
+    border-radius: 0;
+}
+.dropdown-menu{
     border-radius: 0;
 }
