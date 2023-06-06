@@ -136,3 +136,10 @@ div.dataTables_wrapper div.dataTables_filter input {
 .dropdown-menu{
     border-radius: 0;
 }
+.no-border-radius, .form-control, .form-select{
+    border-radius: 0 !important;
+}
+.btn-label {
+    position: relative;
+    padding-left: 2.33rem;
+}
