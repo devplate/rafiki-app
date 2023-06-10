@@ -48,34 +48,33 @@
                                         <h5 class="card-title mb-0">Companies</h5>
                                     </div>
                                     <div class="table-responsive card-body">
-                                    <table id="buttons-datatables" class="display table-centered align-middle table table-hover table-nowrap">
+                                    <table id="buttons-datatables" class="display table table-hover table-nowrap">
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Employees</th>
-                                                    <th>Name</th>
-                                                    <th>Phone no.</th>
+                                                    <th>Gender</th>
+                                                    <th>Full name</th>
+                                                    <th>Phone number</th>
                                                     <th>Email</th>
-                                                    <th>Postal address</th>
+                                                    <th>Company</th>
+                                                    <th>Job title</th>
                                                     <th>Physical location</th>
                                                     <th>Joined</th>
-                                                    <th>Expired</th>
                                                     <th>Status</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
-
                                             <tbody>
                                                 <tr>
                                                     <td>RFC002</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -83,7 +82,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -96,14 +95,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -111,7 +110,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -124,14 +123,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC004</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -139,7 +138,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -152,14 +151,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -167,7 +166,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -180,14 +179,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-danger">Expired</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -195,7 +194,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -208,14 +207,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -223,7 +222,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -236,14 +235,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -251,7 +250,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -264,14 +263,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -279,7 +278,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -292,14 +291,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -307,7 +306,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -320,14 +319,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -335,7 +334,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -348,14 +347,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -363,7 +362,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">
@@ -376,14 +375,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>RFC001</td>
-                                                    <td>220</td>
-                                                    <td>Vodacom Tanzania co .td</td>
+                                                    <td>Male</td>
+                                                    <td>Peter Adam Sangija</td>
                                                     <td>+255 849 849 843</td>
                                                     <td>info@vodacom.co.tz</td>
-                                                    <td>P.O.Box 2453 Dar es salaam</td>
+                                                    <td>Vodacom Tanzania Co. ltd</td>
+                                                    <td>Manager</td>
                                                     <td>Kigamboni, Dar es salaam, Tanzania</td>
                                                     <td>03 Oct, 2021</td>
-                                                    <td>03 Oct, 2025</td>
                                                     <td><span class="badge bg-success">Active</span></td>
                                                     <td>
                                                         <div class="dropdown d-inline-block">
@@ -391,7 +390,7 @@
                                                                 <i class="ri-more-fill align-middle"></i>
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a href="company-view.php" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
+                                                                <li><a href="#" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                                                 <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                                                 <li>
                                                                     <a class="dropdown-item remove-item-btn">

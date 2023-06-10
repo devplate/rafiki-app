@@ -85,7 +85,10 @@
                                 <a href="patient-new.php" class="nav-link" data-key="t-products">Add Patient</a>
                             </li>
                             <li class="nav-item">
-                                <a href="patients.php" class="nav-link" data-key="t-products-grid">All Patients</a>
+                                <a href="patients-upload.php" class="nav-link" data-key="t-products-upload">Upload Patients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="patients.php" class="nav-link" data-key="t-products-grid">View all Patients</a>
                             </li>
                         </ul>
                     </div>
@@ -109,13 +112,10 @@
                     <div class="collapse menu-dropdown" id="sidebarPublications">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="publication-articles.php" class="nav-link" data-key="t-products">Article</a>
+                                <a href="publication-new.php" class="nav-link" data-key="t-products">New publication</a>
                             </li>
                             <li class="nav-item">
-                                <a href="publication-audio.php" class="nav-link" data-key="t-products-grid">Audio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="publication-video.php" class="nav-link" data-key="t-products-grid">Video</a>
+                                <a href="publications.php" class="nav-link" data-key="t-products-grid">All publications</a>
                             </li>
                         </ul>
                     </div>

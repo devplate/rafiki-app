@@ -136,10 +136,25 @@ div.dataTables_wrapper div.dataTables_filter input {
 .dropdown-menu{
     border-radius: 0;
 }
-.no-border-radius, .form-control, .form-select{
+.no-border-radius, .form-control, .btn, .form-select, .choices__inner, .pagination-next, .pagination-prev, .listjs-pagination li .page{
+    border-radius: 0 !important;
+}
+.nav-pills .nav-link{
     border-radius: 0 !important;
 }
 .btn-label {
     position: relative;
     padding-left: 2.33rem;
+}
+.choices__list--multiple .choices__item{
+    border-radius: 0 !important;
+}
+.place-hold{
+    padding-top:20px
+}
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{
+    border-radius: 0 !important;
+}
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{
+    border-radius: 0 !important;
 }
