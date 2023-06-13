@@ -64,38 +64,39 @@
                                     </div>
 
                                     <div class="py-4">
+                                            <div class="card">
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless table-sm align-middle table-nowrap mb-0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Company ID:</th>
+                                                            <td class="text-muted">AHD34836</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Email address:</th>
+                                                            <td class="text-muted">info@vodacom.co.tz</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Postal Address</th>
+                                                            <td class="text-muted">P.O.Box 3726 Dar es Salaam</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Location:</th>
+                                                            <td class="text-muted">Kigamboni Dar es Salaam, Tanzania</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Joined Date:</th>
+                                                            <td class="text-muted">30 Oct 2023</td>
+                                                        </tr>
 
-                                        <div class="table-responsive">
-                                            <table class="table table-borderless table-sm align-middle table-nowrap mb-0">
-                                                <tbody>
-                                                    <tr>
-                                                        <th class="ps-0 text-end" scope="row">Company ID:</th>
-                                                        <td class="text-muted">AHD34836</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="ps-0 text-end" scope="row">Email address:</th>
-                                                        <td class="text-muted">info@vodacom.co.tz</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="ps-0 text-end" scope="row">Postal Address</th>
-                                                        <td class="text-muted">P.O.Box 3726 Dar es Salaam</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="ps-0 text-end" scope="row">Location:</th>
-                                                        <td class="text-muted">Kigamboni Dar es Salaam, Tanzania</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th class="ps-0 text-end" scope="row">Joined Date:</th>
-                                                        <td class="text-muted">30 Oct 2023</td>
-                                                    </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Total Employees:</th>
+                                                            <td class="text-muted">230</td>
+                                                        </tr>
 
-                                                    <tr>
-                                                        <th class="ps-0 text-end" scope="row">Total Employees:</th>
-                                                        <td class="text-muted">230</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +111,12 @@
                                     <ul class="nav nav-pills arrow-navtabs nav-secondary gap-2 flex-grow-1" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active" data-bs-toggle="tab" href="pages-profile.html#employees" role="tab">
-                                                Employees
+                                                Personal details
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="pages-profile.html#qualification" role="tab">
+                                                Qualification details
                                             </a>
                                         </li>
                                         <li class="nav-item">
@@ -402,6 +408,37 @@
                                 </div>
                                 <!--end tab-pane-->
 
+
+                                <div class="tab-pane fade" id="qualification" role="tabpanel">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title mb-0">Qualification</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="acitivity-timeline-2 list-unstyled mb-0">
+                                                <li>
+                                                    <h6 class="fs-md">James Mahindi Mapunda</h6>
+                                                    <p>09:24 PM</p>
+                                                    <p class="text-muted mb-0">Booked appointment to see Dr Ally bakari shabarni</p>
+                                                </li>
+                                                <li>
+                                                    <h6 class="fs-md">Emanuel Karim Mandonga</h6>
+                                                    <p class="mb-3">4 days ago</p>
+                                                    <p class="text-muted mb-0">Diagnosed with Sleeping sickness</p>
+                                                </li>
+                                                <li>
+                                                    <h6 class="fs-md">Juma Shabani Suleman</h6>
+                                                    <p class="mb-3">5 days ago</p>
+                                                    <p class="text-muted mb-0">Attended live section hosted by Dr Asha Shabani Juma</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end card-->
+
+                                </div>
+                                <!--end tab-pane-->
+
                                 <div class="tab-pane fade" id="activities" role="tabpanel">
                                     <div class="card">
                                         <div class="card-header">
@@ -493,56 +530,6 @@
                                         </div>
                                     </div>
 
-
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h6 class="card-title mb-0">Subscription</h6>
-                                        </div>
-                                        <div class="card-body">
-                                            <form action="pages-profile-settings.html">
-                                                <div class="row g-2 justify-content-lg-between align-items-center">
-
-                                                    <div class="col-lg-12">
-                                                        <div class="auth-pass-inputgroup">
-                                                            <label for="password-input" class="form-label">Expired date</label>
-                                                            <div class="position-relative">
-                                                                <input type="text" class="form-control" placeholder="DD-MM-YYYY" id="cleave-date">
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="d-flex align-items-center justify-content-between mt-4">
-                                                        <div class="">
-                                                            <button type="submit" class="btn btn-success">Update subscription</button>
-                                                        </div>
-                                                    </div>
-
-                                                    <!--end col-->
-
-                                                    <div class="col-lg-12">
-                                                        <div class="card bg-light shadow-none passwd-bg" id="password-contain">
-                                                            <div class="card-body">
-                                                                <div class="mb-4">
-                                                                    <h5 class="fs-sm">Subscription</h5>
-                                                                </div>
-                                                                <div class="">
-                                                                    <p id="pass-length" class="invalid fs-xs mb-2">Minimum <b>8 characters</b></p>
-                                                                    <p id="pass-lower" class="invalid fs-xs mb-2">At <b>lowercase</b> letter (a-z)</p>
-                                                                    <p id="pass-upper" class="invalid fs-xs mb-2">At least <b>uppercase</b> letter (A-Z)</p>
-                                                                    <p id="pass-number" class="invalid fs-xs mb-0">A least <b>number</b> (0-9)</p>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <!--end row-->
-                                            </form>
-
-                                        </div>
-                                    </div>
                                 </div>
                                 <!--end tab-pane-->
 
