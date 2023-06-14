@@ -248,7 +248,7 @@
 
                                     <div class="row">
                                         <div class="col-lg-12 mb-4">
-                                            <div class="card">
+                                            <div class="card pb-4">
                                                 <div class="card-header d-flex flex-wrap align-items-center gap-3 mb-2">
                                                     <h6 class="card-title flex-grow-1 pt-3 mb-0">Ratings & Reviews</h6>
                                                     <div class="flex-shrink-0">
