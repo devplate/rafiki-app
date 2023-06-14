@@ -74,6 +74,23 @@
                     </div>
                 </li>
 
+                <!-- Prescription -->
+                <li class="nav-item">
+                    <a href="index.php#sidebarPrescription" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPrescription">
+                    <i class="ph-first-aid-kit-light"></i> <span data-key="t-Prescription">Prescription</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarPrescription">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="prescription-new.php" class="nav-link" data-key="t-products">Add Prescription</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="prescriptions.php" class="nav-link" data-key="t-products-grid">All Prescriptions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
                 <!-- Patient -->
                 <li class="nav-item">
                     <a href="index.php#sidebarPatient" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPatient">
