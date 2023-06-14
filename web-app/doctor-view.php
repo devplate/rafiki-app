@@ -64,27 +64,47 @@
                                     <div class="text-center border-bottom pt-3 pb-4">
                                         <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-lg rounded-circle p-1 img-thumbnail">
                                         <div class="mt-3">
-                                            <h5>Vodacom Tanzania</h5>
-                                            <p class="text-muted"><a href="#">www.vodacom.co.tz</a> </p>
+                                            <h5>Rashid Ali Matawana</h5>
+                                            <p class="text-muted">ID: RD89273</p>
                                         </div>
                                     </div>
 
-                                    <div class="py-4">
+                                    <div class="pt-4 pb-2">
                                         <div class="card">
                                             <div class="table-responsive">
                                                 <table class="table table-borderless table-sm align-middle table-nowrap mb-0">
                                                     <tbody>
                                                         <tr>
-                                                            <th class="ps-0 text-end" scope="row">Doctor ID:</th>
-                                                            <td class="text-muted">AHD34836</td>
+                                                            <th class="ps-0 text-end" scope="row">Age:</th>
+                                                            <td class="text-muted">67</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Gender:</th>
+                                                            <td class="text-muted">Male</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Language:</th>
+                                                            <td class="text-muted">English, Swahili</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Nationality:</th>
+                                                            <td class="text-muted">Tanzania</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">National Id no:</th>
+                                                            <td class="text-muted">3232-5532-7383-738-7438</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Phone number:</th>
+                                                            <td class="text-muted">+255 738 738 7438</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="ps-0 text-end" scope="row">Alt number:</th>
+                                                            <td class="text-muted">+255 738 738 7438</td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Email address:</th>
                                                             <td class="text-muted">info@vodacom.co.tz</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th class="ps-0 text-end" scope="row">Postal Address</th>
-                                                            <td class="text-muted">P.O.Box 3726 Dar es Salaam</td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Location:</th>
@@ -95,10 +115,6 @@
                                                             <td class="text-muted">30 Oct 2023</td>
                                                         </tr>
 
-                                                        <tr>
-                                                            <th class="ps-0 text-end" scope="row">Total Employees:</th>
-                                                            <td class="text-muted">230</td>
-                                                        </tr>
 
                                                     </tbody>
                                                 </table>
@@ -140,7 +156,7 @@
                                                         </tr>
 
                                                         <tr>
-                                                            <th class="ps-0 text-end" scope="row">Relationship</th>
+                                                            <th class="ps-0 text-end" scope="row">Relationship:</th>
                                                             <td class="text-muted">Spouse</td>
                                                         </tr>
 
@@ -233,7 +249,7 @@
                                         <div class="col-xl-12">
                                             <div class="card mt-3 pb-3">
                                                 <div class="card-header mt-3">
-                                                    <h4 class="card-title mb-0">Patients stats </h4>
+                                                    <h4 class="card-title mb-0">Patients attended stats </h4>
                                                 </div><!-- end card header -->
 
                                                 <!-- To edit this component go to /assets/js/pages/apexcharts-column.init.js -->
