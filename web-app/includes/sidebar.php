@@ -60,7 +60,7 @@
                 <!-- Doctor -->
                 <li class="nav-item">
                     <a href="index.php#sidebarDoctor" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDoctor">
-                    <i class="ph-first-aid-kit-light"></i> <span data-key="t-Doctor">Doctor</span>
+                    <i class="ph-first-aid-kit"></i> <span data-key="t-Doctor">Doctor</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarDoctor">
                         <ul class="nav nav-sm flex-column">
@@ -77,7 +77,7 @@
                 <!-- Prescription -->
                 <li class="nav-item">
                     <a href="index.php#sidebarPrescription" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPrescription">
-                    <i class="ph-first-aid-kit-light"></i> <span data-key="t-Prescription">Prescription</span>
+                    <i class="ph-notebook"></i> <span data-key="t-Prescription">Prescription</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarPrescription">
                         <ul class="nav nav-sm flex-column">
