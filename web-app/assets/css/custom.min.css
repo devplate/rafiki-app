@@ -158,3 +158,21 @@ div.dataTables_wrapper div.dataTables_filter input {
 .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{
     border-radius: 0 !important;
 }
+span.ph-graduation-cap-thin.size-3 {
+    font-size: 35px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: var(--off-light-color);
+    background-color: var(--alternative-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+.qualification-title{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.education-map {
+    margin-left: 70px;
+    margin-top: -15px;
+}
