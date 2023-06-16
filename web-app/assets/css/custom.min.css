@@ -70,7 +70,10 @@ body {
     color: var(--tb-header-item-sub-color);
     font-weight: 400;
 }
-
+.bg-badge-light {
+    opacity: 85%;
+    background-color: rgb(241, 162, 30) !important;
+}
 .bg-badge {
     --tb-bg-opacity: 1;
     background-color: rgb(241, 162, 30) !important;
@@ -144,7 +147,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 .btn-label {
     position: relative;
-    padding-left: 2.33rem;
+    padding-left: 3.2rem;
 }
 .choices__list--multiple .choices__item{
     border-radius: 0 !important;
@@ -159,20 +162,118 @@ div.dataTables_wrapper div.dataTables_filter input {
     border-radius: 0 !important;
 }
 span.ph-graduation-cap-thin.size-3 {
-    font-size: 35px;
-    width: 55px;
-    height: 55px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
     text-align: center;
     color: var(--off-light-color);
     background-color: var(--alternative-color);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     padding: 10px;
+    margin-top: 15px;
 }
 .qualification-title{
     padding-top: 20px;
     padding-left: 20px;
 }
 .education-map {
-    margin-left: 70px;
+    margin-left: 63px;
     margin-top: -15px;
+}
+button.btn.bg-badge-light.text-white.btn-label:hover {
+    opacity: 100%;
+}
+.call-menu-profile{
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+}
+
+ul.call-menu-profile>li a {
+    color: var(--primary-color);
+}
+
+ul.call-menu-profile>li a:hover {
+    color: var(--secondary-color);
+}
+
+ul.call-menu-profile>li {
+    padding-left: 15px;
+    font-size: 18px;
+    position: relative;
+    left: 14%;
+}
+span.medical-history.size-3 {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: var(--off-light-color);
+    background-color: var(--alternative-color);
+    padding: 5px;
+    margin-top: 15px;
+}
+span.education.size-3 {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: var(--off-light-color);
+    background-color: var(--alternative-color);
+    padding: 8px;
+    margin-top: 15px;
+}
+span.height-span {
+    font-size: xx-large;
+    color: var(--alternative-color);
+}
+
+.height-date p {
+    margin-bottom: 2px;
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: smaller;
+}
+
+.pressure-stats p {
+    margin-bottom: 2px;
+    font-weight: 400;
+    /* margin-top: 5px; */
+    font-size: smaller;
+    margin-top: 0px;
+    /* margin-left: -93px; */
+    /* margin-bottom: 10px; */
+}
+
+.height-date .span-kg {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 3px;
+    color: var(--text-solid-color);
+}
+
+.height-date h3 {
+    color: var(--primary-color);
+    font-size: large;
+}
+
+span.span-pressure {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 2px;
+}
+.blood-stats{
+    /* padding-left: 40px; */
+}
+.pressure-group h3 {
+    font-size: large;
+    margin-top: -12px;
+}
+.pressure-stats h3 {
+    font-size: large;
+}
+.just-end {
+    margin-left: 327px;
 }
