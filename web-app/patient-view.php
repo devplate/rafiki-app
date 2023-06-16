@@ -514,7 +514,7 @@
                                                     <div class="education-map">
                                                         <p class="text-muted mb-0">Attended on: 12 Jan 2023</p>
                                                         <p class="mt-1 text-danger">Not attended</p>
-                                                        <button type="button" class="btn bg-badge-light text-white btn-label"><i class="ph-first-aid-kit label-icon align-middle fs-lg me-2"></i> Write prescription</button>
+                                                        <a href="prescription-new.php"><button type="button" class="btn bg-badge-light text-white btn-label"><i class="ph-first-aid-kit label-icon align-middle fs-lg me-2"></i> Write prescription</button></a>
                                                     </div>
                                                 </li>
 
