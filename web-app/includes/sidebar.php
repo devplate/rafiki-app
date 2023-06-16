@@ -60,7 +60,7 @@
                 <!-- Doctor -->
                 <li class="nav-item">
                     <a href="index.php#sidebarDoctor" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDoctor">
-                    <i class="ph-first-aid-kit"></i> <span data-key="t-Doctor">Doctor</span>
+                    <i class="ph-user"></i> <span data-key="t-Doctor">Doctor</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarDoctor">
                         <ul class="nav nav-sm flex-column">
@@ -77,7 +77,7 @@
                 <!-- Prescription -->
                 <li class="nav-item">
                     <a href="index.php#sidebarPrescription" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPrescription">
-                    <i class="ph-notebook"></i> <span data-key="t-Prescription">Prescription</span>
+                    <i class="bi bi-clipboard-plus"></i> <span data-key="t-Prescription">Prescription</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarPrescription">
                         <ul class="nav nav-sm flex-column">
@@ -94,7 +94,7 @@
                 <!-- Patient -->
                 <li class="nav-item">
                     <a href="index.php#sidebarPatient" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPatient">
-                        <i class="ph-user"></i> <span data-key="t-Patient">Patient</span>
+                        <i class="ph-user-plus"></i> <span data-key="t-Patient">Patient</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarPatient">
                         <ul class="nav nav-sm flex-column">
@@ -145,8 +145,8 @@
 
                 <!-- Customize -->
                 <li class="nav-item">
-                    <a class="nav-link btn p-2 menu-link" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-                        <i class="ph-wrench"></i> <span data-key="t-custom-ui">Personalize</span> <span class="badge badge-pill bg-badge" data-key="t-custom">Custom</span>
+                    <a class="nav-link btn menu-link" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+                        <i class="bi bi-gear"></i> <span data-key="t-custom-ui">Personalize</span><span class="badge badge-pill bg-badge" data-key="t-custom">Custom</span>
                     </a>
                 </li>
 
