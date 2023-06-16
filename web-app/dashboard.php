@@ -177,7 +177,6 @@
                             </div><!-- end card -->
                         </div>
                         <!-- chart ends -->
-
                     </div>
                     <!-- row ends -->
 
@@ -204,8 +203,7 @@
         <!-- preloader ends -->
 
         <!-- theme Settings starts -->
-        <?php include 'includes/theme-settings.php';
-        ?>
+        <?php include 'includes/theme-settings.php';?>
         <!-- theme settings ends -->
 
         <!-- javascript links starts  -->
@@ -236,8 +234,6 @@
         <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/dayjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/plugin/quarterOfYear.min.js"></script>
-
-
 
 </body>
 
