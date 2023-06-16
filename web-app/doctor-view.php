@@ -64,7 +64,7 @@
                                     <div class="text-center border-bottom pt-3 pb-4">
                                         <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-lg rounded-circle p-1 img-thumbnail">
                                         <div class="mt-3">
-                                            <h5>Rashid Ali Matawana</h5>
+                                            <h5>Dr. Asha Matawana</h5>
                                             <p class="text-muted">ID: RD89273</p>
                                         </div>
                                     </div>
@@ -420,7 +420,7 @@
                                             <ul class="list-unstyled mb-0">
                                                 <li class="mb-4">
                                                     <div class="d-flex">
-                                                    <span class="ph-graduation-cap-thin size-3"></span>
+                                                    <span class="education size-3"><i class="ph-student"></i></span>
                                                     <h6 class="fs-md p-3">Muhimbili Medical University</h6>
                                                     </div>
                                                     <div class="education-map">
@@ -431,7 +431,7 @@
 
                                                 <li class="mb-4">
                                                     <div class="d-flex">
-                                                    <span class="ph-graduation-cap-thin size-3"></span>
+                                                    <span class="education size-3"><i class="ph-student"></i></span>
                                                     <h6 class="fs-md p-3">Muhimbili Medical University</h6>
                                                     </div>
                                                     <div class="education-map">
@@ -442,7 +442,7 @@
 
                                                 <li class="mb-4">
                                                     <div class="d-flex">
-                                                    <span class="ph-graduation-cap-thin size-3"></span>
+                                                    <span class="education size-3"><i class="ph-student"></i></span>
                                                     <h6 class="fs-md p-3">Muhimbili Medical University</h6>
                                                     </div>
                                                     <div class="education-map">
