@@ -91,29 +91,31 @@
 
                                             <div class="mb-4">
                                             <label for="Property-type-input" class="form-label mb-3">Select post type<span class="text-danger">*</span></label>
-                                            <div class="col-lg-12">
+                                            <div class="row">
+                                            <div class="col-lg-3">
                                                 <div class="mb-3 form-check">
                                                     <input type="checkbox" class="form-check-input" id="additionalFeatures">
-                                                    <label class="form-check-label" for="additionalFeatures">Article</label>
+                                                    <label class="form-check-label" for="additionalFeatures">Article post</label>
                                                 </div>
                                             </div><!--end col-->
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-3">
                                                 <div class="mb-3 form-check">
                                                     <input type="checkbox" class="form-check-input" id="additionalFeatures2">
-                                                    <label class="form-check-label" for="additionalFeatures2">Video</label>
+                                                    <label class="form-check-label" for="additionalFeatures2">Video post</label>
                                                 </div>
                                             </div><!--end col-->
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-3">
                                                 <div class="mb-3 form-check">
                                                     <input type="checkbox" class="form-check-input" id="additionalFeatures3">
-                                                    <label class="form-check-label" for="additionalFeatures3">Audio</label>
+                                                    <label class="form-check-label" for="additionalFeatures3">Audio post</label>
                                                 </div>
                                             </div><!--end col-->
                                             </div>
+                                            </div>
 
                                             <div class="col-lg-12 mb-2">
-                                                <div class="hstack gap-2 justify-content-end">
-                                                    <button type="button" class="btn btn-secondary"><i class="bi bi-repeat align-baseline me-1"></i> Save to draft</button>
+                                                <div class="hstack gap-3 justify-content-end">
+                                                    <button type="button" class="btn btn-primary"><i class="bi bi-repeat align-baseline me-1"></i> Save to draft</button>
                                                     <button type="button" class="btn btn-primary"><i class="bi bi-clipboard2-check align-baseline me-1"></i> Publish now</button>
                                                 </div>
                                             </div>
