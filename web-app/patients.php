@@ -48,7 +48,7 @@
                                         <h5 class="card-title mb-0">Companies</h5>
                                     </div>
                                     <div class="table-responsive card-body">
-                                    <table id="buttons-datatables" class="display table table-hover table-nowrap">
+                                    <table id="scroll-horizontal" class="display table nowrap table-hover pb-4" style="width:100%">
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>

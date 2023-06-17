@@ -12,14 +12,6 @@
 
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
 
-<style>
-        div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-                margin: 30px 0;
-                white-space: nowrap;
-                justify-content: flex-end;
-            }
-    </style>
-
 <!-- head ends -->
 
 <body>
@@ -59,7 +51,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <table id="scroll-horizontal" class="table nowrap align-middle" style="width:100%">
+                                <table id="scroll-horizontal" class="display table nowrap table-hover pb-4" style="width:100%">
                                 
                                         <thead>
                                             <tr>
@@ -79,7 +71,6 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center gap-2 position-relative">
-                                                        <img src="assets/images/real-estate/img-01.jpg" alt="" height="35" class="rounded">
                                                         <a href="apps-real-estate-property-overview.html" class="post_title text-reset stretched-link">How to handle working stress and pressure</a>
                                                     </div>
                                                 </td>
@@ -114,7 +105,6 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center gap-2 position-relative">
-                                                        <img src="assets/images/real-estate/img-01.jpg" alt="" height="35" class="rounded">
                                                         <a href="apps-real-estate-property-overview.html" class="post_title text-reset stretched-link">How to handle working stress and pressure</a>
                                                     </div>
                                                 </td>
@@ -149,7 +139,6 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center gap-2 position-relative">
-                                                        <img src="assets/images/real-estate/img-01.jpg" alt="" height="35" class="rounded">
                                                         <a href="apps-real-estate-property-overview.html" class="post_title text-reset stretched-link">How to handle working stress and pressure</a>
                                                     </div>
                                                 </td>
@@ -184,7 +173,6 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center gap-2 position-relative">
-                                                        <img src="assets/images/real-estate/img-01.jpg" alt="" height="35" class="rounded">
                                                         <a href="apps-real-estate-property-overview.html" class="post_title text-reset stretched-link">How to handle working stress and pressure</a>
                                                     </div>
                                                 </td>
@@ -219,7 +207,6 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center gap-2 position-relative">
-                                                        <img src="assets/images/real-estate/img-01.jpg" alt="" height="35" class="rounded">
                                                         <a href="apps-real-estate-property-overview.html" class="post_title text-reset stretched-link">How to handle working stress and pressure</a>
                                                     </div>
                                                 </td>
