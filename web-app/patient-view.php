@@ -61,26 +61,28 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="text-center border-bottom py-3">
+
+                                    <div class="text-center">
                                         <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-lg rounded-circle p-1 img-thumbnail">
                                         <div class="mt-3">
                                             <h5>Rashid Ali Matawana</h5>
                                             <p class="text-muted">ID: RD89273</p>
                                         </div>
-
-                                        <ul class="call-menu-profile">
-                                            <li class="nav-item">
-                                                <a href="tell:+255738437848" class="nav-link active"><i class="bi bi-telephone"></i></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="appointment.php" class="nav-link active"><i class="bi bi-calendar"></i></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="chat.php" class="nav-link active"><i class="bi bi-chat-dots"></i></a>
-                                            </li>
-                                        </ul>
-
                                     </div>
+
+                                    <div class="hstack gap-2 justify-content-center border-bottom py-2">
+                                            <ul class="call-menu-profile">
+                                                <li class="nav-item">
+                                                    <a href="tell:+255738437848" class="nav-link active"><i class="bi bi-telephone"></i></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="appointment.php" class="nav-link active"><i class="bi bi-calendar"></i></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="chat.php" class="nav-link active"><i class="bi bi-chat-dots"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
 
                                     <div class="pt-4 pb-2">
                                         <div class="card">
@@ -318,11 +320,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div><!---end row-->
 
                                     <!-- row start -->
                                     <div class="row mb-3">
+
                                         <!-- chart start -->
                                         <div class="col-xl-12">
                                             <div class="card mt-3 pb-3">
@@ -338,11 +341,11 @@
 
                                             <div class="card py-3">
                                                 <div class="card-header">
-                                                    <h5 class="card-title mb-0">Personal journey summary</h5>
+                                                    <h5 class="card-title mb-0">2023 Personal journey summary</h5>
                                                 </div>
                                                 <div class="card-body">
                                                     <!-- Accordion Flush Example -->
-                                                    <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="flush-heading1">
                                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
@@ -404,23 +407,22 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="just-end">
-                                                        <nav aria-label="Page navigation example">
-                                                        <ul class="pagination">
-                                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                                        </ul>
-                                                    </nav>
                                                 </div>
                                             </div>
-                                            </div>
                                             <!--end card-->
-
                                         </div>
                                         <!-- chart ends -->
+                                        <div class="hstack gap-2 justify-content-end">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
                                     </div>
                                     <!-- row ends -->
 
