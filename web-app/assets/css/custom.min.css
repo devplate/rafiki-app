@@ -41,13 +41,19 @@ body {
 .text-primary{
     color: var(--text-solid-color) !important;
 }
+.text-primary a{
+    color: var(--text-solid-color) !important;
+}
 .text-primary a:hover {
-    color: var(--alternative-color);
+    color: var(--alternative-color) !important;
 }
 .text-secondary a{
     color: var(--text-light-color);
 }
 .text-secondary a:hover {
+    color: var(--alternative-color);
+}
+.text-alt {
     color: var(--alternative-color);
 }
 
@@ -185,9 +191,10 @@ button.btn.bg-badge-light.text-white.btn-label:hover {
 }
 .call-menu-profile{
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
     display: flex;
+    margin-left: -12px;
 }
 
 ul.call-menu-profile>li a {
@@ -199,10 +206,10 @@ ul.call-menu-profile>li a:hover {
 }
 
 ul.call-menu-profile>li {
-    padding-left: 15px;
+    margin-right: 18px;
     font-size: 18px;
-    position: relative;
-    left: 14%;
+    /* position: relative; */
+    /* left: 14%; */
 }
 span.medical-history.size-3 {
     font-size: 25px;
@@ -276,4 +283,10 @@ span.span-pressure {
 }
 .just-end {
     margin-left: 327px;
+}
+.answered{
+    background-color: #f1a21e;
+    color: #EAF0F4;
+    padding: 1px 5px;
+    margin-right: 4px;
 }
