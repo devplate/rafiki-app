@@ -113,8 +113,24 @@
 
                 <!-- Appointment -->
                 <li class="nav-item">
-                    <a href="appointment.php" class="nav-link menu-link"> <i class="ph-calendar"></i> <span data-key="t-calendar">Appointment</span> </a>
+                    <a href="index.php#sidebarAppointment" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAppointment">
+                    <i class="ph-calendar"></i> <span data-key="t-Appointment">Appointment</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarAppointment">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="appointment-new.php" class="nav-link" data-key="t-products">New appointment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="appointments.php" class="nav-link" data-key="t-products-grid">All appointments</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
+
+                <!-- <li class="nav-item">
+                    <a href="appointment.php" class="nav-link menu-link"> <i class="ph-calendar"></i> <span data-key="t-calendar">Appointment</span> </a>
+                </li> -->
 
                 <!-- Chat -->
                 <li class="nav-item">
