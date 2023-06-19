@@ -91,6 +91,11 @@
                     </div>
                 </li>
 
+                <!-- Chat -->
+                <li class="nav-item">
+                    <a href="diagnosis.php" class="nav-link menu-link"> <i class="mdi mdi-stethoscope"></i> <span data-key="t-diagnosis">Diagnosis</span> </a>
+                </li>
+
                 <!-- Patient -->
                 <li class="nav-item">
                     <a href="index.php#sidebarPatient" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPatient">
