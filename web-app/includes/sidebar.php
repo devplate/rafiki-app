@@ -161,7 +161,7 @@
 
                 <!-- Office -->
                 <li class="nav-item">
-                    <a href="office.php" class="nav-link menu-link"> <i class="ph-briefcase"></i> <span data-key="t-chat">Office</span> </a>
+                    <a href="profile.php" class="nav-link menu-link"> <i class="ph-briefcase"></i> <span data-key="t-chat">Profile</span> </a>
                 </li>
 
                 <!-- Customize -->
