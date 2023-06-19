@@ -53,29 +53,27 @@
                                             <tr>
                                                 <th>ID</th>
                                                 <th>Patient name</th>
-                                                <th>Company</th>
-                                                <th>Diagnosis results</th>
-                                                <th>Diagnosis date</th>
-                                                <th>Status</th>
+                                                <th>Doctor name</th>
+                                                <th>Prescription for</th>
+                                                <th>attended date</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>RFC002</td>
+                                                <td>002</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -86,20 +84,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -110,20 +107,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC004</td>
+                                                <td>004</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -134,20 +130,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -158,20 +153,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-danger">Not attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -182,20 +176,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -206,20 +199,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -230,20 +222,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -254,20 +245,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -278,20 +268,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -302,20 +291,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
@@ -326,20 +314,19 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>RFC001</td>
+                                                <td>001</td>
                                                 <td class="text-primary"><a href="patient-view.php">Halima ally Kaimu</a></td>
-                                                <td>Vodacom telcom Tanzania</td>
+                                                <td>Dr John Peter Mtemvu</td>
                                                 <td>79% Changes of having sleeping sickness and depression</td>
                                                 <td>03 Oct, 2021</td>
                                                 
-                                                <td><span class="badge bg-success">Attended</span></td>
                                                 <td>
                                                     <div class="dropdown d-inline-block">
                                                         <button class="btn btn-subtle-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="ri-more-fill align-middle"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-clipboard-plus align-bottom me-2 text-muted"></i> Attend</a></li>
+                                                            <li><a href="prescription-new.php" class="dropdown-item"><i class="bi bi-eye align-bottom me-2 text-muted"></i> View</a></li>
                                                             <li>
                                                                 <a class="dropdown-item remove-item-btn">
                                                                     <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
