@@ -299,11 +299,10 @@
                     <div class="dropdown-menu dropdown-menu-end">
                         <!-- item-->
                         <h6 class="dropdown-header">Welcome Richard!</h6>
-                        <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Profile</span></a>
-                        <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Messages</span></a>
-                        <a class="dropdown-item" href="pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Help</span></a>
+                        <a class="dropdown-item" href="profile.php"><i class="mdi mdi-account-circle text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <a class="dropdown-item" href="chat.php"><i class="ph-chats text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Chat room</span></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="office.php"><i class="mdi ph-wrench-fill text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Office</span></a>
+                        <a class="dropdown-item" href="publications.php"><i class="ph-newspaper text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Publications</span></a>
                         <a class="dropdown-item" href="auth-lockscreen.php"><i class="mdi mdi-lock text-muted fs-lg align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
                         <a class="dropdown-item" href="auth-logout.php"><i class="mdi mdi-logout text-muted fs-lg align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
