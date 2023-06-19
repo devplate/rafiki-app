@@ -91,7 +91,7 @@
                     </div>
                 </li>
 
-                <!-- Chat -->
+                <!-- Diagnosis -->
                 <li class="nav-item">
                     <a href="diagnosis.php" class="nav-link menu-link"> <i class="mdi mdi-stethoscope"></i> <span data-key="t-diagnosis">Diagnosis</span> </a>
                 </li>
