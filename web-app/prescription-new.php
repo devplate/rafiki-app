@@ -75,7 +75,7 @@
                                                     <a href="tell:+255738437848" class="nav-link active"><i class="bi bi-telephone"></i></a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="appointment.php" class="nav-link active"><i class="bi bi-calendar"></i></a>
+                                                    <a href="appointment-new.php" class="nav-link active"><i class="bi bi-calendar"></i></a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="chat.php" class="nav-link active"><i class="bi bi-chat-dots"></i></a>
