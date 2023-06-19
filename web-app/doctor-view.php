@@ -129,7 +129,7 @@
                                 <div class="card-body">
 
                                     <div class="pt-2">
-                                            <h5 class="card-title mb-3">Emergency</h5>
+                                        <h5 class="card-title mb-3">Emergency</h5>
                                         <div class="card">
                                             <div class="table-responsive">
                                                 <table class="table table-borderless table-sm align-middle table-nowrap mb-0">
@@ -169,7 +169,7 @@
                             </div><!--end card-->
 
                         </div><!--end col-->
-                        
+
 
                         <div class="col-xl-8">
 
@@ -420,8 +420,8 @@
                                             <ul class="list-unstyled mb-0">
                                                 <li class="mb-4">
                                                     <div class="d-flex">
-                                                    <span class="education size-3"><i class="ph-student"></i></span>
-                                                    <h6 class="fs-md p-3">Muhimbili Medical University</h6>
+                                                        <span class="education size-3"><i class="ph-student"></i></span>
+                                                        <h6 class="fs-md p-3">Muhimbili Medical University</h6>
                                                     </div>
                                                     <div class="education-map">
                                                         <p class="text-muted mb-0">Bachelor of Science in Medical</p>
@@ -431,8 +431,8 @@
 
                                                 <li class="mb-4">
                                                     <div class="d-flex">
-                                                    <span class="education size-3"><i class="ph-student"></i></span>
-                                                    <h6 class="fs-md p-3">Muhimbili Medical University</h6>
+                                                        <span class="education size-3"><i class="ph-student"></i></span>
+                                                        <h6 class="fs-md p-3">Muhimbili Medical University</h6>
                                                     </div>
                                                     <div class="education-map">
                                                         <p class="text-muted mb-0">Bachelor of Science in Medical</p>
@@ -442,8 +442,8 @@
 
                                                 <li class="mb-4">
                                                     <div class="d-flex">
-                                                    <span class="education size-3"><i class="ph-student"></i></span>
-                                                    <h6 class="fs-md p-3">Muhimbili Medical University</h6>
+                                                        <span class="education size-3"><i class="ph-student"></i></span>
+                                                        <h6 class="fs-md p-3">Muhimbili Medical University</h6>
                                                     </div>
                                                     <div class="education-map">
                                                         <p class="text-muted mb-0">Bachelor of Science in Medical</p>
@@ -764,6 +764,109 @@
                                 <!--end tab-pane-->
 
                                 <div class="tab-pane" id="settings" role="tabpanel">
+
+                                    <div class="card py-3">
+                                        <div class="card-header">
+                                            <h6 class="card-title mb-0">Profile Settings</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="mb-0">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <label for="directMessage" class="form-check-label fs-md">View Diagnosis</label>
+                                                            <p class="text-muted">Allow this doctor to view patient diagnosis</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="directMessage" checked>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-md mb-1" for="desktopNotification">
+                                                                Attended Anxiety
+                                                            </label>
+                                                            <p class="text-muted">Allow this doctor to attend patient with Anxiety</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification" checked>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-md mb-1" for="desktopNotification">
+                                                                Attended Sex Dysfunction
+                                                            </label>
+                                                            <p class="text-muted">Allow this doctor to attend patient with Sex Dysfunction</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification" checked>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-md mb-1" for="desktopNotification">
+                                                                Attended Substance Abuse
+                                                            </label>
+                                                            <p class="text-muted">Allow this doctor to attend patient with Substance Abuse</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-md mb-1" for="desktopNotification">
+                                                                Attended Depression
+                                                            </label>
+                                                            <p class="text-muted">Allow this doctor to attend patient with Depression</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification" checked>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-md mb-1" for="desktopNotification">
+                                                                Attended Stress
+                                                            </label>
+                                                            <p class="text-muted">Allow this doctor to attend patient with Stress</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-md mb-1" for="desktopNotification">
+                                                                Attended Aggression
+                                                            </label>
+                                                            <p class="text-muted">Allow this doctor to attend patient with Aggression</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification" checked>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--end card-->
+                                    </div>
+
                                     <div class="card py-3">
                                         <div class="card-header">
                                             <h6 class="card-title mb-0">Changes Password</h6>
