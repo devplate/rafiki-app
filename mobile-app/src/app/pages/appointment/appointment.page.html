@@ -1,0 +1,118 @@
+<ion-content>
+
+  <div class="profile-header ion-padding">
+    <div class="title">
+      <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+    </div>
+
+    <div class="profile">
+      <ion-thumbnail>
+        <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+      </ion-thumbnail>
+      <h5>Dr, Rumbidizi Mulokozi</h5>
+      <p>Clinical Therapist</p>
+    </div>
+
+    <div class="centered">
+      <div class="link-button" (click)="viewProfile()">
+        <ion-icon name="person-outline"></ion-icon>
+        <div class="button-title">View<br/> Profile</div>
+      </div>
+      <div class="link-button active" (click)="bookAppointment()">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <div class="button-title">Book an<br/> Appointment</div>
+      </div>
+      <div class="link-button" (click)="getDirection()">
+        <ion-icon name="location-outline"></ion-icon>
+        <div class="button-title">Get <br/> Direction</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="doctor-container">
+    <div class="doctor-bio">
+      <div class="main_content_div">
+
+        <div class="text-center">
+          <ion-label class="bold_lbl">Select Date</ion-label>
+        </div>
+
+        <div class="title_flex">
+            <ion-label>{{month}}</ion-label>
+        </div>
+
+        <div class="white_div">
+            <ion-slides #slideDate>
+                <ion-slide>
+                    <ion-row class="row_cal">
+                        <ion-col size="0.75" (click)="previousWeek()">
+                            <ion-icon name="arrow-back-outline" mode="md" class="icon_change center_item"
+                                *ngIf="currentWeek !== 0">
+                            </ion-icon>
+                        </ion-col>
+                        <ion-col *ngFor="let day of days" [class.disabled]="initDate.split('T')[0] > day.val.split('T')"
+                              size="1.5" [class.img_select_date] = "day.val.split('T')[0] === selectedDate"
+                              (click)="selectDate(day)">
+                              <ion-label class="lbl_day"
+                                  [class.selectedDay]="day.val.split('T')[0] === selectedDate">{{ day.day }}
+                              </ion-label>
+                            <ion-label class="lbl_date"
+                                [class.selectedDate]="day.val.split('T')[0] === selectedDate">{{ day.date }}
+                            </ion-label>
+                        </ion-col>
+                        <ion-col size="0.75" (click)="nextWeek()">
+                            <ion-icon name="arrow-forward-outline" mode="md" class="icon_change center_item"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-slide>
+            </ion-slides>
+        </div>
+
+        <div class="text-center mt-5">
+          <ion-label class="bold_lbl">Select Time</ion-label>
+        </div>
+
+        <div class="centered">
+          <div class="slot_container">
+            <div [class.active]="activeSlot == i" *ngFor="let item of slots; let i = index" (click)="activeSlot = i">
+              <ion-label>{{item}}</ion-label>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="centered">
+      <div class="section-button d-flex" (click)="getArticles()">
+        <div class="icon-cauch"><img src="assets/images/sofa-color.svg" alt="sofa"></div>
+        <div class="button-text">Book a Physical Therapy Session</div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- <div class="page-footer">
+    <div class="sect-header">
+      <h2>Book a Session with this Doctor</h2>
+      <div class="centered">
+        <div class="border-line"></div>
+      </div>
+    </div>
+
+    <div class="body-section">
+      <div class="text-center">
+        <h2>Physical Therapy Session</h2>
+        <p>Rafiki, you have to see a Therapist who will Help you with steps how to get better! </p>
+      </div>
+    </div>
+
+    <div class="centered">
+      <div class="section-button d-flex" (click)="bookAppointment()">
+        <div class="icon-cauch"><img src="assets/images/sofa-color.svg" alt="sofa"></div>
+        <div class="button-text">Book a Physical Therapy Session</div>
+      </div>
+    </div>
+  </div> -->
+
+</ion-content>

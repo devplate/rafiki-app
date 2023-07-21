@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.538" height="68.514" viewBox="0 0 59.538 68.514">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #163c56;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #f4a301;
+        font-size: 12px;
+        font-family: Roboto-Black, Roboto;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="Authentification_Phone_Icon" data-name="Authentification Phone Icon" transform="translate(-101.778 -343.67)">
+    <g id="phone-portrait-outline" transform="translate(101.778 343.67)">
+      <path id="Path_21" data-name="Path 21" class="cls-1" d="M13.964-1.375H36.292a7.458,7.458,0,0,1,7.464,7.464V59.676a7.458,7.458,0,0,1-7.464,7.464H13.964A7.458,7.458,0,0,1,6.5,59.676V6.089a7.458,7.458,0,0,1,7.464-7.464ZM36.292,65.608a5.933,5.933,0,0,0,5.933-5.933V6.089A5.933,5.933,0,0,0,36.292.156H13.964A5.933,5.933,0,0,0,8.031,6.089V59.676a5.933,5.933,0,0,0,5.933,5.933Z" transform="translate(-6.5 1.375)"/>
+      <path id="Path_22" data-name="Path 22" class="cls-1" d="M26.272,3.506H17.341a3,3,0,0,1-3-3,.352.352,0,0,0-.352-.352H10.64A.765.765,0,0,1,9.875-.61a.765.765,0,0,1,.765-.765h3.35A1.885,1.885,0,0,1,15.874.508a1.469,1.469,0,0,0,1.467,1.467h8.931A1.469,1.469,0,0,0,27.739.508a1.885,1.885,0,0,1,1.883-1.883h3.35a.765.765,0,0,1,.765.765.765.765,0,0,1-.765.765h-3.35a.352.352,0,0,0-.352.352A3,3,0,0,1,26.272,3.506Z" transform="translate(-3.177 1.375)"/>
+    </g>
+    <path id="Path_23" data-name="Path 23" class="cls-2" d="M6761.419,1236.962l-2.581,9.206,9.032-8.868,20.105-.338V1218.14l-39.379-.044v18.865Z" transform="translate(-6627.272 -854.205)"/>
+    <path id="Path_23_-_Outline" data-name="Path 23 - Outline" class="cls-1" d="M6757.451,1245.393a.612.612,0,0,1-.589-.778l2.362-8.428h-12.015a.613.613,0,0,1-.612-.612v-18.865a.613.613,0,0,1,.612-.612h0l39.379.044a.613.613,0,0,1,.612.612v18.822a.612.612,0,0,1-.6.612l-19.861.334-8.857,8.7A.612.612,0,0,1,6757.451,1245.393Zm-9.629-10.431h12.21a.612.612,0,0,1,.59.778l-1.961,7,7.394-7.26a.612.612,0,0,1,.419-.175l19.5-.328v-17.608l-38.154-.042Z" transform="translate(-6625.885 -852.817)"/>
+    <text id="_" data-name="*" class="cls-3" transform="translate(125.562 378.652)"><tspan x="0" y="0">*</tspan></text>
+    <text id="_2" data-name="*" class="cls-3" transform="translate(133.829 378.652)"><tspan x="0" y="0">*</tspan></text>
+    <text id="_3" data-name="*" class="cls-3" transform="translate(141.79 378.652)"><tspan x="0" y="0">*</tspan></text>
+    <text id="_4" data-name="*" class="cls-3" transform="translate(150.057 378.652)"><tspan x="0" y="0">*</tspan></text>
+  </g>
+</svg>

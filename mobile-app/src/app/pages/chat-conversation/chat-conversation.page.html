@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="title">
+      <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+    </div>
+      <ion-thumbnail>
+        <img src="assets/images/p4.jpg" />
+        <ion-icon name="ellipse" color="success"></ion-icon>
+      </ion-thumbnail>
+    <ion-title>Dr, Mulokozi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+  <div class="conversation">
+    <div class="first-selection">
+     <div class="your-massage">
+       Hello Doctor, I feel like we have to meet today or tomorrow morning !
+     </div>
+     <ion-label>8:25 AM</ion-label>
+    </div>
+
+    <div class="second-massage">
+      <div class="other-massage">
+        hello ?
+      </div>
+     <ion-label>8:27 AM <ion-icon name="checkmark-done-sharp" color="success"></ion-icon></ion-label>
+    </div>
+
+    <div class="first-selection">
+      <div class="your-massage">
+        how are you ?
+      </div>
+     <ion-label>8:28 AM</ion-label>
+     </div>
+
+     <div class="second-massage">
+      <div class="other-massage">
+        fine
+      </div>
+     <ion-label>8:27 AM <ion-icon name="checkmark-done-sharp" color="success"></ion-icon></ion-label>
+    </div>
+  </div>
+
+  <div class="footer" slot="fixed">
+    <ion-item lines="none">
+      <ion-input type="text" placeholder="Type something.."></ion-input>
+      <ion-buttons slot="end">
+        <ion-button (click)="onSend()" color="danger">
+          <ion-icon name="send-sharp"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-fab>
+      <ion-fab-button color="primary">
+        <ion-icon md="caret-up" ios="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button color="light">
+          <ion-icon name="close-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-icon name="mic"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-icon name="link-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+
+</ion-content>
+
+

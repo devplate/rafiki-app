@@ -1,0 +1,25 @@
+ion-content{
+    background: #1171b8 !important;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+  }
+  .title-container h2 {
+    position: absolute;
+    color: #ffffff;
+    bottom: 1em;
+    left: 0em;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    opacity: 50%;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  .logo {
+    text-align: center;
+    width: 160px;
+  }
