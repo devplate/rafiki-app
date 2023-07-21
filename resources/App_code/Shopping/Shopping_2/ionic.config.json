@@ -1,7 +1,0 @@
-{
-  "name": "shop2",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

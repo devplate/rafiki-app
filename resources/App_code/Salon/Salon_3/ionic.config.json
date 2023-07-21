@@ -1,7 +1,0 @@
-{
-  "name": "salon3",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

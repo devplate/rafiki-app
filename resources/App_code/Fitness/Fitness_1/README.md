@@ -1,2 +1,0 @@
-# fitness1_marketplace_capacitor
-fitness1_marketplace_capacitor

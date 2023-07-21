@@ -1,7 +1,0 @@
-{
-  "name": "Datting2",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

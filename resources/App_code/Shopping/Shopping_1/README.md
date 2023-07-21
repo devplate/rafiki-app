@@ -1,2 +1,0 @@
-# shop1_marketplace_capacitor
-shop1_marketplace_capacitor

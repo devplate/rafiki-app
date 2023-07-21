@@ -1,7 +1,0 @@
-{
-  "name": "dating",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

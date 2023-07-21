@@ -1,7 +1,0 @@
-{
-  "name": "Salon Napita",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

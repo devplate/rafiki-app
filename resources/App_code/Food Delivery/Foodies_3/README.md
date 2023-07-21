@@ -1,2 +1,0 @@
-# foodies3_marketplace_capacitor
-foodies3_marketplace_capacitor

@@ -1,7 +1,0 @@
-{
-  "name": "taxi",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

@@ -1,7 +1,0 @@
-{
-  "name": "user",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

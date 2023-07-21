@@ -1,2 +1,0 @@
-# finance2_market_place_capacitor
-finance2_market_place_capacitor
