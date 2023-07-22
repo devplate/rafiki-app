@@ -1,5 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
-import { IonSlides, NavController } from '@ionic/angular';
+import { Component, ViewChild, NgZone } from '@angular/core';
+import { Router } from '@angular/router';
+import { GestureController, Gesture } from '@ionic/angular';
 
 @Component({
   selector: 'app-intro',
@@ -7,20 +8,25 @@ import { IonSlides, NavController } from '@ionic/angular';
   styleUrls: ['intro.page.scss'],
 })
 export class IntroPage {
-  @ViewChild(IonSlides) slides: IonSlides;
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private router: Router, private gestureCtrl: GestureController, private ngZone: NgZone) {}
 
-  async onSlideTransitionEnd() {
-    const activeIndex = await this.slides.getActiveIndex();
-    const slidesLength = await this.slides.length();
-    
-    if (activeIndex === slidesLength - 1) {
-      this.openVerifyPage();
-    }
+  async ionViewDidEnter() {
+    const gesture: Gesture = await this.gestureCtrl.create({
+      el: document.querySelector('ion-content') as any, // Type-cast to 'any'
+      gestureName: 'swipe',
+      direction: 'x',
+      onMove: ev => this.onSwipe(ev),
+    });
+    gesture.enable(true);
   }
 
-  openVerifyPage() {
-    this.navCtrl.navigateForward('/terms');
+  onSwipe(event: any) {
+    if (event.deltaX < -150) {
+      this.ngZone.run(() => {
+        // Navigate to the "NextPage" when swiped left
+        this.router.navigate(['/signin']);
+      });
+    }
   }
 }
