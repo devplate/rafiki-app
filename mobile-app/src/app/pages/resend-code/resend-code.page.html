@@ -1,0 +1,28 @@
+<ion-content class="ion-padding">
+
+  <div class="title">
+    <ion-icon slot="start" (click)="onBackPage()" name="chevron-back-outline"></ion-icon>
+  </div>
+
+  <div class="dentity_div">
+    <h2>Karibu</h2>
+    <div class="logo">
+      <img src="assets/images/logo-alt.svg" alt="Logo" />
+    </div>
+  </div>
+
+  <div class="main_content">
+    <h2>Resend code</h2>
+    <ion-item>
+      <ion-icon slot="start" name="phone-portrait-outline"></ion-icon>
+      <ion-label position="floating">Your phone number</ion-label>
+      <ion-input type="tel" [(ngModel)]="phoneNumber" name="phoneNumber" placeholder="eg: +255700900900" pattern="^\+255[0-9]{9}$" required></ion-input>
+    </ion-item>
+
+    <ion-button class="btn" (click)="goToVerify()" [disabled]="!isValidForm()" expand="full" color="#fff">
+      Resend code
+    </ion-button>
+
+  </div>
+
+</ion-content>

@@ -12,8 +12,24 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'signin',
-    loadChildren: () => import('./pages/signin/signin.module').then( m => m.SigninPageModule)
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'verify-identity',
+    loadChildren: () => import('./pages/verify-identity/verify-identity.module').then( m => m.VerifyIdentityPageModule)
+  },
+  {
+    path: 'resend-code',
+    loadChildren: () => import('./pages/resend-code/resend-code.module').then( m => m.ResendCodePageModule)
+  },
+  {
+    path: 'forget-password',
+    loadChildren: () => import('./pages/forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
+  },
+  {
+    path: 'update-password',
+    loadChildren: () => import('./pages/update-password/update-password.module').then( m => m.UpdatePasswordPageModule)
   },
 ];
 

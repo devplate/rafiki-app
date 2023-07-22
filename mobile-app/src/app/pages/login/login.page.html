@@ -1,0 +1,37 @@
+<ion-content class="centered ion-padding">
+
+  <div class="title">
+    <ion-icon slot="start" (click)="onBackIntro()" name="chevron-back-outline"></ion-icon>
+  </div>
+
+  <div class="dentity_div">
+    <h2>Karibu</h2>
+    <div class="logo">
+      <img src="assets/images/logo-alt.svg" alt="Logo" />
+    </div>
+  </div>
+
+  <div class="main_content">
+    <h2>Sign In</h2>
+
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="email" [(ngModel)]="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="Enter your email"></ion-input>
+      <ion-icon slot="start" name="mail"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="lock-closed"></ion-icon>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" placeholder="Enter password"></ion-input>
+    </ion-item>    
+
+    <ion-button class="btn" (click)="goToVerify()" [disabled]="!isValidForm()" expand="full" color="#fff">
+      Sign In
+    </ion-button>
+
+    <ion-label class="reset-ps" (click)="goToReset()" > - Reset password - </ion-label>
+
+  </div>
+
+</ion-content>

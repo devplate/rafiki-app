@@ -25,7 +25,7 @@ export class IntroPage {
     if (event.deltaX < -150) {
       this.ngZone.run(() => {
         // Navigate to the "NextPage" when swiped left
-        this.router.navigate(['/signin']);
+        this.router.navigate(['/login']);
       });
     }
   }

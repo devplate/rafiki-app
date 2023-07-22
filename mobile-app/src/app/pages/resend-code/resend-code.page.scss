@@ -1,0 +1,127 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+      ion-icon {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+  }
+
+.dentity_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 13vh 0px 1rem 0px;
+    padding: 30px 0px;
+    .logo{
+      width: 160px;
+    }
+    .img {
+      height: 150px;
+      width: 150px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+    }
+    h2 {
+      color: var(--ion-color-app-dark);
+      opacity: 60%;
+      font-size: larger;
+      font-weight: 800;
+    }
+    ion-label {
+      font-size: 12px;
+      color: gray;
+      margin-bottom: 3px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        .logo-name {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .logo-info {
+          font-size: 35px;
+          font-weight: bold;
+        }
+      }
+  }
+
+.main_content {
+    padding: 0 30px;
+    margin-top: 0;
+    background: transparent;
+
+    ion-item {
+      margin: 40px 25px 20px 25px;
+      --background: transparent;
+      
+      ion-icon {
+        color: var(--ion-color-sup);
+        font-size: medium;
+        margin-right: 11px;
+        margin-top: 18px;
+        margin-left: -16px; 
+      }
+      ion-icon.ios {
+        color: var(--ion-color-sup);
+        font-size: medium;
+        margin-right: 11px;
+        margin-left: -16px; 
+        margin-top: 42px;
+      }
+      
+      ion-label{
+        color: var(--ion-color-sup);
+        font-size: medium;
+      }
+
+      ion-input{
+        font-size: medium;
+      }
+    }
+
+    .reset-ps{
+        color: var(--ion-color-app-dark);
+        font-size: small;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 1.2em;
+        font-size: 20px;
+        font-weight: 900;
+        color: var(--ion-color-app-dark);
+      }
+
+      .btn {
+        margin: 40px 20px 25px 20px;
+        height: 35px;
+        text-transform: none;
+        background: var(--ion-color-primary);
+        border-radius: 3px;
+      }
+  }
+  
+  h6 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    span {
+      margin-left: 10px;
+      color: #1171b8;
+    }
+  }
