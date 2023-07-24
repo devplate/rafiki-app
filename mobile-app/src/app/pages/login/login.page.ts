@@ -8,8 +8,8 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  email: string = ''; // Initialize with an empty string
-  password: string = ''; // Initialize with an empty string
+  email: string ;
+  password: string ;
 
   constructor(
     private router: Router,

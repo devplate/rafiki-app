@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { VerifyIdentityPageRoutingModule } from './verify-identity-routing.module';
 import { VerifyIdentityPage } from './verify-identity.page';
-// Import the NgOtpInputModule
 import { NgOtpInputModule } from 'ng-otp-input';
 
 @NgModule({

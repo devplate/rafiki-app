@@ -1,0 +1,84 @@
+<ion-content>
+
+  <div class="profile-header ion-padding">
+    <div class="title">
+      <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+    </div>
+
+    <div class="profile">
+      <ion-thumbnail>
+        <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+      </ion-thumbnail>
+      <h5>Dr, Rumbidizi Mulokozi</h5>
+      <p>Clinical Therapist</p>
+    </div>
+
+    <div class="centered">
+      <div class="link-button active" (click)="viewProfile()">
+        <ion-icon name="person-outline"></ion-icon>
+        <div class="button-title">View<br/> Profile</div>
+      </div>
+      <div class="link-button" (click)="bookAppointment()">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <div class="button-title">Book an<br/> Appointment</div>
+      </div>
+      <div class="link-button" (click)="getDirection()">
+        <ion-icon name="location-outline"></ion-icon>
+        <div class="button-title">Get <br/> Direction</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="doctor-container">
+    <div class="doctor-bio">
+      <h3>Short Bio:</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi pariatur eos quaerat, rem omnis consequatur maxime nihil earum. Id atque molestias possimus mollitia voluptas quia nostrum fuga sunt expedita. </p>
+      <h3>Education and Qualification:</h3>
+      <ul>
+        <li>Doctor of medicine (MD) degree from XYZ Medical school</li>
+        <li>Doctorate in Clinical Psychology (PHD) from XYZ University</li>
+        <li>Board certified physiotherapist</li>
+      </ul>
+      <h3>Approach to Therapy:</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi pariatur eos quaerat, rem omnis consequatur maxime nihil earum. </p>
+      <h3>Areas of Expertise</h3>
+        <ul>
+          <li>Anxiety disorders:</li>
+          <li>Depression and Mood disorder</li>
+          <li>Stress management and Resiliance Building</li>
+          <li>Substance abuse and Addiction</li>
+          <li>Sexual Dysfuntion</li>
+        </ul>
+        <h3>Expertise:</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <h3>Philosophy:</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+
+    <div class="sect-header">
+      <h2>Book a Session with this Doctor</h2>
+      <div class="centered">
+        <div class="border-line"></div>
+      </div>
+    </div>
+
+    <div class="body-section">
+      <div class="text-center">
+        <h2>Physical Therapy Session</h2>
+        <p>Rafiki, you have to see a Therapist who will Help you with steps how to get better! </p>
+      </div>
+    </div>
+
+    <div class="centered">
+      <div class="section-button d-flex" (click)="bookAppointment()">
+        <div class="icon-cauch"><img src="assets/images/sofa-color.svg" alt="sofa"></div>
+        <div class="button-text">Book a Physical Therapy Session</div>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

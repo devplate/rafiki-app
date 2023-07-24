@@ -1,12 +1,10 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'mobile-app',
+  appId: 'io.initappz.date1',
+  appName: 'Date1',
   webDir: 'www',
-  server: {
-    androidScheme: 'https'
-  }
+  bundledWebRuntime: false
 };
 
 export default config;
