@@ -1,6 +1,6 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, ViewChild, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
-import { Gesture, GestureController } from '@ionic/angular';
+import { GestureController, Gesture } from '@ionic/angular';
 
 @Component({
   selector: 'app-intro',
@@ -8,22 +8,23 @@ import { Gesture, GestureController } from '@ionic/angular';
   styleUrls: ['intro.page.scss'],
 })
 export class IntroPage {
+
   constructor(private router: Router, private gestureCtrl: GestureController, private ngZone: NgZone) {}
 
-  ionViewDidEnter() {
-    const gesture: Gesture = this.gestureCtrl.create({
-      el: document.querySelector('ion-content'),
+  async ionViewDidEnter() {
+    const gesture: Gesture = await this.gestureCtrl.create({
+      el: document.querySelector('ion-content') as any, // Type-cast to 'any'
       gestureName: 'swipe',
       direction: 'x',
       onMove: ev => this.onSwipe(ev),
     });
-    gesture.enable();
+    gesture.enable(true);
   }
 
   onSwipe(event: any) {
     if (event.deltaX < -150) {
       this.ngZone.run(() => {
-        // Navigate to the "LoginPage" when swiped left
+        // Navigate to the "NextPage" when swiped left
         this.router.navigate(['/login']);
       });
     }
