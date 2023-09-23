@@ -26,6 +26,6 @@ export class DoctorPage implements OnInit {
     this.router.navigate(['/doctor']);
   }
   getDirection(){
-    this.router.navigate(['/doctor-direction'])
+    this.router.navigate(['/get-direction']);
   }
 }

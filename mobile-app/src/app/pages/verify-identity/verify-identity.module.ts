@@ -10,7 +10,7 @@ import { NgOtpInputModule } from 'ng-otp-input';
     CommonModule,
     IonicModule,
     VerifyIdentityPageRoutingModule,
-    NgOtpInputModule // Add NgOtpInputModule here
+    NgOtpInputModule
   ],
   declarations: [VerifyIdentityPage]
 })

@@ -1,0 +1,6 @@
+{
+  "/diagnosis": {
+    "target": "https://rafikiapptz.azurewebsites.net",
+    "secure": false
+  }
+}

@@ -136,7 +136,7 @@ export class AppointmentPage {
   }
 
   getDirection() {
-    this.router.navigate(['/doctor-direction']);
+    this.router.navigate(['/get-direction']);
   }
 
   bookAppointment() {

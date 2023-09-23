@@ -43,7 +43,7 @@
   ion-card{
 
     .card-title-mg img{ 
-      height: 150px;
+      height: 180px;
       width: 100%;
       object-fit: cover;
     }
@@ -173,10 +173,10 @@
   }
   .section-button{
     background: #fff;
-    width: 80%;
+    width: 55%;
     border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 10px 20px 15px 10px;
+    margin-bottom: 15px;
     border: 1px solid var(--ion-color-primary);
     margin-top: 30px;
   
@@ -186,7 +186,7 @@
   }
 
   .button-text {
-    margin-left: 45px;
+    margin-left: 18px;
     line-height: 1.23;
     font-size: 16px;
     margin-top: 3px;
@@ -208,6 +208,187 @@
 .slide-item {
   display: inline-block;
   vertical-align: top;
-  width: 80%; /* Adjust the card width as needed */
-  margin: 0 5% 0 5%; /* Adjust margins as needed */
+  width: 80%; 
+  margin: 0 5% 0 5%; 
+}
+.slids-cards{
+  margin-top: 40px;
+}
+
+.slider-card{
+  margin-left: 10px;
+  margin-top: 20px;
+
+  .card-title-mg{
+
+    img{
+        height: 120px;
+        width: 100%;
+        object-fit: cover;
+      }
+}
+.card-icon img{
+  position: relative !important;
+  top: 16px !important;
+  left: 5px !important;
+  width: 50% !important;
+} 
+  ion-card-title{
+    font-size: 12px;
+    margin-top: 10px !important;
+  }
+  .headers-title{
+    margin: 2px 0;
+    p{
+      font-size: 8px !important;
+      margin-bottom: -4px !important;
+    }
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 80%;
+    max-width: 350px; 
+    margin: 0 auto;
+  }
+}
+
+.listen-container{
+
+  height: 240px;
+  overflow: scroll;
+}
+.audio-container{
+
+  background-color: var(--ion-color-primary);
+  padding: 0 10px;
+
+  h3{
+    font-weight: 800;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .play-button{
+
+    width: 10%;
+    padding: 0px;
+    margin-top: 15px;
+    
+  }
+  .id-no{
+
+    width: 10%;
+
+    h4{
+      color: #fff;
+      margin-top: 20px;
+    }
+  }
+  .audio-title{
+
+    width: 74%;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h4{
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    p{
+      margin-top: -5px !important;
+      color: #fff;
+      font-size: 10px;
+    }
+  }
+
+  .fev-icon{
+
+    width: 6%;
+    margin-top: 23px;
+  }
+
+  .watchmore-button{
+
+    .section-button{
+      background: transparent;
+      width: 60%;
+      border-radius: 5px;
+      padding: 10px 20px 15px 10px;
+      margin-bottom: 30px;
+      border: 1px solid #fff;
+      margin-top: 40px;
+  }
+    .button-text{
+
+      margin-left: 18px;
+      line-height: 1.23;
+      font-size: 16px;
+      margin-top: 3px;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+.slider-2{
+  .card-title-mg img {
+    height: 180px !important;
+    width: 100%;
+    object-fit: cover;
+}
+}
+.read-container, .slider-2{
+
+  margin-left: 5px;
+  ion-card{
+    color: var(--ion-color-app-dark);
+    padding-bottom: 0 !important;
+    margin: 5px !important;
+  }
+
+  ion-card-title{
+    font-size: 10px;
+    padding-left: 0px;
+    margin-top: 10px;
+    color: var(--ion-color-primary);
+}
+  .card-title{
+    padding: 0 10px 0 15px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    font-size: 8px !important;
+
+    p{
+      line-height: 1.4 !important;
+    }
+  }
+  .card-title-mg img{
+    height: 110px;
+    width: 100%;
+    object-fit: cover;
+  }
+  h5{
+    font-size: 8px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+}
+.slider-2 h5{
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  .section-button{
+    margin-bottom: 40px;
+  }
 }

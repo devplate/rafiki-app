@@ -1,0 +1,89 @@
+
+  .map-container{
+    background-color: var(--ion-color-primary);
+    height: 50vh;
+    padding: 16px;
+    margin: 0px;
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+          ion-icon {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+            margin-top: 10px;
+            color: #ffffff;
+          }
+      }
+      .sc-ion-searchbar-ios-h{
+        --background: #ffffff;
+      }
+}
+.ratings-container{
+  width: 100%;
+
+  .doctor-profile{
+    width: 50%;
+
+    img{
+      border-radius: 5px;
+      height: 120px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .ratings{
+    width: 50%;
+    padding-left: 15px;
+    h4{
+      font-size: 12px;
+      font-weight: 600;
+    }
+    p{
+      font-size: 9px;
+      font-weight: 300;
+      margin-top: -5px;
+    }
+    .rate{
+      color: var(--ion-color-secondary);
+
+      span{
+        color: var(--ion-color-primary);
+        font-size: 10px;
+        margin-left: 6px;
+        position: relative;
+        top: -4px;
+        right: 0px;
+      }
+    }
+    .call-action{
+
+      margin-top: 15px;
+      ion-icon{
+        margin-right: 12px;
+        font-size: 25px;
+      }
+    }
+  }
+}
+.distance-call{
+
+  p{
+    margin-right: 15px;
+  }
+  span{
+    color: var(--ion-color-sup);
+    opacity: .6;
+  }
+}
+.place-gala{
+  
+  img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}

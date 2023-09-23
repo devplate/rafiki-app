@@ -71,6 +71,30 @@ const routes: Routes = [
     path: 'aid-center',
     loadChildren: () => import('./pages/aid-center/aid-center.module').then( m => m.AidCenterPageModule)
   },
+  {
+    path: 'get-direction',
+    loadChildren: () => import('./pages/get-direction/get-direction.module').then( m => m.GetDirectionPageModule)
+  },
+  {
+    path: 'blog-single',
+    loadChildren: () => import('./pages/blog-single/blog-single.module').then( m => m.BlogSinglePageModule)
+  },
+  {
+    path: 'all-blog',
+    loadChildren: () => import('./pages/all-blog/all-blog.module').then( m => m.AllBlogPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'chat-conversation',
+    loadChildren: () => import('./pages/chat-conversation/chat-conversation.module').then( m => m.ChatConversationPageModule)
+  },
+  {
+    path: 'calling1',
+    loadChildren: () => import('./pages/calling1/calling1.module').then( m => m.Calling1PageModule)
+  },
 ];
 
 @NgModule({

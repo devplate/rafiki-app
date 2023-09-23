@@ -1,0 +1,53 @@
+<ion-content>
+
+  <div class="img-header">
+
+    <div class="title">
+      <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+    </div>
+    
+    <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+
+    <div class="overlay"></div>
+
+    <div class="title-position">
+      <div class="play-button">
+        <ion-button (click)="playAudio()">
+          <ion-icon name="{{ isPlaying ? 'pause' : 'play' }}"></ion-icon>
+        </ion-button>
+      </div>
+  
+      <div class="title-header">
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem.</h4>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="doctor-container">
+    <div class="doctor-bio">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi pariatur eos quaerat, rem omnis consequatur maxime nihil earum. Id atque molestias possimus mollitia voluptas quia nostrum fuga sunt expedita. </p>
+      <h3>Education and Qualification:</h3>
+      <ul>
+        <li>Doctor of medicine (MD) degree from XYZ Medical school</li>
+        <li>Doctorate in Clinical Psychology (PHD) from XYZ University</li>
+        <li>Board certified physiotherapist</li>
+      </ul>
+      <h3>Approach to Therapy:</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi pariatur eos quaerat, rem omnis consequatur maxime nihil earum. </p>
+      <h3>Areas of Expertise</h3>
+        <ul>
+          <li>Anxiety disorders:</li>
+          <li>Depression and Mood disorder</li>
+          <li>Stress management and Resiliance Building</li>
+          <li>Substance abuse and Addiction</li>
+          <li>Sexual Dysfuntion</li>
+        </ul>
+        <h3>Expertise:</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <h3>Philosophy:</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  
+</ion-content>

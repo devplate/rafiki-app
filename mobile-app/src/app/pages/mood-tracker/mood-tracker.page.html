@@ -9,7 +9,7 @@
     <ion-thumbnail>
       <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
     </ion-thumbnail>
-    <h5>Rafiki, Jenifer</h5>
+    <h5>Rafiki, {{ firstName }}</h5> 
     <p>How are you feeling today?</p>
   </div>
 </div>
@@ -18,53 +18,55 @@
 
     <ion-grid class="text-center" [fixed]="true">
       <ion-row>
-        <ion-col size="3" (click)="toggleEmotion(0)" [class.selected]="isSelected(0)">
+        <ion-col size="3" (click)="toggleEmotion('happy')" [class.selected]="isSelected('happy')">
           <img src="assets/images/happy.svg" alt="happy">
-          <div class="tick-overlay" *ngIf="isSelected(0)">
+          <div class="tick-overlay" *ngIf="isSelected('happy')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
         </ion-col>
-        <ion-col size="3" (click)="toggleEmotion(1)" [class.selected]="isSelected(1)">
+        <ion-col size="3" (click)="toggleEmotion('confused')" [class.selected]="isSelected('confused')">
           <img src="assets/images/confused.svg" alt="confused">
-          <div class="tick-overlay" *ngIf="isSelected(1)">
+          <div class="tick-overlay" *ngIf="isSelected('confused')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
         </ion-col>
-        <ion-col size="3" (click)="toggleEmotion(2)" [class.selected]="isSelected(2)">
+        <ion-col size="3" (click)="toggleEmotion('sad')" [class.selected]="isSelected('sad')">
           <img src="assets/images/sad.svg" alt="sad">
-          <div class="tick-overlay" *ngIf="isSelected(2)">
+          <div class="tick-overlay" *ngIf="isSelected('sad')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
         </ion-col>
-        <ion-col size="3" (click)="toggleEmotion(3)" [class.selected]="isSelected(3)">
-          <img src="assets/images/postive.svg" alt="postive">
-          <div class="tick-overlay" *ngIf="isSelected(3)">
+        <ion-col size="3" (click)="toggleEmotion('positive')" [class.selected]="isSelected('positive')">
+          <img src="assets/images/postive.svg" alt="positive">
+          <div class="tick-overlay" *ngIf="isSelected('positive')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
-        </ion-col><ion-col size="3" (click)="toggleEmotion(4)" [class.selected]="isSelected(4)">
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('helpless')" [class.selected]="isSelected('helpless')">
           <img src="assets/images/helpless.svg" alt="helpless">
-          <div class="tick-overlay" *ngIf="isSelected(4)">
-            <ion-icon name="checkmark"></ion-icon>
-          </div>
-        </ion-col><ion-col size="3" (click)="toggleEmotion(5)" [class.selected]="isSelected(5)">
-          <img src="assets/images/hurt.svg" alt="hurt">
-          <div class="tick-overlay" *ngIf="isSelected(5)">
+          <div class="tick-overlay" *ngIf="isSelected('helpless')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
         </ion-col>
-        <ion-col size="3" (click)="toggleEmotion(6)" [class.selected]="isSelected(6)">
+        <ion-col size="3" (click)="toggleEmotion('hurt')" [class.selected]="isSelected('hurt')">
+          <img src="assets/images/hurt.svg" alt="hurt">
+          <div class="tick-overlay" *ngIf="isSelected('hurt')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('afraid')" [class.selected]="isSelected('afraid')">
           <img src="assets/images/afraid.svg" alt="afraid">
-          <div class="tick-overlay" *ngIf="isSelected(6)">
+          <div class="tick-overlay" *ngIf="isSelected('afraid')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
-        </ion-col><ion-col size="3" (click)="toggleEmotion(7)" [class.selected]="isSelected(7)">
-          <img src="assets/images/angry-face.svg" alt="angry-face">
-          <div class="tick-overlay" *ngIf="isSelected(7)">
+        </ion-col><ion-col size="3" (click)="toggleEmotion('angry')" [class.selected]="isSelected('angry')">
+          <img src="assets/images/angry-face.svg" alt="angry">
+          <div class="tick-overlay" *ngIf="isSelected('angry')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
-        </ion-col><ion-col size="3" (click)="toggleEmotion(8)" [class.selected]="isSelected(8)">
+        </ion-col><ion-col size="3" (click)="toggleEmotion('strong')" [class.selected]="isSelected('strong')">
           <img src="assets/images/strong.svg" alt="strong">
-          <div class="tick-overlay" *ngIf="isSelected(8)">
+          <div class="tick-overlay" *ngIf="isSelected('strong')">
             <ion-icon name="checkmark"></ion-icon>
           </div>
         </ion-col>

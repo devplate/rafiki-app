@@ -1,0 +1,290 @@
+<ion-content class="ion-padding">
+
+  <div class="title">
+    <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+  </div>
+
+  <div class="profile">
+    <ion-thumbnail>
+      <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+    </ion-thumbnail>
+    <h5>Rafiki, Jenifer</h5>
+  </div>
+
+  <div class="slider-card">
+    <h4>How are you feeling today?</h4>
+
+    <div #swiperContainer class="swiper-container">
+      <div class="swiper-wrapper">
+  
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(0)" [class.selected]="isSelected(0)">
+          <img src="assets/images/happy.svg" alt="happy">
+          <div class="tick-overlay" *ngIf="isSelected(0)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(1)" [class.selected]="isSelected(1)">
+          <img src="assets/images/confused.svg" alt="confused">
+          <div class="tick-overlay" *ngIf="isSelected(1)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(2)" [class.selected]="isSelected(2)">
+          <img src="assets/images/sad.svg" alt="sad">
+          <div class="tick-overlay" *ngIf="isSelected(2)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(3)" [class.selected]="isSelected(3)">
+          <img src="assets/images/postive.svg" alt="postive">
+          <div class="tick-overlay" *ngIf="isSelected(3)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(4)" [class.selected]="isSelected(4)">
+          <img src="assets/images/helpless.svg" alt="helpless">
+          <div class="tick-overlay" *ngIf="isSelected(4)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(5)" [class.selected]="isSelected(5)">
+          <img src="assets/images/hurt.svg" alt="hurt">
+          <div class="tick-overlay" *ngIf="isSelected(5)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(6)" [class.selected]="isSelected(6)">
+          <img src="assets/images/afraid.svg" alt="afraid">
+          <div class="tick-overlay" *ngIf="isSelected(6)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(7)" [class.selected]="isSelected(7)">
+          <img src="assets/images/angry-face.svg" alt="angry-face">
+          <div class="tick-overlay" *ngIf="isSelected(7)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(8)" [class.selected]="isSelected(8)">
+          <img src="assets/images/strong.svg" alt="strong">
+          <div class="tick-overlay" *ngIf="isSelected(8)">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+      </div>
+    </div> 
+    
+    <div class="readmore-button">
+      <div class="section-button d-flex" (click)="knowYourSelf()">
+        <div class="icon-cauch"><img src="assets/images/door-icon-blue.svg" alt="sofa"></div>
+        <div class="button-text">Get to Know Yourself Better</div>
+      </div>
+    </div>
+
+    <div class="remainder-container">
+      <h4>Remainder</h4>
+      <div class="remainders">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+
+            <div class="remainder-date">
+
+           <div class="d-flex">
+            <div class="date-card">
+              <h3>22</h3>
+            </div>
+  
+            <div class="time-card">
+              <p>July 203</p>
+              <p>8:00pm - 9:00am</p>
+            </div>
+
+          </div>
+          <h6>Online appointment with</h6>
+
+          <div class="app-doct-online d-flex">
+            <div class="doct-profile">
+              <img src="assets/images/doc1.jpg" alt="Doctor profile" >
+            </div>
+
+            <div class="doct-profile-container">
+              <h5>Dr Peter Lemotuz</h5>
+            </div>
+
+          </div>
+          </div>
+
+        </ion-col>
+
+          <ion-col size="7">
+            <div class="remainder-text">
+              <h2>Experience what is in your mind</h2>
+
+              <div class="button-yell d-flex">
+                <div class="plus-button">
+                  <img src="assets/images/plus-icon-black.svg" alt="" srcset="">
+                </div>
+                <div class="button-text-doctor">
+                  <p>Start today's journal</p>
+                </div>
+              </div>
+
+            </div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    </div>
+
+    <div class="todays-exp">
+      <h4>Today Exercise</h4>
+
+      <div class="today-exc-container">
+
+        <div class="d-flex">
+          <div class="exc-display-img">
+            <img alt="doctor profile" src="assets/images/doc2.jpg" />
+          </div>
+
+          <div class="exc-meditation">
+            <h6>Mediation</h6>
+            <p>Law with life</p>
+
+            <div class="timer-track">
+              <h5>12 Exercise</h5>
+              <p><ion-icon name="time-outline"></ion-icon> 12 Mins</p>
+            </div>
+          </div>
+
+          <div class="exc-icon-container">
+            <img src="assets/images/vid.svg" alt="" srcset="assets/images/vid.svg">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="recommended-container">
+      <h4>Recommended for you</h4>
+
+      <div class="slider-card slider-2">
+        <div #swiperContainer2 class="swiper-container">
+          <div class="swiper-wrapper">
+      
+            <ion-card class="swiper-slide">
+              <div class="card-title-mg">
+                <img alt="Silhouette of mountains" src="assets/images/doc2.jpg" />
+              </div>
+              
+              <div class="w-100">
+          
+                <div class="card-title" slot="start">
+                    <ion-card-title>Meditation</ion-card-title>
+                    <div class="headers-title">
+                      <p>12 Excesses</p>
+                      <p><ion-icon name="time-outline"></ion-icon> 12:30min</p>
+                    </div>
+                </div>
+          
+                <div class="card-icon" slot="end">
+                  <img src="assets/images/vid.svg" alt="" srcset="assets/images/vid.svg">
+                </div>
+              </div>
+            </ion-card>
+            
+            <ion-card class="swiper-slide">
+              <div class="card-title-mg">
+                <img alt="Silhouette of mountains" src="assets/images/p5.jpg" />
+              </div>
+              
+              <div class="w-100">
+          
+                <div class="card-title" slot="start">
+                    <ion-card-title>Grounding</ion-card-title>
+                    <div class="headers-title">
+                      <p>12 Excesses</p>
+                      <p><ion-icon name="time-outline"></ion-icon> 12:30min</p>
+                    </div>
+                </div>
+          
+                <div class="card-icon" slot="end">
+                  <img src="assets/images/vid.svg" alt="" srcset="assets/images/vid.svg">
+                </div>
+              </div>
+            </ion-card>
+          
+            <ion-card class="swiper-slide">
+              <div class="card-title-mg">
+                <img alt="Silhouette of mountains" src="assets/images/doc1.jpg" />
+              </div>
+              
+              <div class="w-100">
+          
+                <div class="card-title" slot="start">
+                    <ion-card-title>Grounding</ion-card-title>
+                    <div class="headers-title">
+                      <p>12 Excesses</p>
+                      <p><ion-icon name="time-outline"></ion-icon> 12:30min</p>
+                    </div>
+                </div>
+          
+                <div class="card-icon" slot="end">
+                  <img src="assets/images/vid.svg" alt="" srcset="assets/images/vid.svg">
+                </div>
+              </div>
+            </ion-card>
+      
+        </div>
+        </div> 
+      </div>
+
+      <div class="read-container">
+        <div class="d-flex">
+  
+          <ion-card>
+            <div class="card-title-mg">
+              <img alt="Silhouette of mountains" src="assets/images/doc2.jpg" />
+            </div>
+        
+            <div class="card-title">
+              <ion-card-title>Meditation Lorem, ipsum dolor sit amet</ion-card-title>
+              <div class="headers-title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, commodi Lorem, ipsum dolor</p>
+              </div>
+              <h5>Read more</h5>
+          </div>
+  
+          </ion-card>
+          
+          <ion-card>
+            <div class="card-title-mg">
+              <img alt="Silhouette of mountains" src="assets/images/p5.jpg" />
+            </div>
+        
+              <div class="card-title">
+                <ion-card-title>Meditation Lorem, ipsum dolor sit amet</ion-card-title>
+                <div class="headers-title">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, commodi Lorem, ipsum dolor</p>
+                </div>
+                <h5>Read more</h5>
+            </div>
+          </ion-card>
+  
+        </div>
+      </div> 
+
+    </div>
+  </div>
+
+  <div class="botton-container">
+    <div class="centered">
+      <div class="section-button blue d-flex">
+        <div class="icon-cauch"><img src="assets/images/door-icon.svg" alt="sofa"></div>
+        <div class="button-text">Visit <br/> The First AID Kit</div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
