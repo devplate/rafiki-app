@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'calling1',
     loadChildren: () => import('./pages/calling1/calling1.module').then( m => m.Calling1PageModule)
   },
+  {
+    path: 'journal',
+    loadChildren: () => import('./pages/journal/journal.module').then( m => m.JournalPageModule)
+  },
 ];
 
 @NgModule({

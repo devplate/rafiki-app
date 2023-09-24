@@ -1,0 +1,103 @@
+<ion-content>
+
+  <div class="ion-padding">
+    <div class="title">
+      <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+      <ion-thumbnail slot="end">
+        <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+      </ion-thumbnail>
+    </div>
+    
+  
+    <div class="profile">
+      <h5>Rafiki, Jenifer</h5>
+      <p>I am here to help you Know Yourself Better, answer the following question honestly!</p>
+    </div>
+</div>
+
+<div class="prime-bg">
+  <div class="para-text">
+    <h5>PERSONAL JOURNAL</h5>
+  <p>EXPRESS YOUR FELLING</p>
+  </div>
+</div>
+
+  <ion-card>
+    <h3>How are you currently feeling?</h3>
+
+    <ion-grid class="text-center" [fixed]="true">
+
+      <ion-row>
+        <ion-col size="3" (click)="toggleEmotion('happy')" [class.selected]="isSelected('happy')">
+          <img src="assets/images/happy.svg" alt="happy">
+          <div class="tick-overlay" *ngIf="isSelected('happy')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('confused')" [class.selected]="isSelected('confused')">
+          <img src="assets/images/confused.svg" alt="confused">
+          <div class="tick-overlay" *ngIf="isSelected('confused')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('sad')" [class.selected]="isSelected('sad')">
+          <img src="assets/images/sad.svg" alt="sad">
+          <div class="tick-overlay" *ngIf="isSelected('sad')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('positive')" [class.selected]="isSelected('positive')">
+          <img src="assets/images/postive.svg" alt="positive">
+          <div class="tick-overlay" *ngIf="isSelected('positive')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('helpless')" [class.selected]="isSelected('helpless')">
+          <img src="assets/images/helpless.svg" alt="helpless">
+          <div class="tick-overlay" *ngIf="isSelected('helpless')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('hurt')" [class.selected]="isSelected('hurt')">
+          <img src="assets/images/hurt.svg" alt="hurt">
+          <div class="tick-overlay" *ngIf="isSelected('hurt')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="3" (click)="toggleEmotion('afraid')" [class.selected]="isSelected('afraid')">
+          <img src="assets/images/afraid.svg" alt="afraid">
+          <div class="tick-overlay" *ngIf="isSelected('afraid')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col><ion-col size="3" (click)="toggleEmotion('angry')" [class.selected]="isSelected('angry')">
+          <img src="assets/images/angry-face.svg" alt="angry">
+          <div class="tick-overlay" *ngIf="isSelected('angry')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col><ion-col size="3" (click)="toggleEmotion('strong')" [class.selected]="isSelected('strong')">
+          <img src="assets/images/strong.svg" alt="strong">
+          <div class="tick-overlay" *ngIf="isSelected('strong')">
+            <ion-icon name="checkmark"></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+      <div class="select-info">
+        <ul>
+          <li>Select at least 'one' feeling</li>
+          <li>Select 'Start writing your journal' to get started</li>
+        </ul>
+      </div>
+
+      <div class="botton-container">
+        <div class="centered">
+          <div class="section-button blue d-flex" (click)="knowYourSelf()">
+            <div class="icon-cauch"><img src="assets/images/plus-icon-white.svg" alt="sofa"></div>
+            <div class="button-text">Start writing <br/> your journal</div>
+          </div>
+        </div>
+      </div>
+    </ion-card>
+
+</ion-content>
