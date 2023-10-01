@@ -99,6 +99,14 @@ const routes: Routes = [
     path: 'journal',
     loadChildren: () => import('./pages/journal/journal.module').then( m => m.JournalPageModule)
   },
+  {
+    path: 'journal-express',
+    loadChildren: () => import('./pages/journal-express/journal-express.module').then( m => m.JournalExpressPageModule)
+  },
+  {
+    path: 'journal-date-time',
+    loadChildren: () => import('./pages/journal-date-time/journal-date-time.module').then( m => m.JournalDateTimePageModule)
+  },
 ];
 
 @NgModule({

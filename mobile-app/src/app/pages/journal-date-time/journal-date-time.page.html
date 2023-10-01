@@ -1,0 +1,130 @@
+<ion-content>
+
+  <div class="ion-padding">
+    <div class="title">
+      <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+      <ion-thumbnail slot="end">
+        <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+      </ion-thumbnail>
+    </div>
+    
+  
+    <div class="profile">
+      <h5>Rafiki, Jenifer</h5>
+      <p>I am here to help you Know Yourself Better, answer the following question honestly!</p>
+    </div>
+</div>
+
+<div class="prime-bg">
+  <div class="para-text">
+    <h5>PERSONAL JOURNAL</h5>
+  <p>EXPRESS YOUR FELLING</p>
+  </div>
+</div>
+
+  <ion-card>
+    <h3>When did you feel this way?</h3>
+
+    <div class="selected-moods">
+      <div class="d-flex">
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="happy"></div>
+          <span>Sad</span>
+        </div>
+        </div>
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="confused"></div>
+          <span>Confused</span>
+        </div>
+        </div>
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="sad"></div>
+          <span>Sad</span>
+        </div>
+        </div>
+        
+        <!-- Display the rest commented moods  -->
+
+        <!-- 
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="positive"></div>
+          <span>Positive</span>
+        </div>
+        </div>
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="helpless"></div>
+          <span>Helpless</span>
+        </div>
+        </div>
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="hurt"></div>
+          <span>Hurt</span>
+        </div>
+        </div>
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="afraid"></div>
+          <span>Afraid</span>
+        </div>
+        </div>
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="angry"></div>
+          <span>Angry</span>
+        </div>
+        </div>
+
+        <div class="mood-div">
+          <div class="d-inline">
+          <div class="strong"></div>
+          <span>Strong</span>
+        </div>
+        </div> -->
+
+      </div>
+    </div>
+
+    <ion-grid class="text-center" [fixed]="true">
+
+      <ion-item>
+        <ion-input label="The subject" labelPlacement="floating" placeholder="What made you feel this way"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea label="How are you feeling" labelPlacement="floating" placeholder="Express your feeling in almost honest"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea label="How can you help your self" labelPlacement="floating" placeholder="How can you help your self feel better?"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea label="What would you have done differently?" labelPlacement="floating" placeholder="Write it here"></ion-textarea>
+      </ion-item>
+
+    </ion-grid>
+
+      <div class="botton-container">
+        <div class="centered">
+          <div class="section-button blue d-flex">
+            <div class="icon-cauch"><img src="assets/images/plus-icon-white.svg" alt="sofa"></div>
+            <div class="button-text">Save your <br/> journal</div>
+          </div>
+        </div>
+      </div>
+    </ion-card>
+
+</ion-content>
