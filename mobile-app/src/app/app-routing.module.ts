@@ -107,6 +107,10 @@ const routes: Routes = [
     path: 'journal-date-time',
     loadChildren: () => import('./pages/journal-date-time/journal-date-time.module').then( m => m.JournalDateTimePageModule)
   },
+  {
+    path: 'conversations',
+    loadChildren: () => import('./pages/conversations/conversations.module').then( m => m.ConversationsPageModule)
+  },
 ];
 
 @NgModule({

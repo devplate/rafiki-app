@@ -1,3 +1,26 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="mood-tracker">
+        <ion-icon name="thermometer-outline"></ion-icon>
+        <ion-label>Diagnosis</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="aid-center">
+        <ion-icon name="medkit-outline"></ion-icon>
+        <ion-label>Aid center</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="journal">
+        <ion-icon name="today-outline"></ion-icon>
+        <ion-label>Journal</ion-label>
+      </ion-tab-button>
+      
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-app>
