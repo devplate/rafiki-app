@@ -1,0 +1,277 @@
+<ion-content>
+
+  <div class="ion-padding">
+    <div class="title">
+      <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+      <ion-thumbnail slot="end">
+        <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+      </ion-thumbnail>
+    </div>
+    
+  
+    <div class="profile">
+      <h5>Rafiki, Jenifer</h5>
+      <p>What is in your mind! Express your mind through the journal, you can review it any time you want</p>
+    </div>
+</div>
+
+  <div class="doctor-container">
+    <div class="doctor-bio">
+
+      <div class="main_content_div">
+        <div class="text-center">
+          <ion-label class="bold_lbl">Select Date</ion-label>
+        </div>
+      
+        <div class="title_flex">
+          <ion-label>{{ month }}</ion-label>
+        </div>
+      
+        <div class="white_div">
+          <div class="row_cal">
+            <ion-col size="0.75" (click)="previousWeek()">
+              <ion-icon name="arrow-back-outline" mode="md" class="icon_change center_item" *ngIf="currentWeek !== 0">
+              </ion-icon>
+            </ion-col>
+            <div class="date-container">
+              <div class="date-item" *ngFor="let day of days" [class.disabled]="initDate.split('T')[0] > day.val.split('T')"
+                   [class.img_select_date]="day.val.split('T')[0] === selectedDate" (click)="selectDate(day)">
+                <ion-label class="lbl_day" [class.selectedDay]="day.val.split('T')[0] === selectedDate">{{ day.day }}</ion-label>
+                <ion-label class="lbl_date" [class.selectedDate]="day.val.split('T')[0] === selectedDate">{{ day.date }}</ion-label>
+              </div>
+            </div>
+            <ion-col size="0.75" (click)="nextWeek()">
+              <ion-icon name="arrow-forward-outline" mode="md" class="icon_change center_item"></ion-icon>
+            </ion-col>
+          </div>
+        </div>
+
+            <div class="journal-view">
+              <h6>Niligombana na rafiki yangu</h6>
+              <p>this is the pare Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis.</p>
+              <div class="selected-moods">
+                <div class="selected-moods">
+                  <div class="d-flex">
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="happy"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="confused"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="sad"></div>
+                    </div>
+                    </div>
+                    
+                    <!-- Display the rest commented moods  -->
+            
+                    <!-- 
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="positive"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="helpless"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="hurt"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="afraid"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="angry"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="strong"></div>
+                    </div>
+                    </div> -->
+            
+                  </div>
+                </div>
+              </div>
+              <div class="moods-time">
+                <p>12:00 AM</p>
+              </div>
+            </div>
+
+            <div class="journal-view">
+              <h6>Niligombana na rafiki yangu</h6>
+              <p>this is the pare Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis.</p>
+              <div class="selected-moods">
+                <div class="selected-moods">
+                  <div class="d-flex">
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="happy"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="confused"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="sad"></div>
+                    </div>
+                    </div>
+                    
+                    <!-- Display the rest commented moods  -->
+            
+                    <!-- 
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="positive"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="helpless"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="hurt"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="afraid"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="angry"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="strong"></div>
+                    </div>
+                    </div> -->
+            
+                  </div>
+                </div>
+              </div>
+              <div class="moods-time">
+                <p>12:00 AM</p>
+              </div>
+            </div>
+
+            <div class="journal-view">
+              <h6>Niligombana na rafiki yangu</h6>
+              <p>this is the pare Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis.</p>
+              <div class="selected-moods">
+                <div class="selected-moods">
+                  <div class="d-flex">
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="happy"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="confused"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="sad"></div>
+                    </div>
+                    </div>
+                    
+                    <!-- Display the rest commented moods  -->
+            
+                    <!-- 
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="positive"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="helpless"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="hurt"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="afraid"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="angry"></div>
+                    </div>
+                    </div>
+            
+                    <div class="mood-div">
+                      <div class="d-inline">
+                      <div class="strong"></div>
+                    </div>
+                    </div> -->
+            
+                  </div>
+                </div>
+              </div>
+              <div class="moods-time">
+                <p>12:00 AM</p>
+              </div>
+            </div>
+        </div>
+      
+      
+
+    <div class="centered">
+      <div class="section-button d-flex" (click)="getJournal()">
+        <div class="icon-cauch"><img src="assets/images/plus-icon.svg" alt="sofa"></div>
+        <div class="button-text">Add new <br> journal</div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</ion-content>

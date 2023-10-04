@@ -1,0 +1,37 @@
+<ion-content class="ion-padding">
+
+  <div class="title">
+    <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
+  </div>
+
+  <div class="profile">
+    <ion-thumbnail>
+      <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+    </ion-thumbnail>
+    <h5>Rafiki, Jenifer</h5>
+    <p>What is in your mind! Express your mind through the journal, you can review it any time you want</p>
+  </div>
+
+  <ion-card>
+
+      <div class="centered">
+        <div class="question-number">
+          <img src="assets/images/tick-icon.svg" alt="" srcset="assets/images/tick-icon.svg">
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <p>Well done Rafiki, <br/> Your journal has been saved!</p>
+      </div>
+
+    </ion-card>
+
+
+    <div class="centered">
+      <div class="section-button d-flex" (click)="getJournals()">
+        <div class="icon-cauch"><img src="assets/images/plus-icon.svg" alt="sofa"></div>
+        <div class="button-text">Review your journal</div>
+      </div>
+    </div>
+
+</ion-content>

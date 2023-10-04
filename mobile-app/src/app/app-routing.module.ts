@@ -111,6 +111,18 @@ const routes: Routes = [
     path: 'conversations',
     loadChildren: () => import('./pages/conversations/conversations.module').then( m => m.ConversationsPageModule)
   },
+  {
+    path: 'journal-select',
+    loadChildren: () => import('./pages/journal-select/journal-select.module').then( m => m.JournalSelectPageModule)
+  },
+  {
+    path: 'journal-done',
+    loadChildren: () => import('./pages/journal-done/journal-done.module').then( m => m.JournalDonePageModule)
+  },
+  {
+    path: 'journal-list',
+    loadChildren: () => import('./pages/journal-list/journal-list.module').then( m => m.JournalListPageModule)
+  },
 ];
 
 @NgModule({

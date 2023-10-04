@@ -11,7 +11,7 @@
   
     <div class="profile">
       <h5>Rafiki, Jenifer</h5>
-      <p>What is in your mind! Express your mind through the journal, you can review it any time you want</p>
+      <p>I am here to help you Know Yourself Better, answer the following question honestly!</p>
     </div>
 </div>
 
@@ -98,30 +98,36 @@
     </div>
 
     <ion-grid class="text-center" [fixed]="true">
+      <ion-row>
+        <ion-col>
+          <ion-item class="custom-checkbox">
+            <ion-checkbox [(ngModel)]="selectedOptions.option1"></ion-checkbox>
+            <ion-label class="custom-label">I am feeling now</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item class="custom-checkbox">
+            <ion-checkbox [(ngModel)]="selectedOptions.option2"></ion-checkbox>
+            <ion-label class="custom-label">I felt previously</ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item class="custom-checkbox">
+            <ion-checkbox [(ngModel)]="selectedOptions.option3"></ion-checkbox>
+            <ion-label class="custom-label">I have been for sometimes now</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
 
-      <ion-item>
-        <ion-input label="The subject" labelPlacement="floating" placeholder="What made you feel this way"></ion-input>
-      </ion-item>
+      <ion-datetime presentation="date"></ion-datetime>
 
-      <ion-item>
-        <ion-textarea label="How are you feeling" labelPlacement="floating" placeholder="Express your feeling in almost honest"></ion-textarea>
-      </ion-item>
-
-      <ion-item>
-        <ion-textarea label="How can you help your self" labelPlacement="floating" placeholder="How can you help your self feel better?"></ion-textarea>
-      </ion-item>
-
-      <ion-item>
-        <ion-textarea label="What would you have done differently?" labelPlacement="floating" placeholder="Write it here"></ion-textarea>
-      </ion-item>
-
-    </ion-grid>
-
+    </ion-grid>    
+    
       <div class="botton-container">
         <div class="centered">
           <div class="section-button blue d-flex">
             <div class="icon-cauch"><img src="assets/images/plus-icon-white.svg" alt="sofa"></div>
-            <div class="button-text">Save your <br/> journal</div>
+            <div class="button-text">Express your <br/> feelings</div>
           </div>
         </div>
       </div>
