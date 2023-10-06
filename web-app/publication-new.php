@@ -12,6 +12,8 @@
 
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
 
+<script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
 <!-- head ends -->
 
 <body>
@@ -85,7 +87,8 @@
                                                 <div class="mt-3">
                                                     <label for="Property-type-input" class="form-label">Descriptions<span class="text-danger">*</span></label>
                                                     </div><!-- end card header -->
-                                                <div class="ckeditor-classic"></div>
+                                                    <textarea name="editor1" id="editor1"></textarea>
+                                                    <textarea name="editor_data" style="display: none;"></textarea>
                                             </div>
                                             <!-- end col -->
 
@@ -121,6 +124,12 @@
                                             </div>
                                         </div><!--end row-->
                                     </form>
+                                    <script>
+                                        CKEDITOR.instances.editor1.on('change', function () {
+                                            var editorData = CKEDITOR.instances.editor1.getData();
+                                            document.querySelector('textarea[name="editor_data"]').value = editorData;
+                                        });
+                                    </script>
                                 </div>
                             </div><!--end card-->
                         </div><!--end col-->
@@ -168,9 +177,11 @@
         <!-- init js -->
         <script src="assets/js/pages/form-editor.init.js"></script>
 
-
         <!-- javascript links ends -->
 
+        <script>
+            CKEDITOR.replace('editor1');
+        </script>
 
 </body>
 
