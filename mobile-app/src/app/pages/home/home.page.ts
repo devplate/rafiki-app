@@ -37,6 +37,10 @@ export class HomePage implements OnInit {
     this.initSwipers();
   }
 
+  goToChat(){
+    this.router.navigate(['/conversations']);
+  }
+
   private initSwipers() {
     const swiper1 = new Swiper(this.swiperContainer.nativeElement, {
       slidesPerView: 2, // Number of slides to show at once

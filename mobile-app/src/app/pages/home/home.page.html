@@ -1,12 +1,20 @@
 <ion-content class="ion-padding">
 
-  <div class="title">
-    <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+  <div class="title" expand="full">
+    <div class="start">
+      <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+    </div>
+    <div class="end">
+      <ion-icon slot="end" (click)="goToChat()" name="notifications-circle-outline"></ion-icon>
+      <div class="notify">
+        <span>4</span>
+      </div>
+    </div>
   </div>
 
   <div class="profile">
     <ion-thumbnail>
-      <img src="assets/images/p5.jpg" alt="" srcset="assets/images/p5.jpg">
+      <img src="assets/images/chris.jpg" alt="" srcset="assets/images/chris.jpg">
     </ion-thumbnail>
     <h5>Rafiki, Jenifer</h5>
   </div>
