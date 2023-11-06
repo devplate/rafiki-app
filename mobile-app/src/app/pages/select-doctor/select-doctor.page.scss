@@ -29,7 +29,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin: 1rem 0px;
+    margin: 0;
     width: 100%;
   
     ion-thumbnail {
@@ -48,8 +48,9 @@
       padding: 0 30px;
       line-height: 1.4;
       color: var(--ion-color-sup);
-      font-size: 14px;
+      font-size: 12px;
       margin-top: 0px;
+      margin-bottom: 20px;
     }
   }
   
@@ -61,44 +62,76 @@
       margin: 10px 10px;
     }
   }
-  ion-card{
+.cover-bg-blue{
+  background-color: var(--ion-color-primary);
+  height: 240px;
+  position: relative;
+  top: 350px;
+  right: 0px;
+  margin-top: -270px;
+
+}
+
+.cover-bg-gray{
+  background-color: #dddddd;
+  height: 240px;
+  position: relative;
+  top: 350px;
+  right: 0px;
+  margin-top: -270px;
+
+}
+
+ion-card{
   
-    padding-bottom: 30px;
+  padding-bottom: 15px;
+  background-color: #fff;
 
-    .doc-height{
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-    }
-    ion-card-title{
-        font-size: 20px;
+  .doc-height{
+      height: 135px;
+      width: 100%;
+      object-fit: cover;
+  }
+  ion-card-title{
+      font-size: 14px;
+      color: var(--ion-color-primary);
+      font-weight: 800;
+      padding-top: 0;
+      padding-bottom: 0;
+    } 
+    ion-card-header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }   
+  ion-card-content{
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-bottom: 8px;
+      font-size: 10px;
+  }
+      
+    .icon-profile{
+      padding: 0 20px;
+      display: flex;
+      gap: 5px;
+      text-align: left !important;
+
+      ion-icon{
         color: var(--ion-color-primary);
-        font-weight: 800;
-        }    
-    ion-card-content{
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 15px;
+        font-size: 22px;
+        margin-bottom: -10px;
+        margin-top: 10px;
+      }
     }
-        
-      .icon-profile{
-        padding: 0 30px;
 
-        ion-icon{
-          color: var(--ion-color-primary);
-          font-size: 30px;
-          margin-bottom: -10px;
-          margin-top: 10px;
-        }
-      }
+    p{
+      font-size: 10px;
+      color: var(--ion-color-sup);
+      line-height: 1.2;
+      opacity: .7;
+    }
 
-      p{
-        font-size: 12px;
-        color: var(--ion-color-sup);
-      }
-
-    
-      }
+    }
       .severe {
         background: var(--ion-color-danger);
         width: 20px;
@@ -194,7 +227,7 @@
     height: 150px;
   }
   .mb{
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   
   .last {

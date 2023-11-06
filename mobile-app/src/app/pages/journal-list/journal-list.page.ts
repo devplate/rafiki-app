@@ -22,6 +22,7 @@ interface DateItem {
   templateUrl: './journal-list.page.html',
   styleUrls: ['./journal-list.page.scss'],
 })
+
 export class JournalListPage {
   currentWeek = 0;
   days: DateItem[] = [];

@@ -123,6 +123,10 @@ const routes: Routes = [
     path: 'journal-list',
     loadChildren: () => import('./pages/journal-list/journal-list.module').then( m => m.JournalListPageModule)
   },
+  {
+    path: 'journal-single',
+    loadChildren: () => import('./pages/journal-single/journal-single.module').then( m => m.JournalSinglePageModule)
+  },
 ];
 
 @NgModule({

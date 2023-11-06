@@ -1,5 +1,6 @@
-<ion-content class="ion-padding">
+<ion-content>
 
+  <div class="ion-padding">
   <div class="title">
     <ion-icon slot="start" (click)="onBack()" name="chevron-back-outline"></ion-icon>
   </div>
@@ -11,31 +12,37 @@
     <h5>Rafiki, Jenifer</h5>
     <p>I am here to help you Know Yourself Better, answer the following question honestly!</p>
   </div>
+</div>
 
-  <ion-card class="text-center mb">
-    <img class="doc-height" alt="Doctor" src="assets/images/doc1.jpg" />
-    <ion-card-header>
-      <ion-card-title>Dr Sifael Kaaya</ion-card-title>
-    </ion-card-header>
+<div class="cover-bg-blue"></div>
+  <div class="ion-padding">
+    <ion-card class="text-center mb">
+      <img class="doc-height" alt="Doctor" src="assets/images/doc1.jpg" />
+      <ion-card-header>
+        <ion-card-title>Dr Sifael Kaaya</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem, ipsum dolor.
+      </ion-card-content>
   
-    <ion-card-content>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto deleniti sed similique nesciunt commodi eius a enim voluptatem dolor autem Lorem, ipsum dolor.
-    </ion-card-content>
-
-    <div class="centered">
-      <div class="icon-profile text-center" (click)="vieProfile()">
-        <ion-icon name="person-outline"></ion-icon>
-        <p>View <br/> Profile</p>
+      <div class="centered">
+        <div class="icon-profile text-center" (click)="vieProfile()">
+          <ion-icon name="person-outline"></ion-icon>
+          <p>View <br/> Profile</p>
+        </div>
+        
+        <div class="icon-profile text-center" (click)="viewAppointment()">
+            <ion-icon name="calendar-outline"></ion-icon>
+          <p>Book <br/> Appointment</p>
+        </div>
       </div>
-      
-      <div class="icon-profile text-center" (click)="viewAppointment()">
-          <ion-icon name="calendar-outline"></ion-icon>
-        <p>Book <br/> Appointment</p>
-      </div>
-    </div>
+  
+    </ion-card>
+  </div>
 
-  </ion-card>
-
+  <div class="cover-bg-gray"></div>
+  <div class="ion-padding">
   <ion-card class="text-center mb">
     <img class="doc-height" alt="Doctor" src="assets/images/doc2.jpg" />
     <ion-card-header>
@@ -59,7 +66,10 @@
     </div>
 
   </ion-card>
+</div>
 
+<div class="cover-bg-blue"></div> 
+  <div class="ion-padding">
   <ion-card class="text-center mb">
     <img class="doc-height" alt="Doctor" src="assets/images/doc1.jpg" />
     <ion-card-header>
@@ -83,5 +93,6 @@
     </div>
 
   </ion-card>
+</div>
 
 </ion-content>
