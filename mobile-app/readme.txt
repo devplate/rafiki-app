@@ -1,0 +1,2 @@
+-- New page added
+    -- Journal Single Page (journey-single)
