@@ -418,5 +418,10 @@ margin-bottom: 15px;
     margin-right: 10px;
     text-align: center;
     line-height: 2;
-}
+  }
+  .active{
+    background: var(--ion-color-primary);
+    padding: 8px;
+    color: #fff
+  }
 }

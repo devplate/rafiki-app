@@ -1,15 +1,18 @@
 <ion-content class="ion-padding">
 
-  <div class="title" expand="full">
+  <div class="title">
+
     <div class="start">
       <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
     </div>
+
     <div class="end">
       <ion-icon slot="end" (click)="goToChat()" name="notifications-circle-outline"></ion-icon>
       <div class="notify">
         <span>4</span>
       </div>
     </div>
+    
   </div>
 
   <div class="profile">
@@ -23,7 +26,7 @@
     <h4>How are you feeling today?</h4>
 
     <div #swiperContainer class="swiper-container">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper mood-slider">
   
         <ion-col size="3" class="swiper-slide" (click)="toggleEmotion(0)" [class.selected]="isSelected(0)">
           <img src="assets/images/happy.svg" alt="happy">
@@ -84,8 +87,7 @@
     
     <div class="readmore-button">
       <div class="section-button d-flex" (click)="knowYourSelf()">
-        <div class="icon-cauch"><img src="assets/images/door-icon-blue.svg" alt="sofa"></div>
-        <div class="button-text">Get to Know Yourself Better</div>
+        <div class="button-text">Get to Know Yourself Better <ion-icon name="chevron-forward-outline"></ion-icon></div>
       </div>
     </div>
 
@@ -112,12 +114,13 @@
           <h6>Online appointment with</h6>
 
           <div class="app-doct-online d-flex">
-            <div class="doct-profile">
+            <!-- <div class="doct-profile">
               <img src="assets/images/doc1.jpg" alt="Doctor profile" >
-            </div>
+            </div> -->
 
             <div class="doct-profile-container">
               <h5>Dr Peter Lemotuz</h5>
+              <p>PhD. Cognitive Therapy</p>
             </div>
 
           </div>
@@ -249,7 +252,6 @@
       </div>
 
       <div class="read-container">
-        <div class="d-flex">
   
           <ion-card>
             <div class="card-title-mg">
@@ -263,7 +265,6 @@
               </div>
               <h5>Read more</h5>
           </div>
-  
           </ion-card>
           
           <ion-card>
@@ -284,15 +285,11 @@
       </div> 
 
     </div>
-  </div>
 
-  <div class="botton-container">
-    <div class="centered">
-      <div class="section-button blue d-flex">
-        <div class="icon-cauch"><img src="assets/images/door-icon.svg" alt="sofa"></div>
-        <div class="button-text">Visit <br/> The First AID Kit</div>
+    <div class="readmore-button">
+      <div class="section-button d-flex" (click)="knowYourSelf()">
+        <div class="button-text">Visit RAFIKI Aid Center <ion-icon name="chevron-forward-outline"></ion-icon></div>
       </div>
     </div>
-  </div>
 
 </ion-content>
