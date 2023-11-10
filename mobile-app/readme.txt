@@ -24,3 +24,29 @@
         - File affected
             - home.page.html
             - home.page.scss
+
+    5 -- Mood tracker
+        * Styles updated
+        - File affected
+            - mood-tracker.page.scss
+            - mood-tracker.page.html
+
+    6 -- Questions
+        * Styles updated
+        - File affected
+            - questions-page.scss
+
+    7 -- Questions End
+        *Styles updated
+        - File affected
+            - questions-end.page.scss
+
+    8 -- Aid Center
+        * Styles updated
+        - File affected
+            - aid-center.page.scss
+
+    8 -- Journal
+        * Styles updated
+        - File affected
+            - journal.page.scss

@@ -29,7 +29,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin: 1rem 0rem 0px 0px;
+    margin: 0;
     width: 100%;
 
     ion-thumbnail {
@@ -46,10 +46,9 @@
     }
     p {
       padding: 0 30px;
-      line-height: 1.4;
       color: var(--ion-color-sup);
-      font-size: 18px;
-      margin-top: 0px;
+      font-size: 16px;
+      margin-top: -3px;
     }
   }
   
@@ -66,12 +65,12 @@
     --background: var(--ion-card-background, var(--ion-item-background, var(--ion-background-color, #ffffff95)));
     margin: 0px;
     border-radius: 0px;
-    padding: 15px 40px;
+    padding: 15px;
     font-size: 14px;
     box-shadow: black 0px 4px 0px -7px, rgba(0, 0, 0, 0.009) 1px 2px 2px 0px, rgba(0, 0, 0, 0.099) 0px 1px 5px 0px;
 
     .select-info{
-      font-size: 12px;
+      font-size: 11px;
       line-height: 1.8;
       color: #3C3D3D;
       margin-left: 0px;
@@ -133,7 +132,7 @@
   
   .botton-container{
 
-    margin: 5px 40px 40px 40px;
+    margin: 5px;
 
     .section-button{
         background: #fff;
@@ -153,7 +152,6 @@
         line-height: 1.23;
         font-size: 16px;
         margin-top: 3px;
-        font-weight: 600;
         color: var(--ion-color-primary);
       }
     }

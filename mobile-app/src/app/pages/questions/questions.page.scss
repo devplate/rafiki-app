@@ -41,14 +41,14 @@
 
     h5 {
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 800;
       color: var(--ion-color-primary);
     }
     p {
       padding: 0 30px;
       line-height: 1.4;
       color: var(--ion-color-sup);
-      font-size: 14px;
+      font-size: 12px;
       margin-top: 0px;
     }
   }
@@ -69,8 +69,8 @@
       align-items: center;
 
       .question-number{
-        width: 100px;
-        margin-top: 40px;
+        width: 80px;
+        // margin-top: 40px;
         color: #fff;
         background: #033C58;
         text-align: center;
@@ -81,14 +81,15 @@
         left: 0;
         
         h2{
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 700;
+          margin-top: 13px;
         }
       }
     }
 
     .qn {
-      background: #F4F4F4;
+      background: #f4f4f4;
       opacity: 1;
       padding: 15px 20px 10px 20px;
       border-radius: 5px;
@@ -110,26 +111,32 @@
 
       ion-radio-group{
         ul{
-          padding-left: 20px;
+          padding: 0 20px;
           margin-top: 30px;
         }
         ul>li{
           width: 50%;
           display: inline-flex;
           list-style: none;
-          font-size: 15px;
-          margin-bottom: 10px;
+          font-size: 14px;
+          margin-bottom: 5px;
         }
       }
+
       ion-radio {
-        --border-radius: 4px;
+        // --border-radius: 4px;
         --inner-border-radius: 4px;
+        --width: 10px;
         margin-right: 7px;
       
         --color: #ddd;
         --color-checked: var(--ion-color-primary);
       }
       
+      .radio-checked.ios {
+        border-color: var(--ion-color-primary);
+      }
+
       ion-radio.ios {
         width: 20px;
         height: 20px;
@@ -144,10 +151,11 @@
       }
 
     }
+
   }
   .progress{
     padding: 30px 15px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
     ion-progress-bar{
       background: #010910;
@@ -178,7 +186,4 @@
   }
   .quote{
     height: 150px;
-  }
-  .mb{
-    margin-bottom: 40px;
   }
