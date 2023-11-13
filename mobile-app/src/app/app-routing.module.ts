@@ -127,6 +127,14 @@ const routes: Routes = [
     path: 'journal-single',
     loadChildren: () => import('./pages/journal-single/journal-single.module').then( m => m.JournalSinglePageModule)
   },
+  {
+    path: 'all-audios',
+    loadChildren: () => import('./pages/all-audios/all-audios.module').then( m => m.AllAudiosPageModule)
+  },
+  {
+    path: 'all-videos',
+    loadChildren: () => import('./pages/all-videos/all-videos.module').then( m => m.AllVideosPageModule)
+  },
 ];
 
 @NgModule({

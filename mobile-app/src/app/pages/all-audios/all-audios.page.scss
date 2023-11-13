@@ -260,8 +260,8 @@ ion-card-title{
 
 .listen-container{
 
-height: 240px;
-overflow: scroll;
+// height: 240px;
+// overflow: scroll;
 }
 .audio-container{
 
@@ -418,7 +418,8 @@ margin-bottom: 15px;
     display: inline;
     margin-right: 10px;
     text-align: center;
-    line-height: 2;
+    line-height: 1.7;
+    font-size: 15px;
   }
   .active{
     background: var(--ion-color-primary);
@@ -426,3 +427,82 @@ margin-bottom: 15px;
     color: #fff
   }
 }
+
+.audio-container{
+
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+  
+    h3{
+      font-weight: 800;
+      color: var(--ion-color-app-dark);
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+  
+    .play-button{
+  
+      width: 10%;
+      padding: 0px;
+      margin-top: 15px;
+      
+    }
+    .id-no{
+  
+      width: 10%;
+  
+      h4{
+        color: var(--ion-color-app-dark);
+        margin-top: 20px;
+      }
+    }
+    .audio-title{
+  
+      width: 74%;
+      padding-left: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      h4{
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        color: var(--ion-color-app-dark);
+        font-size: 13px;
+        font-weight: 800;
+      }
+      p{
+        margin-top: -5px !important;
+        color: var(--ion-color-app-dark);
+        font-size: 10px;
+      }
+    }
+  
+    .fev-icon{
+  
+      width: 6%;
+      margin-top: 23px;
+    }
+  
+    .watchmore-button{
+  
+      .section-button{
+        background: transparent;
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px 20px 15px 10px;
+        margin-bottom: 30px;
+        border: 1px solid #fff;
+        margin-top: 40px;
+    }
+      .button-text{
+  
+        margin-left: 18px;
+        line-height: 1.23;
+        font-size: 16px;
+        margin-top: 3px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }

@@ -1,8 +1,15 @@
 -- New page added
-    -- Journal Single Page (journey-single)
+   1 -- Journal Single Page (journey-single)
+
+   2 -- All Audio page
+        *Assets added
+            - Assets/images/svg/fev-black.svg
+
+    3 -- All Videos page
+
 
 -- Changes
-    1 -- All blog page
+    1 -- All blog
         * Active class added to the list menu(Filter)
         - file affected:
             - blog.page.html (list elements)
