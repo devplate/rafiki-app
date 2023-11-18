@@ -57,3 +57,14 @@
         * Styles updated
         - File affected
             - journal.page.scss
+
+    9. Pre-loader
+
+        Buttons properties
+            (add this property)- id="open-loading"
+             <ion-loading class="custom-loading" trigger="open-loading" message="Loading..." [duration]="3000"></ion-loading>
+
+        * to enable the pre-loader on menu page, uncomment <ion-loading> property
+
+
+        ************ THE END ***********

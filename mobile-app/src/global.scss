@@ -151,3 +151,17 @@ ion-footer {
 .d-flex{
  display: flex;   
 }
+ion-loading.custom-loading {
+  --background: #ffffff;
+  --spinner-color: var(--ion-color-app-dark);
+  color: var(--ion-color-app-dark);
+}
+ion-loading.hydrated {
+  visibility: inherit;
+  background: #ffffffd4;
+}
+.loading-wrapper.sc-ion-loading-md{
+  background: transparent;
+  -webkit-box-shadow: none;
+    box-shadow: none;
+}
