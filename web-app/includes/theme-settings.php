@@ -1,10 +1,9 @@
-<div class="offcanvas offcanvas-end border-0" data-bs-auto-show="false" tabindex="-1" id="theme-settings-offcanvas" >
+<div class="offcanvas offcanvas-end border-0"  id="theme-settings-offcanvas" >
             <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
                 <div class="me-2">
                     <h5 class="mb-1 text-white">Personalize</h5>
                     <p class="text-white text-opacity-75 mb-0">Choose your themes & layouts etc.</p>
                 </div>
-
                 <button type="button" class="btn-close btn-close-white ms-auto" id="customizerclose-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body p-0">
@@ -90,93 +89,6 @@
                             <!-- end col -->
                         </div>
 
-                        <h6 class="mt-4 fs-md mb-1">Theme</h6>
-                        <p class="text-muted fs-sm">Choose your suitable Theme.</p>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check card-radio">
-                                    <input id="customizer-theme01" name="data-theme" type="radio" value="default" class="form-check-input">
-                                    <label class="form-check-label p-0" for="customizer-theme01">
-                                        <img src="assets/images/custom-theme/light-mode.png" alt="" class="img-fluid">
-                                    </label>
-                                </div>
-                                <h5 class="fs-sm text-center fw-medium mt-2">Default</h5>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check card-radio">
-                                    <input id="customizer-theme02" name="data-theme" type="radio" value="material" class="form-check-input">
-                                    <label class="form-check-label p-0" for="customizer-theme02">
-                                        <img src="assets/images/custom-theme/material.png" alt="" class="img-fluid">
-                                    </label>
-                                </div>
-                                <h5 class="fs-sm text-center fw-medium mt-2">Material</h5>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check card-radio">
-                                    <input id="customizer-theme03" name="data-theme" type="radio" value="creative" class="form-check-input">
-                                    <label class="form-check-label p-0" for="customizer-theme03">
-                                        <img src="assets/images/custom-theme/creative.png" alt="" class="img-fluid">
-                                    </label>
-                                </div>
-                                <h5 class="fs-sm text-center fw-medium mt-2">Creative</h5>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check card-radio">
-                                    <input id="customizer-theme04" name="data-theme" type="radio" value="minimal" class="form-check-input">
-                                    <label class="form-check-label p-0" for="customizer-theme04">
-                                        <img src="assets/images/custom-theme/minimal.png" alt="" class="img-fluid">
-                                    </label>
-                                </div>
-                                <h5 class="fs-sm text-center fw-medium mt-2">Minimal</h5>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check card-radio">
-                                    <input id="customizer-theme05" name="data-theme" type="radio" value="modern" class="form-check-input">
-                                    <label class="form-check-label p-0" for="customizer-theme05">
-                                        <img src="assets/images/custom-theme/modern.png" alt="" class="img-fluid">
-                                    </label>
-                                </div>
-                                <h5 class="fs-sm text-center fw-medium mt-2">Modern</h5>
-                            </div>
-                            <!-- end col -->
-                            <div class="col-6">
-                                <div class="form-check card-radio">
-                                    <input id="customizer-theme06" name="data-theme" type="radio" value="interaction" class="form-check-input">
-                                    <label class="form-check-label p-0" for="customizer-theme06">
-                                        <img src="assets/images/custom-theme/interaction.png.jpeg" alt="" class="img-fluid">
-                                    </label>
-                                </div>
-                                <h5 class="fs-sm text-center fw-medium mt-2">Interaction</h5>
-                            </div><!-- end col -->
-                        </div>
-
-                        <h6 class="mt-4 fs-md mb-1">Color Scheme</h6>
-                        <p class="text-muted fs-sm">Choose Light or Dark Scheme.</p>
-
-                        <div class="colorscheme-cardradio">
-                            <div class="row g-3">
-                                <div class="col-6">
-                                    <div class="form-check card-radio">
-                                        <input class="form-check-input" type="radio" name="data-bs-theme" id="layout-mode-light" value="light">
-                                        <label class="form-check-label p-0 bg-transparent" for="layout-mode-light">
-                                            <img src="assets/images/custom-theme/light-mode.png" alt="" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <h5 class="fs-sm text-center fw-medium mt-2">Light</h5>
-                                </div>
-
-                                <div class="col-6">
-                                    <div class="form-check card-radio dark">
-                                        <input class="form-check-input" type="radio" name="data-bs-theme" id="layout-mode-dark" value="dark">
-                                        <label class="form-check-label p-0 bg-transparent" for="layout-mode-dark">
-                                            <img src="assets/images/custom-theme/dark-mode.png" alt="" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <h5 class="fs-sm text-center fw-medium mt-2">Dark</h5>
-                                </div>
-                            </div>
-                        </div>
 
                         <div id="layout-width">
                             <h6 class="mt-4 fs-md mb-1">Layout Width</h6>
@@ -380,31 +292,6 @@
                                     </div>
                                     <h5 class="fs-sm text-center fw-medium mt-2">Small (Icon View)</h5>
                                 </div>
-
-                                <div class="col-4">
-                                    <div class="form-check sidebar-setting card-radio">
-                                        <input class="form-check-input" type="radio" name="data-sidebar-size" id="sidebar-size-small-hover" value="sm-hover">
-                                        <label class="form-check-label p-0 avatar-md w-100" for="sidebar-size-small-hover">
-                                            <span class="d-flex gap-1 h-100">
-                                                <span class="flex-shrink-0">
-                                                    <span class="bg-light d-flex h-100 flex-column gap-1">
-                                                        <span class="d-block p-1 bg-primary-subtle mb-2"></span>
-                                                        <span class="d-block p-1 pb-0 bg-primary-subtle"></span>
-                                                        <span class="d-block p-1 pb-0 bg-primary-subtle"></span>
-                                                        <span class="d-block p-1 pb-0 bg-primary-subtle"></span>
-                                                    </span>
-                                                </span>
-                                                <span class="flex-grow-1">
-                                                    <span class="d-flex h-100 flex-column">
-                                                        <span class="bg-light d-block p-1"></span>
-                                                        <span class="bg-light d-block p-1 mt-auto"></span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <h5 class="fs-sm text-center fw-medium mt-2">Small Hover View</h5>
-                                </div>
                             </div>
                         </div>
 
@@ -568,48 +455,6 @@
                                             <span class="avatar-title rounded-circle bg-vertical-gradient-4"></span>
                                         </label>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="sidebar-img">
-                            <h6 class="mt-4 fw-semibold fs-base">Sidebar Images</h6>
-                            <p class="text-muted fs-sm">Choose a image of Sidebar.</p>
-
-                            <div class="d-flex gap-2 flex-wrap img-switch">
-                                <div class="form-check sidebar-setting card-radio">
-                                    <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-none" value="none">
-                                    <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-none">
-                                        <span class="avatar-md w-auto bg-light d-flex align-items-center justify-content-center">
-                                            <i class="ri-close-fill fs-3xl"></i>
-                                        </span>
-                                    </label>
-                                </div>
-
-                                <div class="form-check sidebar-setting card-radio">
-                                    <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-01" value="img-1">
-                                    <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-01">
-                                        <img src="assets/images/sidebar/img-sm-1.jpg" alt="" class="avatar-md w-auto object-cover">
-                                    </label>
-                                </div>
-
-                                <div class="form-check sidebar-setting card-radio">
-                                    <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-02" value="img-2">
-                                    <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-02">
-                                        <img src="assets/images/sidebar/img-sm-2.jpg" alt="" class="avatar-md w-auto object-cover">
-                                    </label>
-                                </div>
-                                <div class="form-check sidebar-setting card-radio">
-                                    <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-03" value="img-3">
-                                    <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-03">
-                                        <img src="assets/images/sidebar/img-sm-3.jpg" alt="" class="avatar-md w-auto object-cover">
-                                    </label>
-                                </div>
-                                <div class="form-check sidebar-setting card-radio">
-                                    <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-04" value="img-4">
-                                    <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-04">
-                                        <img src="assets/images/sidebar/img-sm-4.jpg" alt="" class="avatar-md w-auto object-cover">
-                                    </label>
                                 </div>
                             </div>
                         </div>

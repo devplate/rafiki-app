@@ -1,3 +1,5 @@
+<?php include 'connect/database.php'; ?>
+
 <!doctype html>
 
 <html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="dark" data-sidebar-size="lg" data-preloader="enable" data-theme="default" data-bs-theme="light">
@@ -41,10 +43,10 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                <div class="chat-wrapper d-lg-flex gap-1 p-1 mb-3">
+                    <div class="chat-wrapper d-lg-flex gap-1 p-1 mb-3">
                         <div class="chat-wrapper-menu p-3 d-flex flex-column rounded">
                             <div class="mb-3 position-relative d-none d-lg-block">
-                                <a href="apps-chat.html#!"><img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-sm rounded"></a>
+                                <a href="apps-chat.html#!"><img src="<?php echo $_SESSION["user"]["logo"]; ?>" alt="" class="avatar-sm rounded"></a>
                                 <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-success p-1"><span class="visually-hidden">unread messages</span></span>
                             </div>
                             <ul class="chat-menu list-unstyled text-center nav nav-pills justify-content-center">
@@ -95,16 +97,27 @@
                                             </div>
                                         </div>
                                         <div class="search-box">
-                                            <input type="text" class="form-control bg-light border-light" placeholder="Search here...">
+                                            <input type="text" name="query" class="form-control bg-light border-light" placeholder="Search here...">
                                             <i class="ri-search-2-line search-icon"></i>
                                         </div>
                                     </div> <!-- .p-4 -->
-                            
+
                                     <div class="chat-room-list" data-simplebar>
                                         <div class="chat-message-list">
-                                            <ul class="list-unstyled chat-list chat-user-list" id="userList"></ul>
+                                            <ul class="list-unstyled chat-list chat-user-list" id="userList">
+                                                <li id="contact-id-4" data-name="direct-message" class=""> <a href="javascript: void(0);">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
+                                                                <div class="avatar-xxs"> <img src="assets/images/users/avatar-4.jpg" class="rounded-circle img-fluid userprofile" alt=""><span class="user-status"></span> </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 overflow-hidden">
+                                                                <p class="text-truncate mb-0">Janette Caster</p>
+                                                            </div>
+                                                        </div>
+                                                    </a> </li>
+                                            </ul>
                                         </div>
-                                    
+
                                         <div class="d-flex align-items-center px-4 mt-4 pt-4 mb-2">
                                             <div class="flex-grow-1">
                                                 <h4 class="mb-0 fs-xs text-muted text-uppercase">Channels</h4>
@@ -118,7 +131,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="chat-message-list">
                                             <ul class="list-unstyled chat-list chat-user-list mb-0" id="channelList">
                                             </ul>
@@ -129,7 +142,7 @@
                                 </div>
                                 <!-- end tab pane -->
                                 <div class="tab-pane fade" id="pills-contacts">
-                                    <div >
+                                    <div>
                                         <div class="p-4">
                                             <div class="d-flex align-items-start">
                                                 <div class="flex-grow-1">
@@ -151,7 +164,7 @@
                                         </div> <!-- .p-4 -->
                                         <div>
                                             <div class="chat-room-list" data-simplebar>
-                                                <div class="sort-contact">            
+                                                <div class="sort-contact">
                                                 </div>
                                             </div>
                                         </div>
@@ -173,7 +186,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Warren Hickey</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Warren Hickey</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-down-left text-success"></i> 22 Feb, 06:49PM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -198,7 +213,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Angela Walls</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Angela Walls</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-down-left text-success"></i> 22 Feb, 03:23PM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -223,7 +240,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Thomas Lane</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Thomas Lane</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-up-right text-danger"></i> 22 Feb, 10:31AM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -248,7 +267,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Elisa Smith</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Elisa Smith</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-down-left text-success"></i> 21 Feb, 07:05PM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -273,7 +294,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Ola Black</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Ola Black</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-up-right text-danger"></i> 21 Feb, 05:15PM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -298,7 +321,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Victoria McBride</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Victoria McBride</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-down-left text-success"></i> 21 Feb, 10:30AM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -323,7 +348,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Carla Scott</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Carla Scott</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-up-right text-danger"></i> 20 Feb, 05:20PM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -348,7 +375,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Waldo Smith</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Waldo Smith</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-down-left text-success"></i> 20 Feb, 01:40PM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -373,7 +402,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Mary Parker</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Mary Parker</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-up-right text-danger"></i> 19 Feb, 11:29AM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -398,7 +429,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="flex-grow-1 overflow-hidden">
-                                                            <a href="apps-chat.html#!" class="p-0"><p class="fw-medium text-truncate mb-0">Judith Morrow</p></a>
+                                                            <a href="apps-chat.html#!" class="p-0">
+                                                                <p class="fw-medium text-truncate mb-0">Judith Morrow</p>
+                                                            </a>
                                                             <div class="text-muted fs-xs text-truncate"><i class="bi bi-arrow-down-left text-success"></i> 18 Feb, 02:05PM</div>
                                                         </div>
                                                         <div class="flex-shrink-0 ms-3">
@@ -439,7 +472,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">design-phase-1-approved.pdf</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">12.5 MB</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -466,7 +499,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">Bg Pattern</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">https://bgpattern.com/</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -493,7 +526,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">Image-001.jpg</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">4.2 MB</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -520,7 +553,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">Images</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">https://images123.com/</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -547,7 +580,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">Bg Gradient</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">https://bggradient.com/</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -574,7 +607,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">Image-012.jpg</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">3.1 MB</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -601,7 +634,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">analytics dashboard.zip</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">6.7 MB</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -628,7 +661,7 @@
                                                             <h5 class="mb-1"><a href="apps-chat.html#" class="text-truncate p-0">Image-031.jpg</a></h5>
                                                             <p class="text-muted text-truncate fs-xs mb-0">4.2 MB</p>
                                                         </div>
-            
+
                                                         <div class="flex-shrink-0 ms-3">
                                                             <div class="dropdown">
                                                                 <a class="fs-md text-muted px-1" href="apps-chat.html#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -654,7 +687,7 @@
                                         <div class="px-4 pt-4">
                                             <h5 class="mb-4">Attachment</h5>
                                         </div>
-                                        
+
                                         <div class="chat-bookmark-list px-4" data-simplebar>
                                             <div class="card p-2 border mb-2">
                                                 <div class="d-flex align-items-center">
@@ -667,7 +700,7 @@
                                                         <h5 class="fs-sm fw-medium text-truncate mb-1">design-phase-1-approved.pdf</h5>
                                                         <p class="text-muted fs-xs mb-0">12.5 MB</p>
                                                     </div>
-    
+
                                                     <div class="flex-shrink-0 ms-3">
                                                         <div class="d-flex gap-2">
                                                             <div>
@@ -690,7 +723,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <div class="card p-2 border mb-2">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 avatar-xs ms-1 me-3">
@@ -702,7 +735,7 @@
                                                         <h5 class="fs-sm fw-medium text-truncate mb-1">Image-1.jpg</h5>
                                                         <p class="text-muted fs-xs mb-0">4.2 MB</p>
                                                     </div>
-    
+
                                                     <div class="flex-shrink-0 ms-3">
                                                         <div class="d-flex gap-2">
                                                             <div>
@@ -725,7 +758,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <div class="card p-2 border mb-2">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 avatar-xs ms-1 me-3">
@@ -737,7 +770,7 @@
                                                         <h5 class="fs-sm fw-medium text-truncate mb-1">Image-2.jpg</h5>
                                                         <p class="text-muted fs-xs mb-0">3.1 MB</p>
                                                     </div>
-    
+
                                                     <div class="flex-shrink-0 ms-3">
                                                         <div class="d-flex gap-2">
                                                             <div>
@@ -760,7 +793,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <div class="card p-2 border mb-2">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 avatar-xs ms-1 me-3">
@@ -772,7 +805,7 @@
                                                         <h5 class="fs-sm fw-medium text-truncate mb-1">Landing-A.zip</h5>
                                                         <p class="text-muted fs-xs mb-0">6.7 MB</p>
                                                     </div>
-    
+
                                                     <div class="flex-shrink-0 ms-3">
                                                         <div class="d-flex gap-2">
                                                             <div>
@@ -796,7 +829,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <!-- end tab-pane -->
@@ -872,7 +905,7 @@
                                         </div><!--end col-->
                                     </div><!--end row-->
                                 </div>
-                                
+
                                 <div class="p-3 chat-input-section border-top border-2">
                                     <div class="row align-items-center justify-content-between">
                                         <div class="col-lg-12">
@@ -891,7 +924,7 @@
                                 <div class="w-100 overflow-hidden position-relative">
                                     <!-- conversation user -->
                                     <div class="position-relative">
-                    
+
                                         <div class="position-relative" id="users-chat">
                                             <div class="p-3 user-chat-topbar border-bottom border-2">
                                                 <div class="row align-items-center flex-nowrap">
@@ -907,7 +940,7 @@
                                                                         <span class="user-status"></span>
                                                                     </div>
                                                                     <div class="flex-grow-1 overflow-hidden">
-                                                                        <h5 class="text-truncate mb-1 fs-lg"><a class="text-reset username" data-bs-toggle="offcanvas" href="apps-chat.html#userProfileCanvasExample" aria-controls="userProfileCanvasExample">Lisa Parker</a></h5>
+                                                                        <h5 class="text-truncate mb-1 fs-lg"><a class="text-reset username" data-bs-toggle="offcanvas" href="apps-chat.html#userProfileCanvasExample" aria-controls="userProfileCanvasExample">Jennifer</a></h5>
                                                                         <p class="text-truncate text-muted fs-md mb-0 userStatus"><small>Online</small></p>
                                                                     </div>
                                                                 </div>
@@ -931,7 +964,7 @@
                                                                     </div>
                                                                 </div>
                                                             </li>
-                    
+
                                                             <li class="list-inline-item d-none d-lg-inline-block m-0">
                                                                 <button type="button" class="btn btn-ghost-secondary fs-lg btn-icon video-icon">
                                                                     <i class="bi bi-camera-video"></i>
@@ -943,7 +976,7 @@
                                                                     <i class="bi bi-telephone"></i>
                                                                 </button>
                                                             </li>
-                    
+
                                                             <li class="list-inline-item m-0">
                                                                 <div class="dropdown">
                                                                     <button class="btn btn-ghost-secondary fs-lg btn-icon" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -960,7 +993,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                    
+
                                             </div>
                                             <!-- end chat user head -->
                                             <div class="chat-conversation p-3 p-lg-4" id="chat-conversation" data-simplebar>
@@ -970,7 +1003,7 @@
                                                     </div>
                                                 </div>
                                                 <ul class="list-unstyled chat-conversation-list" id="users-conversation">
-                    
+
                                                 </ul>
                                                 <!-- end chat-conversation-list -->
                                             </div>
@@ -978,7 +1011,7 @@
                                                 Message copied
                                             </div>
                                         </div>
-                    
+
                                         <div class="position-relative" id="channel-chat">
                                             <div class="p-3 user-chat-topbar border-bottom border-2">
                                                 <div class="row align-items-center flex-nowrap">
@@ -1010,20 +1043,20 @@
                                                                     <div class="dropdown-menu p-0 dropdown-menu-end dropdown-menu-lg">
                                                                         <div class="p-2">
                                                                             <div class="search-box">
-                                                                                <input type="text" class="form-control bg-light border-light"  autocomplete="off" placeholder="Search here..." onkeyup="searchMessages()" id="searchMessage">
+                                                                                <input type="text" class="form-control bg-light border-light" autocomplete="off" placeholder="Search here..." onkeyup="searchMessages()" id="searchMessage">
                                                                                 <i class="ri-search-2-line search-icon"></i>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </li>
-                    
+
                                                             <li class="list-inline-item d-none d-lg-inline-block m-0">
                                                                 <button type="button" class="btn btn-ghost-secondary btn-icon" data-bs-toggle="offcanvas" data-bs-target="#userProfileCanvasExample" aria-controls="userProfileCanvasExample">
                                                                     <i class="bi bi-info-circle"></i>
                                                                 </button>
                                                             </li>
-                    
+
                                                             <li class="list-inline-item m-0">
                                                                 <div class="dropdown">
                                                                     <button class="btn btn-ghost-secondary fs-lg btn-icon" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1040,24 +1073,24 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                    
+
                                             </div>
                                             <!-- end chat user head -->
                                             <div class="chat-conversation p-3 p-lg-4" id="chat-conversation" data-simplebar>
                                                 <ul class="list-unstyled chat-conversation-list" id="channel-conversation">
                                                 </ul>
                                                 <!-- end chat-conversation-list -->
-                    
+
                                             </div>
                                             <div class="alert alert-warning alert-dismissible copyclipboard-alert px-4 fade show " id="copyClipBoardChannel" role="alert">
                                                 Message copied
                                             </div>
                                         </div>
-                    
+
                                         <!-- end chat-conversation -->
-                    
+
                                         <div class="chat-input-section p-3 p-lg-4 border-top border-2">
-                    
+
                                             <form id="chatinput-form" enctype="multipart/form-data">
                                                 <div class="row g-0 align-items-center">
                                                     <div class="col-auto">
@@ -1069,7 +1102,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                    
+
                                                     <div class="col">
                                                         <div class="chat-input-feedback">
                                                             Please Enter a Message
@@ -1079,17 +1112,17 @@
                                                     <div class="col-auto">
                                                         <div class="chat-input-links ms-2">
                                                             <div class="links-list-item">
-                                                                <button type="submit" class="btn btn-dark chat-send waves-effect waves-light">
+                                                                <button type="submit" id="send" class="btn btn-dark chat-send waves-effect waves-light">
                                                                     <i class="ph-paper-plane-right align-middle"></i>
                                                                 </button>
                                                             </div>
                                                         </div>
                                                     </div>
-                    
+
                                                 </div>
                                             </form>
                                         </div>
-                    
+
                                         <div class="replyCard">
                                             <div class="card mb-0">
                                                 <div class="card-body py-3">
@@ -1144,18 +1177,313 @@
 
     <!-- javascript links starts  -->
     <?php include 'includes/javascripts.php'; ?>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.11/signalr.min.js"></script>
 
     <!-- glightbox js -->
     <script src="assets/libs/glightbox/js/glightbox.min.js"></script>
-    
+
     <!-- fgEmojiPicker js -->
     <script src="assets/libs/fg-emoji-picker/fgEmojiPicker.js"></script>
-    
+
     <!-- chat init js -->
     <script src="assets/js/pages/chat.init.js"></script>
 
     <!-- javascript links ends -->
+    <script>
+        let connection;
+        const userList = document.getElementById("userList");
+        const chatHeader = document.getElementById("users-chat");
+        var currentUser;
+        // hii token vriable utapata value zake baada ya kutumia api ya sign in 
 
+        // URL of the API endpoint you want to fetch data from
+        const apiUrl = "https://apis.rafikiapp.co.tz/auth";
+        var tkn = "";
+        const postData = {
+            email: "<?php echo $_SESSION["user"]["email"] ?>",
+            uid: "0"
+        };
+
+        // Create the request configuration
+        const requestOptions = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+
+            },
+           
+            body: JSON.stringify(postData) // Convert the data to JSON format
+        };
+        // Send a GET request using the fetch API
+
+        function ShowChat(data) {
+            connection.invoke("GetUser",data).catch((err) => console.error(err.toString()));
+            connection.invoke("GetChat",data).catch((err) => console.error(err.toString()));
+            
+        }
+
+        function intergrateHeaderChat(data) {
+           
+            var result = JSON.parse(data); 
+            currentUser = result;
+            console.log(result);          
+            chatHeader.innerHTML = `
+            <div class="p-3 user-chat-topbar border-bottom border-2">
+                                                <div class="row align-items-center flex-nowrap">
+                                                    <div class="col-sm-4 col">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 d-block d-lg-none me-3">
+                                                                <a href="javascript: void(0);" class="user-chat-remove fs-lg p-1"><i class="ri-arrow-left-s-line align-bottom"></i></a>
+                                                            </div>
+                                                            <div class="flex-grow-1 overflow-hidden">
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="flex-shrink-0 chat-user-img online user-own-img align-self-center me-3 ms-0">
+                                                                        <img src="${result.logo}" class="rounded-circle avatar-xs" alt="">
+                                                                        <span class="user-status"></span>
+                                                                    </div>
+                                                                    <div class="flex-grow-1 overflow-hidden">
+                                                                        <h5 class="text-truncate mb-1 fs-lg"><a class="text-reset username" data-bs-toggle="offcanvas" href="apps-chat.html#userProfileCanvasExample" aria-controls="userProfileCanvasExample">${result.first_name}</a></h5>
+                                                                        <p class="text-truncate text-muted fs-md mb-0 userStatus"><small>Online</small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-auto">
+                                                        <ul class="list-inline user-chat-nav text-end mb-0">
+                                                            <li class="list-inline-item m-0">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-ghost-secondary btn-icon" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        <i class="bi bi-search"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu p-0 dropdown-menu-end dropdown-menu-lg">
+                                                                        <div class="p-2">
+                                                                            <div class="search-box">
+                                                                                <input type="text" class="form-control bg-light border-light" autocomplete="off" placeholder="Search here..." onkeyup="searchMessages()" id="searchMessage">
+                                                                                <i class="ri-search-2-line search-icon"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="list-inline-item d-none d-lg-inline-block m-0">
+                                                                <button type="button" class="btn btn-ghost-secondary fs-lg btn-icon video-icon">
+                                                                    <i class="bi bi-camera-video"></i>
+                                                                </button>
+                                                            </li>
+
+                                                            <li class="list-inline-item d-none d-lg-inline-block m-0">
+                                                                <button type="button" class="btn btn-ghost-secondary fs-lg btn-icon" data-bs-toggle="offcanvas" data-bs-target="#userProfileCanvasExample" aria-controls="userProfileCanvasExample">
+                                                                    <i class="bi bi-telephone"></i>
+                                                                </button>
+                                                            </li>
+
+                                                            <li class="list-inline-item m-0">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-ghost-secondary fs-lg btn-icon" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        <i class="bi bi-three-dots-vertical"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                        <a class="dropdown-item d-block d-lg-none user-profile-show" href="apps-chat.html#"><i class="ri-user-2-fill align-bottom text-muted me-2"></i> View Profile</a>
+                                                                        <a class="dropdown-item" href="apps-chat.html#"><i class="ri-inbox-archive-line align-bottom text-muted me-2"></i> Archive</a>
+                                                                        <a class="dropdown-item" href="apps-chat.html#"><i class="ri-mic-off-line align-bottom text-muted me-2"></i> Muted</a>
+                                                                        <a class="dropdown-item" href="apps-chat.html#"><i class="ri-delete-bin-5-line align-bottom text-muted me-2"></i> Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- end chat user head -->
+                                            <div class="chat-conversation p-3 p-lg-4" id="chat-conversation" data-simplebar>
+                                                <div id="elmLoader">
+                                                    <div class="spinner-border text-primary avatar-sm" role="status">
+                                                        <span class="visually-hidden">Loading...</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="list-unstyled chat-conversation-list" id="users-conversation">
+
+                                                </ul>
+                                                <!-- end chat-conversation-list -->
+                                            </div>
+                                            <div class="alert alert-warning alert-dismissible copyclipboard-alert px-4 fade show " id="copyClipBoard" role="alert">
+                                                Message copied
+                                            </div>
+            `;
+        }
+
+        function intergrateChat(data) {
+            const chatList = document.getElementById("users-conversation");
+            var chats = JSON.parse(data);
+            chats.messages.forEach(item => {
+                const chatItem = document.createElement('li');
+                chatItem.id = "1";
+                if (item.receiver.email === currentUser.email) {
+                    chatItem.setAttribute("class", "chat-list right");
+                    var temp = currentUser.logo;
+                    currentUser.logo = "<?php echo $_SESSION["user"]["logo"]; ?>";
+                } else {
+                    chatItem.setAttribute("class", "chat-list left");
+
+                }
+                chatItem.innerHTML = `              
+                        <div class="conversation-list">
+                            <div class="chat-avatar"><img src="${currentUser.logo}" alt=""></div>
+                            <div class="user-chat-content">
+                                <div class="ctext-wrap">
+                                    <div class="ctext-wrap-content" id="1">
+                                        <p class="mb-0 ctext-content">${item.content}</p>
+                                    </div>
+                                    <div class="dropdown align-self-start message-box-drop"> <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="bi bi-three-dots-vertical"></i> </a>
+                                        <div class="dropdown-menu"> <a class="dropdown-item reply-message" href="#"><i class="bi bi-reply me-2 text-muted"></i>Reply</a> <a class="dropdown-item" href="#"><i class="bi bi-share me-2 text-muted"></i>Forward</a> <a class="dropdown-item copy-message" href="#"><i class="bi bi-clipboard-check me-2 text-muted"></i>Copy</a> <a class="dropdown-item" href="#"><i class="bi bi-bookmarks me-2 text-muted"></i>Bookmark</a> <a class="dropdown-item delete-item" href="#"><i class="bi bi-trash3 me-2 text-muted"></i>Delete</a> </div>
+                                    </div>
+                                </div>
+                                <div class="conversation-name"><span class="d-none name">Lisa Parker</span><small class="text-muted time">${item.timestamp}</small> <span class="text-success check-message-icon"><i class="bx bx-check-double"></i></span></div>
+                            </div>
+                        </div>
+                    
+                                          
+                `;
+                chatList.appendChild(chatItem);
+                currentUser.logo = temp;
+            });
+        }
+
+        function intergrateUserlist(data) {
+            userList.innerHTML = " ";
+
+            const jsonObject = JSON.parse(data);
+
+            jsonObject.forEach(item => {
+                const userItem = document.createElement('li');
+                userItem.id = "contact-id-4";
+                userItem.setAttribute("data-name", "direct-message");
+                userItem.innerHTML = `
+               
+                                                 <a href="javascript: void(0);" onclick="ShowChat('${item.email}')">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
+                                                                <div class="avatar-xxs"> <img src="${item.logo}" class="rounded-circle img-fluid userprofile" alt=""><span class="user-status"></span> </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 overflow-hidden">
+                                                                <p class="text-truncate mb-0">${item.first_name} ${item.last_name}</p>
+                                                            </div>
+                                                        </div>
+                                                    </a> 
+                                          
+                `;
+                userList.appendChild(userItem);
+            });
+        }
+        function appendChat(userId,message){
+            user = JSON.parse(userId);
+            content = JSON.parse(message);
+            console.log(user);
+            console.log(content);
+            const chatItem = document.createElement('li');
+                    const chatList = document.getElementById("users-conversation");
+
+                    chatItem.id = "1";
+
+                    chatItem.setAttribute("class", "chat-list left");
+
+                    const now = new Date();
+                    const currentTime = now.toLocaleTimeString();
+                    chatItem.innerHTML = `                
+                        <div class="conversation-list">                            
+                            <div class="user-chat-content">
+                                <div class="ctext-wrap">
+                                    <div class="ctext-wrap-content" id="1">
+                                        <p class="mb-0 ctext-content">${content.content}</p>
+                                    </div>
+                                    <div class="dropdown align-self-start message-box-drop"> <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="bi bi-three-dots-vertical"></i> </a>
+                                        <div class="dropdown-menu"> <a class="dropdown-item reply-message" href="#"><i class="bi bi-reply me-2 text-muted"></i>Reply</a> <a class="dropdown-item" href="#"><i class="bi bi-share me-2 text-muted"></i>Forward</a> <a class="dropdown-item copy-message" href="#"><i class="bi bi-clipboard-check me-2 text-muted"></i>Copy</a> <a class="dropdown-item" href="#"><i class="bi bi-bookmarks me-2 text-muted"></i>Bookmark</a> <a class="dropdown-item delete-item" href="#"><i class="bi bi-trash3 me-2 text-muted"></i>Delete</a> </div>
+                                    </div>
+                                </div>
+                                <div class="conversation-name"><span class="d-none name">Lisa Parker</span><small class="text-muted time">${currentTime}</small> <span class="text-success check-message-icon"><i class="bx bx-check-double"></i></span></div>
+                            </div>
+                        </div>
+                    
+                                          
+                `;
+                    chatList.appendChild(chatItem);
+        }
+        // hii ndo request ya kupata hio token na kuinitialize signalR 
+        // package ya signalR tayari ipo included above
+        fetch(apiUrl, requestOptions)
+            .then(response => {
+                // Check if the response status is OK (200)
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                // Parse the response body as JSON
+                return response.json();
+            })
+            .then(data => {
+                // Handle the JSON data
+                console.log(data.tkn);
+
+                const hubUrl = "https://apis.rafikiapp.co.tz/chatHub";
+
+                // Create a connection to the SignalR hub
+                connection = new signalR.HubConnectionBuilder()
+                    .withUrl(hubUrl, {
+                        accessTokenFactory: () => data.tkn
+                    })
+                    .build();
+
+                // Handle received messages
+                connection.on("ReceiveMessage", (userId, message) => {
+                    console.log(message);
+                    // message zikae kwenye UI hapa
+                    appendChat(userId,message);
+                });
+                connection.on("Result", (result) => {
+                    intergrateUserlist(result);
+                });
+                connection.on("User", (result) => {
+                    intergrateHeaderChat(result);
+
+                });
+                connection.on("Chat", (result) => {
+                    console.log(result);
+                    intergrateChat(result);
+                });
+
+                // Start the connection
+                connection.start({
+                    withCredentials: false
+                }).catch((err) => console.error(err.toString()));
+                document.querySelector('input[name="query"]').addEventListener('input', function(event) {
+                    // Handle the input event
+
+                    connection.invoke("GetPatients", event.target.value).catch((err) => console.error(err.toString()));
+
+                });
+                // Send a message when the "Send" button is clicked
+                document.getElementById("send").addEventListener("click", () => {
+                    const messageInput = document.getElementById("chat-input");
+                    const message = messageInput.value;
+                    
+
+
+                    // Send the message to the server
+                    connection.invoke("SendPrivateMessage", currentUser.email , message).catch((err) => console.error(err.toString()));
+                    appendChat();
+                });
+
+            })
+            .catch(error => {
+                // Handle errors
+                console.error("Fetch error:", error);
+            });
+
+        // Update the URL to your SignalR hub
+    </script>
 
 </body>
 

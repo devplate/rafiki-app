@@ -1,3 +1,7 @@
+<?php include 'connect/database.php';
+
+?>
+
 <!doctype html>
 
 <html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="dark" data-sidebar-size="lg" data-preloader="enable" data-theme="default" data-bs-theme="light">
@@ -46,7 +50,7 @@
                             <div class="card-header">
                             </div><!-- end card header -->
                             <div class="card-body form-steps">
-                                <form action="#">
+                                <form action="connect/database.php" method="post">
 
                                     <!-- menu section -->
                                     <div class="step-arrow-nav mb-4">
@@ -55,7 +59,7 @@
                                                 <button class="nav-link active" id="steparrow-gen-info-tab" data-bs-toggle="pill" data-bs-target="#steparrow-gen-info" type="button" role="tab" aria-controls="steparrow-gen-info" aria-selected="true">Personal details</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="steparrow-description-info-tab" data-bs-toggle="pill" data-bs-target="#steparrow-description-info" type="button" role="tab" aria-controls="steparrow-description-info" aria-selected="false">Qualification details</button>
+                                                <button class="nav-link" id="steparrow-description-info-tab" data-bs-toggle="pill" data-bs-target="#steparrow-description-info" type="button" role="tab" aria-controls="steparrow-description-info" aria-selected="false">Medical details</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Finish</button>
@@ -72,7 +76,7 @@
                                                     <div class="profile-user position-relative d-inline-block mx-auto mb-3">
                                                         <img src="assets/images/users/user-dummy-img.jpg" class="rounded-circle avatar-lg img-thumbnail user-profile-image" alt="user-profile-image">
                                                         <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
-                                                            <input id="profile-img-file-input" type="file" class="profile-img-file-input" accept="image/png, image/jpeg">
+                                                            <input id="profile-img-file-input" name="profile-img-file-input" type="file" class="profile-img-file-input" accept="image/png, image/jpeg">
                                                             <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
                                                                 <span class="avatar-title rounded-circle bg-light text-body">
                                                                     <i class="ri-camera-fill"></i>
@@ -88,19 +92,19 @@
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-name-input">First name <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="steparrow-gen-info-name-input" placeholder="Enter first name">
+                                                            <input type="text" data-value name="patient_first_name" class="form-control" id="steparrow-gen-info-name-input" placeholder="Enter first name">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-name-input">Second name <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="steparrow-gen-info-name-input" placeholder="Enter second name">
+                                                            <input type="text" data-value name="patient_second_name" class="form-control" id="steparrow-gen-info-name-input" placeholder="Enter second name">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-name-input">Last name <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="steparrow-gen-info-name-input" placeholder="Enter last name">
+                                                            <input type="text" data-value name="patient_last_name" class="form-control" id="steparrow-gen-info-name-input" placeholder="Enter last name">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -110,19 +114,19 @@
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="cleave-phone">Phone number <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="cleave-phone" placeholder="+255 xxx xxx xxxx">
+                                                            <input type="text" data-value name="patient_phone_number" class="form-control" id="cleave-phone" placeholder="+255 xxx xxx xxxx">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="cleave-alt-phone">Alternative number <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="cleave-alt-phone" placeholder="+255 xxx xxx xxxx">
+                                                            <input type="text" data-value name="patient_alt_phone_number" class="form-control" id="cleave-alt-phone" placeholder="+255 xxx xxx xxxx">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-email-input">Email address <span class="text-danger">*</span></label>
-                                                            <input type="email" class="form-control" id="steparrow-gen-info-email-input" placeholder="Enter email address">
+                                                            <input type="email" data-value name="patient_email" class="form-control" id="steparrow-gen-info-email-input" placeholder="Enter email address">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -135,10 +139,10 @@
                                                         <div class="mb-4">
                                                             <label class="form-label" for="cleave-phone">Gender <span class="text-danger">*</span></label>
                                                             <div class="mb-2">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                <input class="form-check-input" value="female" type="radio" data-value name="patient_gender" id="flexRadioDefault1">
                                                                 <label class="form-check-label" for="flexRadioDefault1"> Female </label>
                                                             </div>
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <input class="form-check-input" value="male" type="radio" data-value name="patient_gender" id="flexRadioDefault2">
                                                             <label class="form-check-label" for="flexRadioDefault2"> Male </label>
                                                         </div>
                                                     </div>
@@ -146,14 +150,14 @@
                                                     <div class="col-lg-2">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="cleave-phone">Birth date <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" placeholder="DD-MM-YYYY" id="cleave-date">
+                                                            <input type="text" data-value name="patient_birth_date" class="form-control" placeholder="DD-MM-YYYY" id="cleave-date">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="cleave-alt-phone">Nationality <span class="text-danger">*</span></label>
                                                             <!-- Country names and Country Name -->
-                                                            <select class="form-select" id="country" name="country">
+                                                            <select class="form-select" id="country" data-value name="country">
                                                                 <option value="">Select country</option>
                                                                 <option value="Afghanistan">Afghanistan</option>
                                                                 <option value="Aland Islands">Aland Islands</option>
@@ -414,7 +418,7 @@
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="cleave-alt-phone">National ID <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="cleave-alt-phone" placeholder="Enter national id">
+                                                            <input type="text" data-value name="patient_national_id" class="form-control" id="cleave-alt-phone" placeholder="Enter national id">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -426,7 +430,7 @@
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-lname-input">Marital status <span class="text-danger">*</span></label>
-                                                            <select class="form-select" id="state">
+                                                            <select class="form-select" data-value name="patient_maritial" id="state">
                                                                 <option value="">Select</option>
                                                                 <option value="Single">Single</option>
                                                                 <option value="Marriage">Marriage</option>
@@ -436,7 +440,7 @@
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-email-input">Languages <span class="text-danger">*</span></label>
-                                                            <select class="form-control" id="choices-multiple-remove-button" data-choices data-choices-removeItem name="choices-multiple-remove-button" multiple>
+                                                            <select class="form-control" data-value name="patient_language" id="choices-multiple-remove-button" data-choices data-choices-removeItem data-value name="choices-multiple-remove-button" multiple>
                                                                 <option value="English" selected>English</option>
                                                                 <option value="Swahili">Swahili</option>
                                                                 <option value="French">French</option>
@@ -451,14 +455,14 @@
                                                     <div class="col-lg-12">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-email-input">Physical address <span class="text-danger">*</span></label>
-                                                            <input type="email" class="form-control" id="steparrow-gen-info-email-input" placeholder="Enter physical address">
+                                                            <input type="email" data-value name="patient_physical" class="form-control" id="steparrow-gen-info-email-input" placeholder="Enter physical address">
                                                         </div>
                                                     </div>
 
                                                     <div class="col-lg-12">
                                                         <div class="mb-4">
                                                             <label class="form-label mb-2" for="steparrow-gen-info-email-input">Biography</label>
-                                                            <textarea class="form-control" placeholder="Enter Description" id="gen-info-description-input" rows="4"></textarea>
+                                                            <textarea class="form-control" data-value name="patient_bio" placeholder="Enter Description" id="gen-info-description-input" rows="4"></textarea>
                                                         </div><!-- end card-body -->
                                                     </div>
                                                 </div>
@@ -477,7 +481,7 @@
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-fname-input">Company name <span class="text-danger">*</span></label>
-                                                        <select class="form-select" id="state">
+                                                        <select class="form-select" data-value name="patient_company_name" id="companies">
                                                             <option value="">Select</option>
                                                             <option value="Vodacom Tanzania">Vodacom Tanzania</option>
                                                             <option value="Tigo Tanzania">Tigo Tanzania</option>
@@ -489,7 +493,7 @@
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-sname-input">Department <span class="text-danger">*</span></label>
-                                                        <select class="form-select" id="state">
+                                                        <select data-id class="form-select" data-value name="patient_department_name" id="depts">
                                                             <option value="">Select</option>
                                                             <option value="Department one">Department one</option>
                                                             <option value="Department two">Department two</option>
@@ -497,24 +501,52 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <script>
+                                                    function append(response) {
+                                                        document.getElementById("companies").innerHTML = response;
+                                                    }
 
+                                                    document.querySelector("#companies").addEventListener("change", (event) => {
+
+                                                        getDepts();
+                                                    });
+
+                                                    function getDepts() {
+                                                        let companies = document.querySelector("#companies");
+                                                        fetch("https://www.rafikiapp.tz/web-app/connect/metadata.php?post_depts=" + document.querySelector("#companies").selectedOptions[0].dataset.id, {
+                                                            method: "GET",
+                                                            headers: {
+                                                                "Content-Type": "application/x-www-form-urlencoded"
+                                                            }
+                                                        }).then((response) => response.text()).then((text) => {
+                                                            document.querySelector("#depts").innerHTML = text;
+                                                        });
+                                                    }
+                                                    fetch("https://www.rafikiapp.tz/web-app/connect/metadata.php?post_companies=1", {
+                                                        method: "GET",
+                                                        headers: {
+                                                            "Content-Type": "application/x-www-form-urlencoded"
+                                                        }
+                                                    }).then((response) => response.text()).then((text) => append(text));
+                                                </script>
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-lname-input">Job title <span class="text-danger">*</span></label>
-                                                        <input type="email" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter job title">
+                                                        <input type="text" data-value name="patient_job_title" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter job title">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-lname-input">Employee ID <span class="text-danger">*</span></label>
-                                                        <input type="email" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter employee ID">
+                                                        <input type="text" data-value name="patient_emp_id" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter employee ID">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
-                                                        <label class="form-label" for="steparrow-gen-info-sname-input">Education level</label><select class="form-select" id="qualification" name="qualification">
+                                                        <label class="form-label" for="steparrow-gen-info-sname-input">Education level</label>
+                                                        <select class="form-select" id="qualification" data-value name="qualification">
                                                             <option value="">Select an education level</option>
                                                             <option value="Certificate">Certificate</option>
                                                             <option value="Diploma">Diploma</option>
@@ -539,21 +571,21 @@
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-fname-input">First name <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="steparrow-gen-info-fname-input" placeholder="Enter first name">
+                                                        <input type="text" data-value name="contact_first_name" class="form-control" id="steparrow-gen-info-fname-input" placeholder="Enter first name">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-sname-input">Second name <span class="text-danger">*</span></label>
-                                                        <input type="email" class="form-control" id="steparrow-gen-info-sname-input" placeholder="Enter second name">
+                                                        <input type="email" data-value name="contact_second_name" class="form-control" id="steparrow-gen-info-sname-input" placeholder="Enter second name">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-lname-input">Last name <span class="text-danger">*</span></label>
-                                                        <input type="email" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter last name">
+                                                        <input type="email" data-value name="contact_last_name" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter last name">
                                                     </div>
                                                 </div>
 
@@ -563,13 +595,13 @@
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="cleave-hr-phone">Phone number <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="cleave-hr-phone" placeholder="+255 xxx xxx xxxx">
+                                                        <input type="text" data-value name="contact_phone" class="form-control" id="cleave-hr-phone" placeholder="+255 xxx xxx xxxx">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="cleave-hr-alt-phone">Alternative number <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="cleave-hr-alt-phone" placeholder="+255 xxx xxx xxxx">
+                                                        <input type="text" data-value name="alt_contact_phone" class="form-control" id="cleave-hr-alt-phone" placeholder="+255 xxx xxx xxxx">
                                                     </div>
                                                 </div>
                                             </div>
@@ -578,7 +610,7 @@
                                                 <div class="col-lg-4">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-lname-input">Relationship <span class="text-danger">*</span></label>
-                                                        <select class="form-select" id="state">
+                                                        <select class="form-select" data-value name="contact_relationship" id="state">
                                                             <option value="">Select</option>
                                                             <option value="Spouse">Spouse</option>
                                                             <option value="Sister/Brother">Sister/Brother</option>
@@ -593,7 +625,7 @@
                                                 <div class="col-lg-12">
                                                     <div class="mb-4">
                                                         <label class="form-label" for="steparrow-gen-info-lname-input">Physical address <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter physical address">
+                                                        <input type="text" data-value name="contact_physical" class="form-control" id="steparrow-gen-info-lname-input" placeholder="Enter physical address">
                                                     </div>
                                                 </div>
                                             </div>
@@ -620,13 +652,13 @@
                                                     <div class="col-lg-2">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-lname-input">Height <span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="steparrow-gen-info-lname-input" placeholder="In cm">
+                                                            <input type="text" data-value name="height" class="form-control" id="steparrow-gen-info-lname-input" placeholder="In cm">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-2">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-lname-input">Weight<span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="steparrow-gen-info-lname-input" placeholder="In kg">
+                                                            <input type="text" data-value name="weight" class="form-control" id="steparrow-gen-info-lname-input" placeholder="In kg">
                                                         </div>
                                                     </div>
                                                 </div><!--end col-->
@@ -635,19 +667,19 @@
                                                     <div class="col-lg-2">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-lname-input">Blood pressure<span class="text-danger">*</span></label>
-                                                            <input type="text" class="form-control" id="cleave-hr-phone" placeholder="High">
+                                                            <input type="text" data-value name="bp_high" class="form-control" id="cleave-hr-phone" placeholder="High">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-2">
                                                         <div class="mb-4">
                                                             <div class="form-label place-hold"></div>
-                                                            <input type="text" class="form-control" id="cleave-hr-alt-phone" placeholder="Low">
+                                                            <input type="text" data-value name="bp_low" class="form-control" id="cleave-hr-alt-phone" placeholder="Low">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-4">
                                                         <div class="mb-4">
                                                             <label class="form-label" for="steparrow-gen-info-lname-input">Blood group<span class="text-danger">*</span></label>
-                                                            <select class="form-select" id="state">
+                                                            <select class="form-select" data-value name="blood_group" id="state">
                                                                 <option value="">Select</option>
                                                                 <option value="A+">A+</option>
                                                                 <option value="A-">A-</option>
@@ -667,7 +699,7 @@
 
                                             <div class="d-flex align-items-start gap-3 mt-5">
                                                 <button type="button" class="btn btn-light btn-label no-border-radius previestab" data-previous="steparrow-gen-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-lg me-2"></i> Back </button>
-                                                <button type="button" class="btn btn-success btn-label right ms-auto no-border-radius nexttab nexttab" data-nexttab="pills-experience-tab"><i class="ri-arrow-right-line label-icon align-middle fs-lg ms-2"></i>Finish</button>
+                                                <button type="button" onclick="submitForm()" data-value name="patient_submit" class="btn btn-success btn-label right ms-auto no-border-radius nexttab nexttab" data-nexttab="pills-experience-tab"><i class="ri-arrow-right-line label-icon align-middle fs-lg ms-2"></i>Finish</button>
                                             </div>
 
                                         </div>
@@ -745,3 +777,82 @@
 </body>
 
 </html>
+<script>
+
+    function submitForm() {
+        const formData = new FormData();
+        const fileInput = document.querySelector('input[name="profile-img-file-input"]');  
+        formData.append("fileInput",fileInput.files[0]);      
+        let url = "";
+        
+        var patient_first_name         = document.querySelector('input[name="patient_first_name"]').value;
+        var patient_second_name        = document.querySelector('input[name="patient_second_name"]').value;
+        var patient_last_name          = document.querySelector('input[name="patient_last_name"]').value;
+        var patient_phone_number       = document.querySelector('input[name="patient_phone_number"]').value;
+        var patient_alt_phone_number   = document.querySelector('input[name="patient_alt_phone_number"]').value;
+        var patient_email              = document.querySelector('input[name="patient_email"]').value;
+        var patient_gender             = document.querySelector('input[name="patient_gender"]').value;
+        var patient_birth_date         = document.querySelector('input[name="patient_birth_date"]').value;
+        var country                    = document.querySelector('select[name="country"]').value;
+        var patient_national_id        = document.querySelector('input[name="patient_national_id"]').value;
+        var patient_maritial           = document.querySelector('select[name="patient_maritial"]').value;
+        var patient_language           = document.querySelector('select[name="patient_language"]').value;
+        var patient_physical           = document.querySelector('input[name="patient_physical"]').value;
+        var patient_bio                = document.querySelector('textarea[name="patient_bio"]').value;
+        var patient_job_title          = document.querySelector('input[name="patient_job_title"]').value;
+        var patient_emp_id             = document.querySelector('input[name="patient_emp_id"]').value;
+        var qualification              = document.querySelector('select[name="qualification"]').value;
+        var patient_company_name       = document.querySelector('select[name="patient_company_name"]').value;
+        var contact_first_name         = document.querySelector('input[name="contact_first_name"]').value;
+        var contact_second_name        = document.querySelector('input[name="contact_second_name"]').value;
+        var contact_last_name          = document.querySelector('input[name="contact_last_name"]').value;
+        var contact_phone              = document.querySelector('input[name="contact_phone"]').value;
+        var alt_contact_phone          = document.querySelector('input[name="alt_contact_phone"]').value;
+        var contact_relationship       = document.querySelector('select[name="contact_relationship"]').value;
+        var contact_physical           = document.querySelector('input[name="contact_physical"]').value;
+        var height                     = document.querySelector('input[name="height"]').value;
+        var weight                     = document.querySelector('input[name="weight"]').value;
+        var bp_high                    = document.querySelector('input[name="bp_high"]').value;
+        var bp_low                     = document.querySelector('input[name="bp_low"]').value;
+        var blood_group                = document.querySelector('select[name="blood_group"]').value;
+     
+
+        formData.append("patient_first_name",patient_first_name       );
+        formData.append("patient_second_name",patient_second_name      );
+        formData.append("patient_last_name",patient_last_name        );
+        formData.append("patient_phone_number",patient_phone_number     );
+        formData.append("patient_alt_phone_number",patient_alt_phone_number );
+        formData.append("patient_email",patient_email            );
+        formData.append("patient_gender",patient_gender           );
+        formData.append("patient_birth_date",patient_birth_date       );
+        formData.append("country",country                  );
+        formData.append("patient_national_id",patient_national_id      );
+        formData.append("patient_maritial",patient_maritial         );
+        formData.append("patient_language",patient_language      );
+        formData.append("patient_physical",patient_physical         );
+        formData.append("patient_bio",patient_bio              );
+        formData.append("patient_job_title",patient_job_title        );
+        formData.append("patient_emp_id",patient_emp_id           );
+        formData.append("qualification",qualification            );
+        formData.append("patient_company_name",patient_company_name     );
+        formData.append("contact_first_name",contact_first_name       );
+        formData.append("contact_second_name",contact_second_name      );
+        formData.append("contact_last_name",contact_last_name        );
+        formData.append("contact_phone",contact_phone            );
+        formData.append("alt_contact_phone",alt_contact_phone        );
+        formData.append("contact_relationship",contact_relationship     );
+        formData.append("contact_physical",contact_physical         );
+        formData.append("height",height                   );
+        formData.append("weight",weight                   );
+        formData.append("bp_high",bp_high                  );
+        formData.append("bp_low",bp_low                   );
+        formData.append("blood_group",blood_group              );
+        formData.append("patient_submit",1           );     
+
+        fetch(url.concat("https://www.rafikiapp.tz/web-app/connect/database.php"), 
+        {
+            method: "POST",
+            body: formData
+        });
+    }
+</script>

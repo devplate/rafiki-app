@@ -1,3 +1,5 @@
+<?php include 'connect/database.php';?>
+
 <!doctype html>
 
 <html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="dark" data-sidebar-size="lg" data-preloader="enable" data-theme="default" data-bs-theme="light">
@@ -62,10 +64,10 @@
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-lg rounded-circle p-1 img-thumbnail">
+                                        <img src="<?php echo $_SESSION["patient"]["logo"] ?>" alt="" class="avatar-lg rounded-circle p-1 img-thumbnail">
                                         <div class="mt-3">
-                                            <h5 class="text-primary"><a href="patient-view.php">Rashid Ali Matawana</a></h5>
-                                            <p class="text-muted">ID: RD89273</p>
+                                            <h5 class="text-primary"><a href="patient-view.php"><?php echo $_SESSION["patient"]["first_name"]." ".$_SESSION["patient"]["second_name"]." ".$_SESSION["patient"]["last_name"]?></a></h5>
+                                            <p class="text-muted">ID: <?php echo $_SESSION["patient"]["id"] ?></p>
                                         </div>
                                     </div>
 
@@ -90,39 +92,39 @@
                                                     <tbody>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Age:</th>
-                                                            <td class="text-muted">67</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["age"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Gender:</th>
-                                                            <td class="text-muted">Male</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["gender"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Language:</th>
-                                                            <td class="text-muted">English, Swahili</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["languages"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Nationality:</th>
-                                                            <td class="text-muted">Tanzania</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["nationality"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">National Id no:</th>
-                                                            <td class="text-muted">3232-5532-7383-738-7438</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["national_id"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Phone number:</th>
-                                                            <td class="text-muted">+255 738 738 7438</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["phone_number"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Alt number:</th>
-                                                            <td class="text-muted">+255 738 738 7438</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["alt_phone_number"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Email address:</th>
-                                                            <td class="text-muted">info@vodacom.co.tz</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["email"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Location:</th>
-                                                            <td class="text-muted">Kigamboni Dar es Salaam, Tanzania</td>
+                                                            <td class="text-muted"><?php echo $_SESSION["patient"]["physical_address"] ?></td>
                                                         </tr>
                                                         <tr>
                                                             <th class="ps-0 text-end" scope="row">Joined Date:</th>
@@ -151,14 +153,14 @@
                                                 <div class="height-date text-center">
                                                     <span class="height-span"><i class="bx bx-sort-up"></i></span>
                                                     <p>Height</p>
-                                                    <h3>189<span class="span-kg">Cm</span> </h3>
+                                                    <h3><?php echo $_SESSION["patient"]["height"] ?><span class="span-kg">Cm</span> </h3>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="height-date text-center">
                                                     <span class="height-span"><i class="bi bi-diagram-3"></i></span>
                                                     <p>Weight</p>
-                                                    <h3>87<span class="span-kg">Kg</span> </h3>
+                                                    <h3><?php echo $_SESSION["patient"]["weight"] ?><span class="span-kg">Kg</span> </h3>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
@@ -178,19 +180,19 @@
                                             <div class="col-lg-5">
                                                 <div class="pressure-stats">
                                                     <p>High</p>
-                                                    <h3>189<span class="span-pressure">mmHg</span> </h3>
+                                                    <h3><?php echo $_SESSION["patient"]["bp_high"] ?><span class="span-pressure">mmHg</span> </h3>
                                                 </div>
                                             </div>
                                             <div class="col-lg-5">
                                                 <div class="pressure-stats ">
                                                     <p>Low</p>
-                                                    <h3>129<span class="span-pressure">mmHg</span> </h3>
+                                                    <h3><?php echo $_SESSION["patient"]["bp_low"] ?><span class="span-pressure">mmHg</span> </h3>
                                                 </div>
                                             </div>
                                             <p class="text-muted mt-4">Blood group</p>
                                             <div class="col-lg-4">
                                                 <div class="pressure-group">
-                                                    <h3>B+</h3>
+                                                    <h3><?php echo $_SESSION["patient"]["blood_group"] ?></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -262,300 +264,94 @@
                                         </div>
                                     </div>
 
+<?php if (isset($_GET["attend_diagnosis"])){
+  
+    $id = $_GET["patient"];
+    $diagnosis = $_GET["attend_diagnosis"];
+    $sql_statement = "SELECT * FROM patient WHERE patient_id='$id'";
 
+    $result = $conn->query($sql_statement);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $_SESSION["patient"] = $row;
+        }
+    }
+    $sql_statement = "SELECT * FROM diagnosis  WHERE diagnosis.patient = '$id'";
+
+    $result = $conn->query($sql_statement);
+    if ($result->num_rows > 0) {
+      
+        while($_SESSION["diagnosis"] = $result->fetch_assoc()){
+    
+    
+           
+
+
+   
+    ?>
+    
                                     <div class="card py-3">
                                         <div class="card-header">
                                             <h5 class="card-title mb-0">Diagnosis test result</h5>
-                                            <p class="text-muted mt-2">Performed on: <span class="text-alt">12 Apr 2023</span> </p>
+                                            <p class="text-muted mt-2">Performed on: <span class="text-alt"><?php echo $_SESSION["diagnosis"]["date"] ?></span> </p>
                                         </div>
                                         <div class="card-body">
                                             <!-- Accordion Flush Example -->
-                                            <h6>94% chance of having sleeping sickness and depression</h6>
+                                            <h6><?php echo $_SESSION["diagnosis"]["score"]." ".$_SESSION["diagnosis"]["category"]." ".$_SESSION["diagnosis"]["test"]?></h6>
                                             <hr>
                                             <div class="accordion accordion-flush">
+                                                <?php 
+                                                $diag_id =  $_SESSION["diagnosis"]["id"];
+                                                $sql_statement = "SELECT * FROM diagnosis LEFT JOIN question ON diagnosis.id = question.diagnosis WHERE question.diagnosis = '$diag_id'";
+
+                                                $result = $conn->query($sql_statement);
+                                                if ($result->num_rows > 0) {
+                                                  
+                                                    while($_SESSION["question"] = $result->fetch_assoc()){
+                                                ?>
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="flush-heading001">
                                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse001" aria-expanded="false" aria-controls="flush-collapse001">
-                                                            How many hours do you sleep per day
+                                                            <?php echo $_SESSION["question"]["ask"]; ?>
                                                         </button>
                                                     </h2>
                                                     <div id="flush-collapse001" class="accordion-collapse collapse show" aria-labelledby="flush-heading001" data-bs-parent="#accordionFlushExample">
                                                         <div class="accordion-body">
                                                             <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: 20hrs a day</p>
+                                                                <?php $array = explode(",",$_SESSION["question"]["choices"]);
+                                                                $i = 0;
+                                                                foreach ($array as $choice){
+                                                                    if ($_SESSION["question"]["response"] == $i) {
+                                                                        echo "
+                                                                        <div class=\"col-lg-6\">
+                                                                    <p> <span class=\"answered\">" . $i . ":</span> " . $array[$i] . "</p>
                                                                 </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>B: 12hrs a day</p>
+                                                                        ";
+                                                                    }else{
+                                                                    echo "
+                                                                    <div class=\"col-lg-6\">
+                                                                    <p>" . $i . ":</span> " . $array[$i] . "</p>
                                                                 </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">C:</span>2hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>D: 10hrs a day</p>
-                                                                </div>
+                                                                    ";
+                                                                    }
+                                                                    $i++;
+                                                                
+                                                            }
+                                                                ?>                                                                
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading002">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse002" aria-expanded="false" aria-controls="flush-collapse002">
-                                                            How many hours do you work a day
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse002" class="accordion-collapse collapse" aria-labelledby="flush-heading002" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: 20hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">B:</span>2hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>C: 12hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>D: 10hrs a day</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading003">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse003" aria-expanded="false" aria-controls="flush-collapse003">
-                                                            Your longest time you are using to work a day
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse003" class="accordion-collapse collapse" aria-labelledby="flush-heading003" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: 20hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>B: 12hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">C:</span>2hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>D: 10hrs a day</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading004">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse004" aria-expanded="false" aria-controls="flush-collapse004">
-                                                            Do you fee important at your working space?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse004" class="accordion-collapse collapse" aria-labelledby="flush-heading004" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: Yes</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">B:</span>No</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading005">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse005" aria-expanded="false" aria-controls="flush-collapse005">
-                                                            Do you like to go home straight after work?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse005" class="accordion-collapse collapse" aria-labelledby="flush-heading005" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">A:</span>Yes</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>B: No</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading006">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse006" aria-expanded="false" aria-controls="flush-collapse006">
-                                                            Do yu have any relationship with one of your workers
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse006" class="accordion-collapse collapse" aria-labelledby="flush-heading006" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>B: Yes</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">C:</span>No</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                </div>   
+                                                <?php }}?>                                             
                                             </div>
                                         </div>
                                     </div>
                                     <!--end card-->
-
-                                    <div class="card py-3">
-                                        <div class="card-header">
-                                            <h5 class="card-title mb-0">Diagnosis test result</h5>
-                                            <p class="text-muted mt-2">Performed on: <span class="text-alt">12 Apr 2023</span> </p>
-                                        </div>
-                                        <div class="card-body">
-                                            <!-- Accordion Flush Example -->
-                                            <h6>94% chance of having sleeping sickness and depression</h6>
-                                            <hr>
-                                            <div class="accordion accordion-flush">
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading0001">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0001" aria-expanded="false" aria-controls="flush-collapse0001">
-                                                            How many hours do you sleep per day
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse0001" class="accordion-collapse collapse show" aria-labelledby="flush-heading0001" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: 20hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>B: 12hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">C:</span>2hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>D: 10hrs a day</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading0002">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0002" aria-expanded="false" aria-controls="flush-collapse0002">
-                                                            How many hours do you work a day
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse0002" class="accordion-collapse collapse" aria-labelledby="flush-heading0002" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: 20hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">B:</span>2hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>C: 12hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>D: 10hrs a day</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading0003">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0003" aria-expanded="false" aria-controls="flush-collapse0003">
-                                                            Your longest time you are using to work a day
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse0003" class="accordion-collapse collapse" aria-labelledby="flush-heading0003" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: 20hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>B: 12hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">C:</span>2hrs a day</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>D: 10hrs a day</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading0004">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0004" aria-expanded="false" aria-controls="flush-collapse0004">
-                                                            Do you fee important at your working space?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse0004" class="accordion-collapse collapse" aria-labelledby="flush-heading0004" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>A: Yes</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">B:</span>No</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading0005">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0005" aria-expanded="false" aria-controls="flush-collapse0005">
-                                                            Do you like to go home straight after work?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse0005" class="accordion-collapse collapse" aria-labelledby="flush-heading0005" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">A:</span>Yes</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p>B: No</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-heading0006">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0006" aria-expanded="false" aria-controls="flush-collapse0006">
-                                                            Do yu have any relationship with one of your workers
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapse0006" class="accordion-collapse collapse" aria-labelledby="flush-heading0006" data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <p>B: Yes</p>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <p> <span class="answered">C:</span>No</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end card-->
+<?php }
+        
+    }  }?>
+                                    
+                                 
 
                                     <div class="hstack gap-2 justify-content-end">
                                         <nav aria-label="Page navigation example">

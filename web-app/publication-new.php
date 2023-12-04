@@ -1,3 +1,4 @@
+<?php include "connect/database.php";?>
 <!doctype html>
 
 <html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="dark" data-sidebar-size="lg" data-preloader="enable" data-theme="default" data-bs-theme="light">
@@ -50,20 +51,26 @@
                                     <h5 class="card-title mb-0">Publish</h5>
                                 </div>
                                 <div class="card-body">
-                                    <form action="#!">
+                                    <form action="connect/database.php" method="post" enctype="multipart/form-data">
 
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="mb-3">
                                                     <label for="Property-title-input" class="form-label">Property title<span class="text-danger">*</span></label>
-                                                    <input type="text" id="Property-title-input" class="form-control" placeholder="Enter property title" required>
+                                                    <input type="text" name="title" id="Property-title-input" class="form-control" placeholder="Enter property title" required>
                                                 </div>
                                             </div><!--end col-->
 
                                             <div class="col-lg-12">
                                                 <div class="mb-3">
                                                     <label for="formFile" class="form-label">Upload cover image<span class="text-danger">*</span></label>
-                                                    <input class="form-control" type="file" id="formFile">
+                                                    <input type="file" name="cover_image" class="form-control"  id="cover_image">
+                                                </div>
+                                            </div> 
+                                            <div class="col-lg-12">
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Upload content (.docx for articles)<span class="text-danger">*</span></label>
+                                                    <input type="file" name="content" class="form-control"  id="content">
                                                 </div>
                                             </div>    
 
@@ -71,7 +78,7 @@
                                                 <div class="mb-3">
                                                     <label for="Property-type-input" class="form-label">Post category<span class="text-danger">*</span></label>
 
-                                                    <select class="form-control" id="choices-multiple-remove-button" data-choices data-choices-removeItem name="choices-multiple-remove-button" multiple>
+                                                    <select name="category" class="form-control" id="choices-multiple-remove-button" data-choices data-choices-removeItem name="choices-multiple-remove-button" multiple>
                                                         <option value="">Select post category</option>
                                                         <option value="General posts">General posts</option>
                                                         <option value="Anxiety">Anxiety</option>
@@ -88,7 +95,8 @@
                                                     <label for="Property-type-input" class="form-label">Descriptions<span class="text-danger">*</span></label>
                                                     </div><!-- end card header -->
                                                     <textarea name="editor1" id="editor1"></textarea>
-                                                    <textarea name="editor_data" style="display: none;"></textarea>
+                                                    <textarea name="desc" style="display: none;"></textarea>
+
                                             </div>
                                             <!-- end col -->
 
@@ -97,19 +105,19 @@
                                             <div class="row">
                                             <div class="col-lg-3">
                                                 <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input" id="additionalFeatures">
+                                                    <input type="radio" name="type" value="article" class="form-check-input" id="additionalFeatures">
                                                     <label class="form-check-label" for="additionalFeatures">Article post</label>
                                                 </div>
                                             </div><!--end col-->
                                             <div class="col-lg-3">
                                                 <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input" id="additionalFeatures2">
+                                                    <input type="radio" name="type" value="video" class="form-check-input" id="additionalFeatures2">
                                                     <label class="form-check-label" for="additionalFeatures2">Video post</label>
                                                 </div>
                                             </div><!--end col-->
                                             <div class="col-lg-3">
                                                 <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input" id="additionalFeatures3">
+                                                    <input type="radio" name="type" value="audio" class="form-check-input" id="additionalFeatures3">
                                                     <label class="form-check-label" for="additionalFeatures3">Audio post</label>
                                                 </div>
                                             </div><!--end col-->
@@ -119,7 +127,7 @@
                                             <div class="col-lg-12 mb-2">
                                                 <div class="hstack gap-3 justify-content-end">
                                                     <button type="button" class="btn btn-primary"><i class="bi bi-repeat align-baseline me-1"></i> Save to draft</button>
-                                                    <button type="button" class="btn btn-primary"><i class="bi bi-clipboard2-check align-baseline me-1"></i> Publish now</button>
+                                                    <button type="submit" value="12" name="post_publication" class="btn btn-primary"><i class="bi bi-clipboard2-check align-baseline me-1"></i> Publish now</button>
                                                 </div>
                                             </div>
                                         </div><!--end row-->
@@ -178,10 +186,11 @@
         <script src="assets/js/pages/form-editor.init.js"></script>
 
         <!-- javascript links ends -->
-
-        <script>
+        
+         <script>
             CKEDITOR.replace('editor1');
         </script>
+
 
 </body>
 

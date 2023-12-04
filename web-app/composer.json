@@ -1,0 +1,7 @@
+{
+    "name": "vendor/autoload",
+    "type": "library",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}

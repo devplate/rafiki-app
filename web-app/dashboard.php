@@ -1,3 +1,22 @@
+<?php include 'connect/database.php'; 
+
+
+$id = $_SESSION["user"]["hr"];
+$sql_statement = "";
+if($_SESSION["user"]["user_group"] == "doctor" || ($_SESSION["user"]["user_group"] == "root" ) ){
+    $sql_statement = "SELECT first_name FROM patient";
+
+}elseif($_SESSION["user"]["user_group"] == "hr"){
+    $sql_statement = "SELECT first_name FROM patient";
+
+}
+
+$result = $conn->query($sql_statement);
+
+
+
+?>
+
 <!doctype html>
 
 <html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="dark" data-sidebar-size="lg" data-preloader="enable" data-theme="default" data-bs-theme="light">
@@ -46,118 +65,97 @@
 
                     <!-- top stasts starts -->
                     <div class="row">
+                
+                    <?php if (true) { ?>
                         <div class="col-xl-3 col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
+                                <div class="avatar-sm height-5 float-end">
+                                        <div class="avatar-title bg-primary-subtle text-primary fs-3xl">
+                                        <i class="ph-user-plus"></i>
                                         </div>
                                     </div>
-                                    <p class="fs-md text-muted mb-0">Patients</p>
-
-                                    <div class="row mt-4 align-items-end">
+                                    <div class="row mt-2 align-items-end">
                                         <div class="col-lg-6">
-                                            <h5 class="mb-4"><span class="counter-value" data-target="3680"></span></h5>
-                                            <p class="text-success mb-0"><i class="bi bi-arrow-up me-1"></i> 06.41% Last Month</p>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div id="session_chart" data-colors='["--tb-primary", "--tb-secondary"]' class="apex-charts m-n3 mt-n4" dir="ltr"></div>
+                                            <h5 class="mb-4"><span class="counter-value" data-target="<?php echo $result->num_rows; ?>"></span></h5>
                                         </div>
                                     </div>
+                                    <p class="fs-md text-muted mb-0"><?php if($_SESSION["user"]["user_group"] == "hr") { ?> Employees<?php }else{?>Patients<?php }?></p>
                                 </div>
                             </div>
                         </div><!--end col-->
-                        <div class="col-xl-3 col-sm-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
-                                        </div>
-                                    </div>
-                                    <p class="fs-md text-muted mb-0">Doctors</p>
+                        <?php }?>
+                
+                        
+                <?php if ($_SESSION["user"]["user_group"] == "root") { ?>
 
-                                    <div class="row mt-4 align-items-end">
-                                        <div class="col-lg-6">
-                                            <h5 class="mb-4"><span class="counter-value" data-target="900">0</span></h5>
-                                            <p class="text-success mb-0"><i class="bi bi-arrow-up me-1"></i> 13% Last Month</p>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div id="visti_duration_chart" data-colors='["--tb-primary", "--tb-secondary"]' class="apex-charts m-n3 mt-n4" dir="ltr"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--end col-->
                         <div class="col-xl-3 col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
+                                <div class="avatar-sm height-5 float-end">
+                                        <div class="avatar-title bg-primary-subtle text-primary fs-3xl ">
+                                            <i class="ph-house-line"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2 align-items-end">
+                                        <div class="col-lg-6">
+                                            <?php
+                                            $sql_statement = "SELECT id FROM company";
+                                            $results = $conn->query($sql_statement);
+                                            ?>
+                                            <h5 class="mb-4"><span class="counter-value" data-target="<?php echo $results->num_rows ?>">0</span></h5>
                                         </div>
                                     </div>
                                     <p class="fs-md text-muted mb-0">Companies</p>
-
-                                    <div class="row mt-4 align-items-end">
-                                        <div class="col-lg-6">
-                                            <h5 class="mb-4"><span class="counter-value" data-target="164">0</span></h5>
-                                            <p class="text-danger mb-0"><i class="bi bi-arrow-down me-1"></i> 07.26% Last Week</p>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div id="impressions_chart" data-colors='["--tb-secondary"]' class="apex-charts m-n3 mt-n4" dir="ltr"></div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div><!--end col-->
+                        <?php }?>
+
+                        <?php if ($_SESSION["user"]["user_group"] == "root") { ?>
                         <div class="col-xl-3 col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="dropdown float-end">
-                                        <a class="text-reset dropdown-btn" href="dashboard.php" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="text-muted fs-lg"><i class="mdi mdi-dots-vertical align-middle"></i></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="dashboard.php">Today</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Week</a>
-                                            <a class="dropdown-item" href="dashboard.php">Last Month</a>
-                                            <a class="dropdown-item" href="dashboard.php">Current Year</a>
+                                <div class="avatar-sm height-5 float-end">
+                                        <div class="avatar-title bg-primary-subtle text-primary fs-3xl ">
+                                        <i class="ph ph-user"></i>
                                         </div>
                                     </div>
-                                    <p class="fs-md text-muted mb-0">Attended cases</p>
-
-                                    <div class="row mt-4 align-items-end">
+                                    <div class="row mt-2 align-items-end">
                                         <div class="col-lg-6">
-                                            <h5 class="mb-4"><span class="counter-value" data-target="291"></span></h5>
-                                            <p class="text-success mb-0"><i class="bi bi-arrow-up me-1"></i> 13% Last Month</p>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div id="views_chart" data-colors='["--tb-primary"]' class="apex-charts m-n3 mt-n4" dir="ltr"></div>
+                                        <?php
+                                            $sql_statement = "SELECT doctor_id FROM doctor";
+                                            $results = $conn->query($sql_statement);
+                                            ?>
+                                            <h5 class="mb-4"><span class="counter-value" data-target="<?php echo $results->num_rows ?>">0</span></h5>
                                         </div>
                                     </div>
+                                    <p class="fs-md text-muted mb-0">Doctors</p>
                                 </div>
                             </div>
                         </div><!--end col-->
+                        <?php }?>
+
+                    <?php if (true) { ?>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                <div class="avatar-sm height-5 float-end">
+                                        <div class="avatar-title bg-primary-subtle text-primary fs-3xl ">
+                                        <i class="bi bi-clipboard-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2 align-items-end">
+                                        <div class="col-lg-6">
+                                            <h5 class="mb-4"><span class="counter-value" data-target="291"></span></h5>
+                                        </div>
+                                    </div>
+                                    <p class="fs-md text-muted mb-0">Attended cases</p>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                        <?php }?>
+
                     </div><!--end row-->
                     <!-- top stasts end -->
 

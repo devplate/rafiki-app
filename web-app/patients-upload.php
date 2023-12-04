@@ -1,3 +1,16 @@
+<?php include 'connect/database.php';
+
+
+
+
+$sql_statement = "
+SELECT id,name FROM company
+";
+$result = $conn->query($sql_statement);
+
+?>
+
+
 <!doctype html>
 
 <html lang="en" data-layout="vertical" data-layout-style="detached" data-sidebar="dark" data-sidebar-size="lg" data-preloader="enable" data-theme="default" data-bs-theme="light">
@@ -45,35 +58,41 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title mb-0">Publish</h5>
+                                    <h5 class="card-title mb-0">Upload patient list</h5>
                                 </div>
                                 <div class="card-body">
-                                    <form action="#!">
+                                    <form action="connect/database.php" method="post" enctype="multipart/form-data">
 
                                         <div class="row">
 
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-6">
                                                 <div class="mb-3">
-                                                    <label for="Property-type-input" class="form-label">Select company<span class="text-danger">*</span></label>
-                                                    <select class="form-select" id="country" name="country">
+                                                    <label for="Property-type-input" class="form-label text-muted">Select company <span class="text-danger"> *</span></label>
+                                                    <select class="form-select" data-choices id="country" name="company">
                                                         <option value="">Select company</option>
-                                                        <option value="Vodacom Tanzania">Vodacom Tanzania</option>
-                                                        <option value="Airtel Africa">Airtel Africa</option>
-                                                        <option value="Azam company">Azam company</option>
+                                                        <?php  
+                                                            if($result->num_rows > 0){
+                                                                while($row = $result->fetch_assoc()){
+                                                                    echo "
+                                                                        <option value=\"".$row["id"]."\">".$row["name"]."</option>                                                                    
+                                                                    ";
+                                                                }
+                                                            }
+                                                          ?>                                                        
                                                     </select>
                                                 </div>
                                             </div>
 
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-6">
                                                 <div class="mb-3">
-                                                    <label for="formFile" class="form-label">Upload xcl file here<span class="text-danger">*</span></label>
-                                                    <input class="form-control" type="file" id="formFile">
+                                                    <label for="formFile" class="form-label text-muted">Upload xcl file here <span class="text-danger"> *</span></label>
+                                                    <input class="form-control" name="excel" type="file" id="formFile">
                                                 </div>
                                             </div>   
 
                                             <div class="col-lg-12 mt-4 mb-2">
                                                 <div class="hstack gap-2 justify-content-end">
-                                                    <button type="button" class="btn btn-primary"><i class="bi bi-upload align-baseline me-1"></i> Upload patients</button>
+                                                    <button type="submit" name="excel_submit" class="btn btn-success"> <i class="bi bi-upload align-baseline me-1"> </i> Upload</button>
                                                 </div>
                                             </div>
                                         </div><!--end row-->

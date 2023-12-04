@@ -41,6 +41,7 @@
                 </li>
 
                 <!-- Company -->
+                <?php if ($_SESSION["user"]["user_group"] == "root") { ?>
                 <li class="nav-item">
                     <a href="index.php#sidebarCompany" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCompany">
                         <i class="ph-house-line"></i> <span data-key="company">Company</span>
@@ -48,7 +49,7 @@
                     <div class="collapse menu-dropdown" id="sidebarCompany">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="company-new.php" class="nav-link" data-key="add-company">Add Company</a>
+                                <a href="company-new-details.php" class="nav-link" data-key="add-company">Add Company</a>
                             </li>
                             <li class="nav-item">
                                 <a href="companies.php" class="nav-link" data-key="companies">All Companies</a>
@@ -56,8 +57,10 @@
                         </ul>
                     </div>
                 </li>
+                <?php }?>
 
                 <!-- Doctor -->
+                <?php if ($_SESSION["user"]["user_group"] == "root") { ?>
                 <li class="nav-item">
                     <a href="index.php#sidebarDoctor" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDoctor">
                     <i class="ph-user"></i> <span data-key="t-Doctor">Doctor</span>
@@ -65,7 +68,7 @@
                     <div class="collapse menu-dropdown" id="sidebarDoctor">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="doctor-new.php" class="nav-link" data-key="t-products">Add Doctor</a>
+                                <a href="doctor-new-details.php" class="nav-link" data-key="t-products">Add Doctor</a>
                             </li>
                             <li class="nav-item">
                                 <a href="doctors.php" class="nav-link" data-key="t-products-grid">All Doctors</a>
@@ -73,8 +76,11 @@
                         </ul>
                     </div>
                 </li>
+                <?php }?>
 
                 <!-- Prescription -->
+                <?php if ($_SESSION["user"]["user_group"] == "doctor" || $_SESSION["user"]["user_group"] == "root") { ?>
+                
                 <li class="nav-item">
                     <a href="index.php#sidebarPrescription" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPrescription">
                     <i class="bi bi-clipboard-plus"></i> <span data-key="t-Prescription">Prescription</span>
@@ -90,13 +96,20 @@
                         </ul>
                     </div>
                 </li>
+                <?php }?>
+
 
                 <!-- Diagnosis -->
+                <?php if ($_SESSION["user"]["user_group"] == "doctor") { ?>
+
                 <li class="nav-item">
                     <a href="diagnosis.php" class="nav-link menu-link"> <i class="mdi mdi-stethoscope"></i> <span data-key="t-diagnosis">Diagnosis</span> </a>
                 </li>
-
+                <?php }?>
+                
                 <!-- Patient -->
+                <?php if ($_SESSION["user"]["user_group"] == "hr" || $_SESSION["user"]["user_group"] == "root") { ?>
+
                 <li class="nav-item">
                     <a href="index.php#sidebarPatient" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPatient">
                         <i class="ph-user-plus"></i> <span data-key="t-Patient">Patient</span>
@@ -104,7 +117,7 @@
                     <div class="collapse menu-dropdown" id="sidebarPatient">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="patient-new.php" class="nav-link" data-key="t-products">Add Patient</a>
+                                <a href="patient-new-details.php" class="nav-link" data-key="t-products">Add Patient</a>
                             </li>
                             <li class="nav-item">
                                 <a href="patients-upload.php" class="nav-link" data-key="t-products-upload">Upload Patients</a>
@@ -115,8 +128,11 @@
                         </ul>
                     </div>
                 </li>
+                <?php }?>
 
                 <!-- Appointment -->
+                <?php if ($_SESSION["user"]["user_group"] == "doctor" || $_SESSION["user"]["user_group"] == "root") { ?>
+
                 <li class="nav-item">
                     <a href="index.php#sidebarAppointment" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAppointment">
                     <i class="ph-calendar"></i> <span data-key="t-Appointment">Appointment</span>
@@ -132,17 +148,25 @@
                         </ul>
                     </div>
                 </li>
+                <?php }?>
+
 
                 <!-- <li class="nav-item">
                     <a href="appointment.php" class="nav-link menu-link"> <i class="ph-calendar"></i> <span data-key="t-calendar">Appointment</span> </a>
                 </li> -->
 
                 <!-- Chat -->
+                <?php if ($_SESSION["user"]["user_group"] == "doctor") { ?>
+
                 <li class="nav-item">
                     <a href="chat.php" class="nav-link menu-link"> <i class="ph-chats"></i> <span data-key="t-chat">Chat</span> </a>
                 </li>
+                <?php }?>
+
 
                 <!-- Publications -->
+                <?php if ($_SESSION["user"]["user_group"] == "doctor" || $_SESSION["user"]["user_group"] == "root") { ?>
+
                 <li class="nav-item">
                     <a href="index.php#sidebarPublications" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPublications">
                         <i class="ph-newspaper"></i> <span data-key="t-Publication">Publication</span>
@@ -158,16 +182,21 @@
                         </ul>
                     </div>
                 </li>
+                <?php }?>
+
 
                 <!-- Office -->
+                <?php if ($_SESSION["user"]["user_group"] != "root") { ?>
+
                 <li class="nav-item">
                     <a href="profile.php" class="nav-link menu-link"> <i class="ph-briefcase"></i> <span data-key="t-chat">Profile</span> </a>
                 </li>
+                <?php }?>
 
                 <!-- Customize -->
                 <li class="nav-item">
                     <a class="nav-link btn menu-link" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-                        <i class="bi bi-gear"></i> <span data-key="t-custom-ui">Personalize</span><span class="badge badge-pill bg-badge" data-key="t-custom">Custom</span>
+                        <i class="bi bi-gear"></i> <span data-key="t-custom-ui">Personalize</span>
                     </a>
                 </li>
 
