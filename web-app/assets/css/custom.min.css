@@ -297,3 +297,7 @@ span.span-pressure {
 .mb-4x {
     margin-bottom: 1.35rem!important;
 }
+.vertical-navs-step .nav .nav-link.active {
+    border-color: var(--tb-primary);
+    width: 100%;
+}
